@@ -435,48 +435,40 @@ public class Principal extends javax.swing.JFrame {
 
     public void validarGrupos() {
         if (g1.isSelected()) {
-            Activos activos = new Activos();
+            m_Activos activos = new m_Activos();
             activos.setVisible(true);
             this.dispose();
             
         } else if (g2.isSelected()) {
-            Arquitectura arquitectura = new Arquitectura();
+            m_Arquitectura arquitectura = new m_Arquitectura();
             arquitectura.setVisible(true);
             this.dispose();
         } else if (g3.isSelected()) {
-            Datos datos = new Datos();
+            m_Datos datos = new m_Datos();
             datos.setVisible(true);
             this.dispose();
         } else if (g3.isSelected()) {
-            Datos datos = new Datos();
+            m_Datos datos = new m_Datos();
             datos.setVisible(true);
             this.dispose();
-        } else if (g4.isSelected()) {
-            Servicios servicios = new Servicios();
-            servicios.setVisible(true);
-            this.dispose();
         } else if (g5.isSelected()) {
-            Software software = new Software();
+            m_Software software = new m_Software();
             software.setVisible(true);
             this.dispose();
         } else if (g6.isSelected()) {
-            Hardware hardware = new Hardware();
+            m_Hardware hardware = new m_Hardware();
             hardware.setVisible(true);
             this.dispose();
         } else if (g7.isSelected()) {
-            Redes redes = new Redes();
+            m_Redes redes = new m_Redes();
             redes.setVisible(true);
             this.dispose();
         } else if (g8.isSelected()) {
-            Soportes soportes = new Soportes();
+            m_Soportes soportes = new m_Soportes();
             soportes.setVisible(true);
             this.dispose();
-        } else if (g9.isSelected()) {
-            Equipamiento equipamiento = new Equipamiento();
-            equipamiento.setVisible(true);
-            this.dispose();
         } else if (g10.isSelected()) {
-            Personal personal = new Personal();
+            m_Personal personal = new m_Personal();
             personal.setVisible(true);
             this.dispose();
         }

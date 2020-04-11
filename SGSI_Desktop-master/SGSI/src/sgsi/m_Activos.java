@@ -1,8 +1,3 @@
-/*Hola Charvy beio
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package sgsi;
 
 import java.awt.List;
@@ -18,16 +13,16 @@ import javax.swing.JRadioButton;
  *
  * @author Luis Efe
  */
-public class Activos extends javax.swing.JFrame {
+public class m_Activos extends javax.swing.JFrame {
 
     /**
      * Creates new form activos_esenciales
      */
-    public Activos() {
+    public m_Activos() {
         initComponents();
         this.setLocationRelativeTo(null);
         ;
-        JPanel ocultar[]=AgregarRespuestas(respuesta1,respuesta2,respuesta3,respuesta4);
+        JPanel ocultar[] = AgregarRespuestas(respuesta1, respuesta2, respuesta3, respuesta4);
         for (int i = 0; i < ocultar.length; i++) {
             ocultar[i].setVisible(false);
         }
@@ -229,7 +224,7 @@ public class Activos extends javax.swing.JFrame {
             }
         });
 
-        p1.setText("y lari lari he");
+        p1.setText("A");
         p1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 p1ActionPerformed(evt);
@@ -318,7 +313,7 @@ public class Activos extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        p2.setText("y lari lari he");
+        p2.setText("B");
         p2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 p2ActionPerformed(evt);
@@ -407,7 +402,7 @@ public class Activos extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        p3.setText("y lari lari he");
+        p3.setText("C");
         p3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 p3ActionPerformed(evt);
@@ -496,7 +491,7 @@ public class Activos extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        p4.setText("y lari lari he");
+        p4.setText("D");
         p4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 p4ActionPerformed(evt);
@@ -651,47 +646,49 @@ public class Activos extends javax.swing.JFrame {
     }//GEN-LAST:event_formWindowActivated
 
     private void d12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_d12MouseClicked
- 
+
         String sl = System.getProperty("line.separator");
         JOptionPane.showMessageDialog(rootPane, "La información no se pone a disposición ni se revela a individuos, entidades o procesos no autorizados.",
-        "[Confidencialidad]", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:
+                "[Confidencialidad]", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:
     }//GEN-LAST:event_d12MouseClicked
 
     private void d13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_d13MouseClicked
 
         String sl = System.getProperty("line.separator");
         JOptionPane.showMessageDialog(rootPane, "Mantenimiento de la exactitud y completitud de la información y sus métodos de proceso.",
-        "[Integridad]", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:// TODO add your handling code here:
+                "[Integridad]", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:// TODO add your handling code here:
     }//GEN-LAST:event_d13MouseClicked
 
     private void d14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_d14MouseClicked
 
         String sl = System.getProperty("line.separator");
         JOptionPane.showMessageDialog(rootPane, "Acceso y utilización de la información y los sistemas de tratamiento de la misma"
-                +sl+ "por parte de los individuos, entidades o procesos autorizados cuando lo requieran.",
-        "[Disponibilidad]", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:// TODO add your handling code here:
+                + sl + "por parte de los individuos, entidades o procesos autorizados cuando lo requieran.",
+                "[Disponibilidad]", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:// TODO add your handling code here:
         // TODO add your handling code here:
     }//GEN-LAST:event_d14MouseClicked
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
       /*JRadioButton[] preguntas=new JRadioButton[4];
-      preguntas=AgregarPreguntas(p1,p2,p4,p5);
-      JPanel[] respuestas=new JPanel[4];
+         preguntas=AgregarPreguntas(p1,p2,p4,p5);
+         JPanel[] respuestas=new JPanel[4];
          pregunta4.setBounds(93, pregunta3.getY()+40, 544, 34);143 inicia
-      respuestas=AgregarRespuestas(r2,r3,r4,r6);
+         respuestas=AgregarRespuestas(r2,r3,r4,r6);
+         for (int i = 0; i < preguntas.length; i++) {
+         if(preguntas[i].isSelected())respuestas[i].setVisible(false);
+         }
+         */
+        JPanel[] controlador_preguntas = new JPanel[4];
+        controlador_preguntas = Preguntas(pregunta1, pregunta2, pregunta3, pregunta4);
+        JRadioButton[] preguntas = new JRadioButton[4];
+        preguntas = AgregarPreguntas(p1, p2, p3, p4);
         for (int i = 0; i < preguntas.length; i++) {
-            if(preguntas[i].isSelected())respuestas[i].setVisible(false);
+            if (!preguntas[i].isSelected()) {
+                controlador_preguntas[i].setVisible(false);
+            }
         }
-     */
-        JPanel[]controlador_preguntas=new JPanel[4];
-       controlador_preguntas=Preguntas(pregunta1,pregunta2,pregunta3,pregunta4);
-       JRadioButton[] preguntas=new JRadioButton[4];
-      preguntas=AgregarPreguntas(p1,p2,p3,p4);
-        for (int i = 0; i < preguntas.length; i++) {
-            if(!preguntas[i].isSelected())controlador_preguntas[i].setVisible(false);
-        }
-        JPanel mostrar[]=AgregarRespuestas(respuesta1,respuesta2,respuesta3,respuesta4);
+        JPanel mostrar[] = AgregarRespuestas(respuesta1, respuesta2, respuesta3, respuesta4);
         for (int i = 0; i < mostrar.length; i++) {
             mostrar[i].setVisible(true);
         }
@@ -703,31 +700,31 @@ public class Activos extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        ArrayList puntos=new ArrayList<String>();
-        int controlar=0;
-        int inicio=0;
-        int finalizar=2;
-        String datos="";
-        JComboBox[] opciones=new JComboBox[12];
-        opciones=respuestas(cb1,cb2,cb3,cb4,cb5,cb6,cb7,cb8,cb9,cb10,cb11,cb12);
-         JRadioButton[] preguntas=new JRadioButton[4];
-        preguntas=AgregarPreguntas(p1,p2,p3,p4);
+        ArrayList puntos = new ArrayList<String>();
+        int controlar = 0;
+        int inicio = 0;
+        int finalizar = 2;
+        String datos = "";
+        JComboBox[] opciones = new JComboBox[12];
+        opciones = respuestas(cb1, cb2, cb3, cb4, cb5, cb6, cb7, cb8, cb9, cb10, cb11, cb12);
+        JRadioButton[] preguntas = new JRadioButton[4];
+        preguntas = AgregarPreguntas(p1, p2, p3, p4);
         for (int i = 0; i < preguntas.length; i++) {
-            if(preguntas[i].isSelected()) {
-                for ( controlar =inicio; controlar <= finalizar; controlar++) {
-                  datos=datos+opciones[controlar].getSelectedItem().toString()+"/";
+            if (preguntas[i].isSelected()) {
+                for (controlar = inicio; controlar <= finalizar; controlar++) {
+                    datos = datos + opciones[controlar].getSelectedItem().toString() + "/";
                 }
-                inicio=finalizar+1;
-                finalizar=inicio+2;
-            }else{
-             inicio=finalizar+1;
-             finalizar=inicio+2;
+                inicio = finalizar + 1;
+                finalizar = inicio + 2;
+            } else {
+                inicio = finalizar + 1;
+                finalizar = inicio + 2;
             }
-        if(datos!=""){
-            puntos.add("grupo "+(i+1)+"/activos "+(i+1)+"/"+datos);
-            datos="";
-        }
-        
+            if (datos != "") {
+                puntos.add("grupo " + (i + 1) + "/activos " + (i + 1) + "/" + datos);
+                datos = "";
+            }
+
         }
         System.out.println(puntos);
     }//GEN-LAST:event_jButton2ActionPerformed
@@ -792,39 +789,38 @@ public class Activos extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_cb12ActionPerformed
 
-    public  JRadioButton[] AgregarPreguntas(JRadioButton... arrayOpciones)
-{
-  JRadioButton[] preguntas=new JRadioButton[arrayOpciones.length];
-    for (int i = 0; i < arrayOpciones.length; i++) {
-        preguntas[i]=arrayOpciones[i];
+    public JRadioButton[] AgregarPreguntas(JRadioButton... arrayOpciones) {
+        JRadioButton[] preguntas = new JRadioButton[arrayOpciones.length];
+        for (int i = 0; i < arrayOpciones.length; i++) {
+            preguntas[i] = arrayOpciones[i];
+        }
+        return preguntas;
     }
-    return preguntas;
-}
 
-        public  JPanel[] AgregarRespuestas(JPanel... arrayOpciones)
-{
-  JPanel[] respuestas=new JPanel[arrayOpciones.length];
-    for (int i = 0; i < arrayOpciones.length; i++) {
-        respuestas[i]=arrayOpciones[i];
+    public JPanel[] AgregarRespuestas(JPanel... arrayOpciones) {
+        JPanel[] respuestas = new JPanel[arrayOpciones.length];
+        for (int i = 0; i < arrayOpciones.length; i++) {
+            respuestas[i] = arrayOpciones[i];
+        }
+        return respuestas;
     }
-    return respuestas;
-}
-         public  JPanel[] Preguntas(JPanel... arrayOpciones)
-{
-  JPanel[] respuestas=new JPanel[arrayOpciones.length];
-    for (int i = 0; i < arrayOpciones.length; i++) {
-        respuestas[i]=arrayOpciones[i];
+
+    public JPanel[] Preguntas(JPanel... arrayOpciones) {
+        JPanel[] respuestas = new JPanel[arrayOpciones.length];
+        for (int i = 0; i < arrayOpciones.length; i++) {
+            respuestas[i] = arrayOpciones[i];
+        }
+        return respuestas;
     }
-    return respuestas;
-}
-         public JComboBox[] respuestas(JComboBox... ArrayOpciones)
-{
-         JComboBox[] res=new JComboBox[ArrayOpciones.length];
-         for (int i = 0; i < ArrayOpciones.length; i++) {
-        res[i]=ArrayOpciones[i];
+
+    public JComboBox[] respuestas(JComboBox... ArrayOpciones) {
+        JComboBox[] res = new JComboBox[ArrayOpciones.length];
+        for (int i = 0; i < ArrayOpciones.length; i++) {
+            res[i] = ArrayOpciones[i];
+        }
+        return res;
     }
-         return res;
-   }
+
     /**
      * @param args the command line arguments
      */
@@ -842,14 +838,18 @@ public class Activos extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Activos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(m_Activos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Activos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(m_Activos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Activos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(m_Activos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Activos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(m_Activos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -858,7 +858,7 @@ public class Activos extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Activos().setVisible(true);
+                new m_Activos().setVisible(true);
             }
         });
     }
