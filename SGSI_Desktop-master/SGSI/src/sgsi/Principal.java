@@ -20,7 +20,7 @@ public class Principal extends javax.swing.JFrame {
         initComponents();
         this.setLocationRelativeTo(null);
         Reporte reporte = new Reporte();
-        reporte.setVisible(true);
+       // reporte.setVisible(true);
         //this.setExtendedState(MAXIMIZED_BOTH);
     }
 

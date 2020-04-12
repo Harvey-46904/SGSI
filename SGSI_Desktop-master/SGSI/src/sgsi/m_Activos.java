@@ -1,3 +1,4 @@
+//TODO ARREGLADO LUIS
 package sgsi;
 
 import java.awt.List;
@@ -601,7 +602,7 @@ public class m_Activos extends javax.swing.JFrame {
                 .addComponent(jButton2)
                 .addGap(323, 323, 323))
             .addGroup(layout.createSequentialGroup()
-                .addGap(183, 183, 183)
+                .addGap(203, 203, 203)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(pregunta4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(pregunta3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
