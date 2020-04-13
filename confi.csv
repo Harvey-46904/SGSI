@@ -1,0 +1,162 @@
+1,Tiene buena confidencialidad,activos1,Alto
+2,Estable en confidencialidad,activos1,Medio
+3,Debe mejorar la confidencialidad,activos1,Bajo
+4,Tiene buena confidencialidad,activos2,Alto
+5,Estable en confidencialidad,activos2,Medio
+6,Debe mejorar la confidencialidad,activos2,Bajo
+7,Tiene buena confidencialidad,activos3,Alto
+8,Estable en confidencialidad,activos3,Medio
+9,Debe mejorar la confidencialidad,activos3,Bajo
+10,Tiene buena confidencialidad,activos4,Alto
+11,Estable en confidencialidad,activos4,Medio
+12,Debe mejorar la confidencialidad,activos4,Bajo
+13,Tiene buena confidencialidad,Arquitectura1,Alto
+14,Estable en confidencialidad,Arquitectura1,Medio
+15,Debe mejorar la confidencialidad,Arquitectura1,Bajo
+16,Tiene buena confidencialidad,Arquitectura2,Alto
+17,Estable en confidencialidad,Arquitectura2,Medio
+18,Debe mejorar la confidencialidad,Arquitectura2,Bajo
+19,Tiene buena confidencialidad,Arquitectura3,Alto
+20,Estable en confidencialidad,Arquitectura3,Medio
+21,Debe mejorar la confidencialidad,Arquitectura3,Bajo
+22,Tiene buena confidencialidad,datos1,Alto
+23,Estable en confidencialidad,datos1,Medio
+24,Debe mejorar la confidencialidad,datos1,Bajo
+25,Tiene buena confidencialidad,datos2,Alto
+26,Estable en confidencialidad,datos2,Medio
+27,Debe mejorar la confidencialidad,datos2,Bajo
+28,Tiene buena confidencialidad,datos3,Alto
+29,Estable en confidencialidad,datos3,Medio
+30,Debe mejorar la confidencialidad,datos3,Bajo
+31,Tiene buena confidencialidad,datos4,Alto
+32,Estable en confidencialidad,datos4,Medio
+33,Debe mejorar la confidencialidad,datos4,Bajo
+34,Tiene buena confidencialidad,datos5,Alto
+35,Estable en confidencialidad,datos5,Medio
+36,Debe mejorar la confidencialidad,datos5,Bajo
+37,Tiene buena confidencialidad,datos6,Alto
+38,Estable en confidencialidad,datos6,Medio
+39,Debe mejorar la confidencialidad,datos6,Bajo
+40,Tiene buena confidencialidad,datos7,Alto
+41,Estable en confidencialidad,datos7,Medio
+42,Debe mejorar la confidencialidad,datos7,Bajo
+43,Tiene buena confidencialidad,datos8,Alto
+44,Estable en confidencialidad,datos8,Medio
+45,Debe mejorar la confidencialidad,datos8,Bajo
+46,Tiene buena confidencialidad,datos9,Alto
+47,Estable en confidencialidad,datos9,Medio
+48,Debe mejorar la confidencialidad,datos9,Bajo
+49,Tiene buena confidencialidad,datos10,Alto
+50,Estable en confidencialidad,datos10,Medio
+51,Debe mejorar la confidencialidad,datos10,Bajo
+52,Tiene buena confidencialidad,hadware1,Alto
+53,Estable en confidencialidad,hadware1,Medio
+54,Debe mejorar la confidencialidad,hadware1,Bajo
+55,Tiene buena confidencialidad,hadware2,Alto
+56,Estable en confidencialidad,hadware2,Medio
+57,Debe mejorar la confidencialidad,hadware2,Bajo
+58,Tiene buena confidencialidad,hadware3,Alto
+59,Estable en confidencialidad,hadware3,Medio
+60,Debe mejorar la confidencialidad,hadware3,Bajo
+61,Tiene buena confidencialidad,hadware4,Alto
+62,Estable en confidencialidad,hadware4,Medio
+63,Debe mejorar la confidencialidad,hadware4,Bajo
+64,Tiene buena confidencialidad,hadware5,Alto
+65,Estable en confidencialidad,hadware5,Medio
+66,Debe mejorar la confidencialidad,hadware5,Bajo
+67,Tiene buena confidencialidad,personal1,Alto
+68,Estable en confidencialidad,personal1,Medio
+69,Debe mejorar la confidencialidad,personal1,Bajo
+70,Tiene buena confidencialidad,personal2,Alto
+71,Estable en confidencialidad,personal2,Medio
+72,Debe mejorar la confidencialidad,personal2,Bajo
+73,Tiene buena confidencialidad,personal3,Alto
+74,Estable en confidencialidad,personal3,Medio
+75,Debe mejorar la confidencialidad,personal3,Bajo
+76,Tiene buena confidencialidad,personal4,Alto
+77,Estable en confidencialidad,personal4,Medio
+78,Debe mejorar la confidencialidad,personal4,Bajo
+79,Tiene buena confidencialidad,personal5,Alto
+80,Estable en confidencialidad,personal5,Medio
+81,Debe mejorar la confidencialidad,personal5,Bajo
+82,Tiene buena confidencialidad,personal6,Alto
+83,Estable en confidencialidad,personal6,Medio
+84,Debe mejorar la confidencialidad,personal6,Bajo
+85,Tiene buena confidencialidad,personal7,Alto
+86,Estable en confidencialidad,personal7,Medio
+87,Debe mejorar la confidencialidad,personal7,Bajo
+88,Tiene buena confidencialidad,personal8,Alto
+89,Estable en confidencialidad,personal8,Medio
+90,Debe mejorar la confidencialidad,personal8,Bajo
+91,Tiene buena confidencialidad,redes1,Alto
+92,Estable en confidencialidad,redes1,Medio
+93,Debe mejorar la confidencialidad,redes1,Bajo
+94,Tiene buena confidencialidad,redes2,Alto
+95,Estable en confidencialidad,redes2,Medio
+96,Debe mejorar la confidencialidad,redes2,Bajo
+97,Tiene buena confidencialidad,redes3,Alto
+98,Estable en confidencialidad,redes3,Medio
+99,Debe mejorar la confidencialidad,redes3,Bajo
+100,Tiene buena confidencialidad,redes4,Alto
+101,Estable en confidencialidad,redes4,Medio
+102,Debe mejorar la confidencialidad,redes4,Bajo
+103,Tiene buena confidencialidad,redes5,Alto
+104,Estable en confidencialidad,redes5,Medio
+105,Debe mejorar la confidencialidad,redes5,Bajo
+106,Tiene buena confidencialidad,redes6,Alto
+107,Estable en confidencialidad,redes6,Medio
+108,Debe mejorar la confidencialidad,redes6,Bajo
+109,Tiene buena confidencialidad,redes7,Alto
+110,Estable en confidencialidad,redes7,Medio
+111,Debe mejorar la confidencialidad,redes7,Bajo
+112,Tiene buena confidencialidad,redes8,Alto
+113,Estable en confidencialidad,redes8,Medio
+114,Debe mejorar la confidencialidad,redes8,Bajo
+115,Tiene buena confidencialidad,software1,Alto
+116,Estable en confidencialidad,software1,Medio
+117,Debe mejorar la confidencialidad,software1,Bajo
+118,Tiene buena confidencialidad,software2,Alto
+119,Estable en confidencialidad,software2,Medio
+120,Debe mejorar la confidencialidad,software2,Bajo
+121,Tiene buena confidencialidad,software3,Alto
+122,Estable en confidencialidad,software3,Medio
+123,Debe mejorar la confidencialidad,software3,Bajo
+124,Tiene buena confidencialidad,software4,Alto
+125,Estable en confidencialidad,software4,Medio
+126,Debe mejorar la confidencialidad,software4,Bajo
+127,Tiene buena confidencialidad,software5,Alto
+128,Estable en confidencialidad,software5,Medio
+129,Debe mejorar la confidencialidad,software5,Bajo
+130,Tiene buena confidencialidad,software6,Alto
+131,Estable en confidencialidad,software6,Medio
+132,Debe mejorar la confidencialidad,software6,Bajo
+133,Tiene buena confidencialidad,software7,Alto
+134,Estable en confidencialidad,software7,Medio
+135,Debe mejorar la confidencialidad,software7,Bajo
+136,Tiene buena confidencialidad,software8,Alto
+137,Estable en confidencialidad,software8,Medio
+138,Debe mejorar la confidencialidad,software8,Bajo
+139,Tiene buena confidencialidad,software9,Alto
+140,Estable en confidencialidad,software9,Medio
+141,Debe mejorar la confidencialidad,software9,Bajo
+142,Tiene buena confidencialidad,soportes1,Alto
+143,Estable en confidencialidad,soportes1,Medio
+144,Debe mejorar la confidencialidad,soportes1,Bajo
+145,Tiene buena confidencialidad,soportes2,Alto
+146,Estable en confidencialidad,soportes2,Medio
+147,Debe mejorar la confidencialidad,soportes2,Bajo
+148,Tiene buena confidencialidad,soportes3,Alto
+149,Estable en confidencialidad,soportes3,Medio
+150,Debe mejorar la confidencialidad,soportes3,Bajo
+151,Tiene buena confidencialidad,soportes4,Alto
+152,Estable en confidencialidad,soportes4,Medio
+153,Debe mejorar la confidencialidad,soportes4,Bajo
+154,Tiene buena confidencialidad,soportes5,Alto
+155,Estable en confidencialidad,soportes5,Medio
+156,Debe mejorar la confidencialidad,soportes5,Bajo
+157,Tiene buena confidencialidad,soportes6,Alto
+158,Estable en confidencialidad,soportes6,Medio
+159,Debe mejorar la confidencialidad,soportes6,Bajo
+160,Tiene buena confidencialidad,soportes7,Alto
+161,Estable en confidencialidad,soportes7,Medio
+162,Debe mejorar la confidencialidad,soportes7,Bajo

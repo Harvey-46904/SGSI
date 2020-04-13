@@ -1,0 +1,162 @@
+1,Tiene buena disponibilidad,activos1,Alto
+2,Estable en disponibilidad,activos1,Medio
+3,Debe mejorar la disponibilidad,activos1,Bajo
+4,Tiene buena disponibilidad,activos2,Alto
+5,Estable en disponibilidad,activos2,Medio
+6,Debe mejorar la disponibilidad,activos2,Bajo
+7,Tiene buena disponibilidad,activos3,Alto
+8,Estable en disponibilidad,activos3,Medio
+9,Debe mejorar la disponibilidad,activos3,Bajo
+10,Tiene buena disponibilidad,activos4,Alto
+11,Estable en disponibilidad,activos4,Medio
+12,Debe mejorar la disponibilidad,activos4,Bajo
+13,Tiene buena disponibilidad,Arquitectura1,Alto
+14,Estable en disponibilidad,Arquitectura1,Medio
+15,Debe mejorar la disponibilidad,Arquitectura1,Bajo
+16,Tiene buena disponibilidad,Arquitectura2,Alto
+17,Estable en disponibilidad,Arquitectura2,Medio
+18,Debe mejorar la disponibilidad,Arquitectura2,Bajo
+19,Tiene buena disponibilidad,Arquitectura3,Alto
+20,Estable en disponibilidad,Arquitectura3,Medio
+21,Debe mejorar la disponibilidad,Arquitectura3,Bajo
+22,Tiene buena disponibilidad,datos1,Alto
+23,Estable en disponibilidad,datos1,Medio
+24,Debe mejorar la disponibilidad,datos1,Bajo
+25,Tiene buena disponibilidad,datos2,Alto
+26,Estable en disponibilidad,datos2,Medio
+27,Debe mejorar la disponibilidad,datos2,Bajo
+28,Tiene buena disponibilidad,datos3,Alto
+29,Estable en disponibilidad,datos3,Medio
+30,Debe mejorar la disponibilidad,datos3,Bajo
+31,Tiene buena disponibilidad,datos4,Alto
+32,Estable en disponibilidad,datos4,Medio
+33,Debe mejorar la disponibilidad,datos4,Bajo
+34,Tiene buena disponibilidad,datos5,Alto
+35,Estable en disponibilidad,datos5,Medio
+36,Debe mejorar la disponibilidad,datos5,Bajo
+37,Tiene buena disponibilidad,datos6,Alto
+38,Estable en disponibilidad,datos6,Medio
+39,Debe mejorar la disponibilidad,datos6,Bajo
+40,Tiene buena disponibilidad,datos7,Alto
+41,Estable en disponibilidad,datos7,Medio
+42,Debe mejorar la disponibilidad,datos7,Bajo
+43,Tiene buena disponibilidad,datos8,Alto
+44,Estable en disponibilidad,datos8,Medio
+45,Debe mejorar la disponibilidad,datos8,Bajo
+46,Tiene buena disponibilidad,datos9,Alto
+47,Estable en disponibilidad,datos9,Medio
+48,Debe mejorar la disponibilidad,datos9,Bajo
+49,Tiene buena disponibilidad,datos10,Alto
+50,Estable en disponibilidad,datos10,Medio
+51,Debe mejorar la disponibilidad,datos10,Bajo
+52,Tiene buena disponibilidad,hadware1,Alto
+53,Estable en disponibilidad,hadware1,Medio
+54,Debe mejorar la disponibilidad,hadware1,Bajo
+55,Tiene buena disponibilidad,hadware2,Alto
+56,Estable en disponibilidad,hadware2,Medio
+57,Debe mejorar la disponibilidad,hadware2,Bajo
+58,Tiene buena disponibilidad,hadware3,Alto
+59,Estable en disponibilidad,hadware3,Medio
+60,Debe mejorar la disponibilidad,hadware3,Bajo
+61,Tiene buena disponibilidad,hadware4,Alto
+62,Estable en disponibilidad,hadware4,Medio
+63,Debe mejorar la disponibilidad,hadware4,Bajo
+64,Tiene buena disponibilidad,hadware5,Alto
+65,Estable en disponibilidad,hadware5,Medio
+66,Debe mejorar la disponibilidad,hadware5,Bajo
+67,Tiene buena disponibilidad,personal1,Alto
+68,Estable en disponibilidad,personal1,Medio
+69,Debe mejorar la disponibilidad,personal1,Bajo
+70,Tiene buena disponibilidad,personal2,Alto
+71,Estable en disponibilidad,personal2,Medio
+72,Debe mejorar la disponibilidad,personal2,Bajo
+73,Tiene buena disponibilidad,personal3,Alto
+74,Estable en disponibilidad,personal3,Medio
+75,Debe mejorar la disponibilidad,personal3,Bajo
+76,Tiene buena disponibilidad,personal4,Alto
+77,Estable en disponibilidad,personal4,Medio
+78,Debe mejorar la disponibilidad,personal4,Bajo
+79,Tiene buena disponibilidad,personal5,Alto
+80,Estable en disponibilidad,personal5,Medio
+81,Debe mejorar la disponibilidad,personal5,Bajo
+82,Tiene buena disponibilidad,personal6,Alto
+83,Estable en disponibilidad,personal6,Medio
+84,Debe mejorar la disponibilidad,personal6,Bajo
+85,Tiene buena disponibilidad,personal7,Alto
+86,Estable en disponibilidad,personal7,Medio
+87,Debe mejorar la disponibilidad,personal7,Bajo
+88,Tiene buena disponibilidad,personal8,Alto
+89,Estable en disponibilidad,personal8,Medio
+90,Debe mejorar la disponibilidad,personal8,Bajo
+91,Tiene buena disponibilidad,redes1,Alto
+92,Estable en disponibilidad,redes1,Medio
+93,Debe mejorar la disponibilidad,redes1,Bajo
+94,Tiene buena disponibilidad,redes2,Alto
+95,Estable en disponibilidad,redes2,Medio
+96,Debe mejorar la disponibilidad,redes2,Bajo
+97,Tiene buena disponibilidad,redes3,Alto
+98,Estable en disponibilidad,redes3,Medio
+99,Debe mejorar la disponibilidad,redes3,Bajo
+100,Tiene buena disponibilidad,redes4,Alto
+101,Estable en disponibilidad,redes4,Medio
+102,Debe mejorar la disponibilidad,redes4,Bajo
+103,Tiene buena disponibilidad,redes5,Alto
+104,Estable en disponibilidad,redes5,Medio
+105,Debe mejorar la disponibilidad,redes5,Bajo
+106,Tiene buena disponibilidad,redes6,Alto
+107,Estable en disponibilidad,redes6,Medio
+108,Debe mejorar la disponibilidad,redes6,Bajo
+109,Tiene buena disponibilidad,redes7,Alto
+110,Estable en disponibilidad,redes7,Medio
+111,Debe mejorar la disponibilidad,redes7,Bajo
+112,Tiene buena disponibilidad,redes8,Alto
+113,Estable en disponibilidad,redes8,Medio
+114,Debe mejorar la disponibilidad,redes8,Bajo
+115,Tiene buena disponibilidad,software1,Alto
+116,Estable en disponibilidad,software1,Medio
+117,Debe mejorar la disponibilidad,software1,Bajo
+118,Tiene buena disponibilidad,software2,Alto
+119,Estable en disponibilidad,software2,Medio
+120,Debe mejorar la disponibilidad,software2,Bajo
+121,Tiene buena disponibilidad,software3,Alto
+122,Estable en disponibilidad,software3,Medio
+123,Debe mejorar la disponibilidad,software3,Bajo
+124,Tiene buena disponibilidad,software4,Alto
+125,Estable en disponibilidad,software4,Medio
+126,Debe mejorar la disponibilidad,software4,Bajo
+127,Tiene buena disponibilidad,software5,Alto
+128,Estable en disponibilidad,software5,Medio
+129,Debe mejorar la disponibilidad,software5,Bajo
+130,Tiene buena disponibilidad,software6,Alto
+131,Estable en disponibilidad,software6,Medio
+132,Debe mejorar la disponibilidad,software6,Bajo
+133,Tiene buena disponibilidad,software7,Alto
+134,Estable en disponibilidad,software7,Medio
+135,Debe mejorar la disponibilidad,software7,Bajo
+136,Tiene buena disponibilidad,software8,Alto
+137,Estable en disponibilidad,software8,Medio
+138,Debe mejorar la disponibilidad,software8,Bajo
+139,Tiene buena disponibilidad,software9,Alto
+140,Estable en disponibilidad,software9,Medio
+141,Debe mejorar la disponibilidad,software9,Bajo
+142,Tiene buena disponibilidad,soportes1,Alto
+143,Estable en disponibilidad,soportes1,Medio
+144,Debe mejorar la disponibilidad,soportes1,Bajo
+145,Tiene buena disponibilidad,soportes2,Alto
+146,Estable en disponibilidad,soportes2,Medio
+147,Debe mejorar la disponibilidad,soportes2,Bajo
+148,Tiene buena disponibilidad,soportes3,Alto
+149,Estable en disponibilidad,soportes3,Medio
+150,Debe mejorar la disponibilidad,soportes3,Bajo
+151,Tiene buena disponibilidad,soportes4,Alto
+152,Estable en disponibilidad,soportes4,Medio
+153,Debe mejorar la disponibilidad,soportes4,Bajo
+154,Tiene buena disponibilidad,soportes5,Alto
+155,Estable en disponibilidad,soportes5,Medio
+156,Debe mejorar la disponibilidad,soportes5,Bajo
+157,Tiene buena disponibilidad,soportes6,Alto
+158,Estable en disponibilidad,soportes6,Medio
+159,Debe mejorar la disponibilidad,soportes6,Bajo
+160,Tiene buena disponibilidad,soportes7,Alto
+161,Estable en disponibilidad,soportes7,Medio
+162,Debe mejorar la disponibilidad,soportes7,Bajo

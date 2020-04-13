@@ -1,0 +1,162 @@
+1,Tiene buena integridad,activos1,Alto
+2,Estable en integridad,activos1,Medio
+3,Debe mejorar la integridad,activos1,Bajo
+4,Tiene buena integridad,activos2,Alto
+5,Estable en integridad,activos2,Medio
+6,Debe mejorar la integridad,activos2,Bajo
+7,Tiene buena integridad,activos3,Alto
+8,Estable en integridad,activos3,Medio
+9,Debe mejorar la integridad,activos3,Bajo
+10,Tiene buena integridad,activos4,Alto
+11,Estable en integridad,activos4,Medio
+12,Debe mejorar la integridad,activos4,Bajo
+13,Tiene buena integridad,Arquitectura1,Alto
+14,Estable en integridad,Arquitectura1,Medio
+15,Debe mejorar la integridad,Arquitectura1,Bajo
+16,Tiene buena integridad,Arquitectura2,Alto
+17,Estable en integridad,Arquitectura2,Medio
+18,Debe mejorar la integridad,Arquitectura2,Bajo
+19,Tiene buena integridad,Arquitectura3,Alto
+20,Estable en integridad,Arquitectura3,Medio
+21,Debe mejorar la integridad,Arquitectura3,Bajo
+22,Tiene buena integridad,datos1,Alto
+23,Estable en integridad,datos1,Medio
+24,Debe mejorar la integridad,datos1,Bajo
+25,Tiene buena integridad,datos2,Alto
+26,Estable en integridad,datos2,Medio
+27,Debe mejorar la integridad,datos2,Bajo
+28,Tiene buena integridad,datos3,Alto
+29,Estable en integridad,datos3,Medio
+30,Debe mejorar la integridad,datos3,Bajo
+31,Tiene buena integridad,datos4,Alto
+32,Estable en integridad,datos4,Medio
+33,Debe mejorar la integridad,datos4,Bajo
+34,Tiene buena integridad,datos5,Alto
+35,Estable en integridad,datos5,Medio
+36,Debe mejorar la integridad,datos5,Bajo
+37,Tiene buena integridad,datos6,Alto
+38,Estable en integridad,datos6,Medio
+39,Debe mejorar la integridad,datos6,Bajo
+40,Tiene buena integridad,datos7,Alto
+41,Estable en integridad,datos7,Medio
+42,Debe mejorar la integridad,datos7,Bajo
+43,Tiene buena integridad,datos8,Alto
+44,Estable en integridad,datos8,Medio
+45,Debe mejorar la integridad,datos8,Bajo
+46,Tiene buena integridad,datos9,Alto
+47,Estable en integridad,datos9,Medio
+48,Debe mejorar la integridad,datos9,Bajo
+49,Tiene buena integridad,datos10,Alto
+50,Estable en integridad,datos10,Medio
+51,Debe mejorar la integridad,datos10,Bajo
+52,Tiene buena integridad,hadware1,Alto
+53,Estable en integridad,hadware1,Medio
+54,Debe mejorar la integridad,hadware1,Bajo
+55,Tiene buena integridad,hadware2,Alto
+56,Estable en integridad,hadware2,Medio
+57,Debe mejorar la integridad,hadware2,Bajo
+58,Tiene buena integridad,hadware3,Alto
+59,Estable en integridad,hadware3,Medio
+60,Debe mejorar la integridad,hadware3,Bajo
+61,Tiene buena integridad,hadware4,Alto
+62,Estable en integridad,hadware4,Medio
+63,Debe mejorar la integridad,hadware4,Bajo
+64,Tiene buena integridad,hadware5,Alto
+65,Estable en integridad,hadware5,Medio
+66,Debe mejorar la integridad,hadware5,Bajo
+67,Tiene buena integridad,personal1,Alto
+68,Estable en integridad,personal1,Medio
+69,Debe mejorar la integridad,personal1,Bajo
+70,Tiene buena integridad,personal2,Alto
+71,Estable en integridad,personal2,Medio
+72,Debe mejorar la integridad,personal2,Bajo
+73,Tiene buena integridad,personal3,Alto
+74,Estable en integridad,personal3,Medio
+75,Debe mejorar la integridad,personal3,Bajo
+76,Tiene buena integridad,personal4,Alto
+77,Estable en integridad,personal4,Medio
+78,Debe mejorar la integridad,personal4,Bajo
+79,Tiene buena integridad,personal5,Alto
+80,Estable en integridad,personal5,Medio
+81,Debe mejorar la integridad,personal5,Bajo
+82,Tiene buena integridad,personal6,Alto
+83,Estable en integridad,personal6,Medio
+84,Debe mejorar la integridad,personal6,Bajo
+85,Tiene buena integridad,personal7,Alto
+86,Estable en integridad,personal7,Medio
+87,Debe mejorar la integridad,personal7,Bajo
+88,Tiene buena integridad,personal8,Alto
+89,Estable en integridad,personal8,Medio
+90,Debe mejorar la integridad,personal8,Bajo
+91,Tiene buena integridad,redes1,Alto
+92,Estable en integridad,redes1,Medio
+93,Debe mejorar la integridad,redes1,Bajo
+94,Tiene buena integridad,redes2,Alto
+95,Estable en integridad,redes2,Medio
+96,Debe mejorar la integridad,redes2,Bajo
+97,Tiene buena integridad,redes3,Alto
+98,Estable en integridad,redes3,Medio
+99,Debe mejorar la integridad,redes3,Bajo
+100,Tiene buena integridad,redes4,Alto
+101,Estable en integridad,redes4,Medio
+102,Debe mejorar la integridad,redes4,Bajo
+103,Tiene buena integridad,redes5,Alto
+104,Estable en integridad,redes5,Medio
+105,Debe mejorar la integridad,redes5,Bajo
+106,Tiene buena integridad,redes6,Alto
+107,Estable en integridad,redes6,Medio
+108,Debe mejorar la integridad,redes6,Bajo
+109,Tiene buena integridad,redes7,Alto
+110,Estable en integridad,redes7,Medio
+111,Debe mejorar la integridad,redes7,Bajo
+112,Tiene buena integridad,redes8,Alto
+113,Estable en integridad,redes8,Medio
+114,Debe mejorar la integridad,redes8,Bajo
+115,Tiene buena integridad,software1,Alto
+116,Estable en integridad,software1,Medio
+117,Debe mejorar la integridad,software1,Bajo
+118,Tiene buena integridad,software2,Alto
+119,Estable en integridad,software2,Medio
+120,Debe mejorar la integridad,software2,Bajo
+121,Tiene buena integridad,software3,Alto
+122,Estable en integridad,software3,Medio
+123,Debe mejorar la integridad,software3,Bajo
+124,Tiene buena integridad,software4,Alto
+125,Estable en integridad,software4,Medio
+126,Debe mejorar la integridad,software4,Bajo
+127,Tiene buena integridad,software5,Alto
+128,Estable en integridad,software5,Medio
+129,Debe mejorar la integridad,software5,Bajo
+130,Tiene buena integridad,software6,Alto
+131,Estable en integridad,software6,Medio
+132,Debe mejorar la integridad,software6,Bajo
+133,Tiene buena integridad,software7,Alto
+134,Estable en integridad,software7,Medio
+135,Debe mejorar la integridad,software7,Bajo
+136,Tiene buena integridad,software8,Alto
+137,Estable en integridad,software8,Medio
+138,Debe mejorar la integridad,software8,Bajo
+139,Tiene buena integridad,software9,Alto
+140,Estable en integridad,software9,Medio
+141,Debe mejorar la integridad,software9,Bajo
+142,Tiene buena integridad,soportes1,Alto
+143,Estable en integridad,soportes1,Medio
+144,Debe mejorar la integridad,soportes1,Bajo
+145,Tiene buena integridad,soportes2,Alto
+146,Estable en integridad,soportes2,Medio
+147,Debe mejorar la integridad,soportes2,Bajo
+148,Tiene buena integridad,soportes3,Alto
+149,Estable en integridad,soportes3,Medio
+150,Debe mejorar la integridad,soportes3,Bajo
+151,Tiene buena integridad,soportes4,Alto
+152,Estable en integridad,soportes4,Medio
+153,Debe mejorar la integridad,soportes4,Bajo
+154,Tiene buena integridad,soportes5,Alto
+155,Estable en integridad,soportes5,Medio
+156,Debe mejorar la integridad,soportes5,Bajo
+157,Tiene buena integridad,soportes6,Alto
+158,Estable en integridad,soportes6,Medio
+159,Debe mejorar la integridad,soportes6,Bajo
+160,Tiene buena integridad,soportes7,Alto
+161,Estable en integridad,soportes7,Medio
+162,Debe mejorar la integridad,soportes7,Bajo

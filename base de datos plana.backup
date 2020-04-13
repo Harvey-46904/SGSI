@@ -1,0 +1,865 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 9.4.24
+-- Dumped by pg_dump version 9.4.24
+-- Started on 2020-04-13 05:05:56
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+
+--
+-- TOC entry 1 (class 3079 OID 11855)
+-- Name: plpgsql; Type: EXTENSION; Schema: -; Owner: 
+--
+
+CREATE EXTENSION IF NOT EXISTS plpgsql WITH SCHEMA pg_catalog;
+
+
+--
+-- TOC entry 2045 (class 0 OID 0)
+-- Dependencies: 1
+-- Name: EXTENSION plpgsql; Type: COMMENT; Schema: -; Owner: 
+--
+
+COMMENT ON EXTENSION plpgsql IS 'PL/pgSQL procedural language';
+
+
+SET default_tablespace = '';
+
+SET default_with_oids = false;
+
+--
+-- TOC entry 173 (class 1259 OID 16412)
+-- Name: grupos; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE public.grupos (
+    id_grupo numeric NOT NULL,
+    nombre character varying(40) NOT NULL
+);
+
+
+ALTER TABLE public.grupos OWNER TO postgres;
+
+--
+-- TOC entry 174 (class 1259 OID 16543)
+-- Name: item; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE public.item (
+    id_item numeric(2,0) NOT NULL,
+    nombre character varying NOT NULL,
+    fk_id_grupo numeric(1,0) NOT NULL,
+    codigo_pregunta character varying(20)
+);
+
+
+ALTER TABLE public.item OWNER TO postgres;
+
+--
+-- TOC entry 177 (class 1259 OID 16622)
+-- Name: respuestas; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE public.respuestas (
+    id_respuesta integer NOT NULL,
+    id_pregunta character varying(20) NOT NULL,
+    confidencialidad character varying(20) NOT NULL,
+    integridad character varying(20) NOT NULL,
+    disponibilidad character varying(20) NOT NULL
+);
+
+
+ALTER TABLE public.respuestas OWNER TO postgres;
+
+--
+-- TOC entry 176 (class 1259 OID 16620)
+-- Name: respuestas_id_respuesta_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE public.respuestas_id_respuesta_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.respuestas_id_respuesta_seq OWNER TO postgres;
+
+--
+-- TOC entry 2046 (class 0 OID 0)
+-- Dependencies: 176
+-- Name: respuestas_id_respuesta_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE public.respuestas_id_respuesta_seq OWNED BY public.respuestas.id_respuesta;
+
+
+--
+-- TOC entry 175 (class 1259 OID 16557)
+-- Name: resultado_confidencialidad; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE public.resultado_confidencialidad (
+    id_estadoa integer NOT NULL,
+    descripcion character varying(500) NOT NULL,
+    id_pregunta character varying(20),
+    estado character varying(20)
+);
+
+
+ALTER TABLE public.resultado_confidencialidad OWNER TO postgres;
+
+--
+-- TOC entry 178 (class 1259 OID 16680)
+-- Name: resultado_disponibilidad; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE public.resultado_disponibilidad (
+    id_estadob integer NOT NULL,
+    descripcion character varying(500) NOT NULL,
+    id_pregunta character varying(20),
+    estado character varying(20)
+);
+
+
+ALTER TABLE public.resultado_disponibilidad OWNER TO postgres;
+
+--
+-- TOC entry 179 (class 1259 OID 16688)
+-- Name: resultado_integridad; Type: TABLE; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE TABLE public.resultado_integridad (
+    id_estadoc integer NOT NULL,
+    descripcion character varying(500) NOT NULL,
+    id_pregunta character varying(20),
+    estado character varying(20)
+);
+
+
+ALTER TABLE public.resultado_integridad OWNER TO postgres;
+
+--
+-- TOC entry 1906 (class 2604 OID 16625)
+-- Name: id_respuesta; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.respuestas ALTER COLUMN id_respuesta SET DEFAULT nextval('public.respuestas_id_respuesta_seq'::regclass);
+
+
+--
+-- TOC entry 2030 (class 0 OID 16412)
+-- Dependencies: 173
+-- Data for Name: grupos; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.grupos (id_grupo, nombre) FROM stdin;
+1	Activos esenciales
+2	Arquitectura del sistema
+3	Datos/Informaci¢n
+4	Aplicaciones (software)
+5	Equipos inform ticos (hardware)
+6	Redes de comunicaciones
+7	Soportes de informaci¢n
+8	Personal
+\.
+
+
+--
+-- TOC entry 2031 (class 0 OID 16543)
+-- Dependencies: 174
+-- Data for Name: item; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.item (id_item, nombre, fk_id_grupo, codigo_pregunta) FROM stdin;
+9	[sap] Punto de acceso al servicio 	2	Arquitectura1
+10	[ip] Punto de interconexi¢n	2	Arquitectura2
+11	[ext]  Proporcionado por terceros	2	Arquitectura3
+12	[files] Ficheros	3	datos1
+13	[backup] Copias de respaldo	3	datos2
+14	[conf]  Datos de configuraci¢n	3	datos3
+15	[int] Datos de gesti¢n interna	3	datos4
+16	[password] Credenciales/Contrase¤as	3	datos5
+17	[auth] Datos de validaci¢n de credenciales	3	datos6
+18	[acl] Datos de control de acceso	3	datos7
+19	[log] Registro de actividad	3	datos8
+20	[source]C¢digo fuente	3	datos9
+21	[exe] C¢digo ejecutable	3	datos10
+23	[modem] M¢dems	5	hadware1
+24	[hub] Concentradores	5	hadware2
+25	[switch] Conmutadores	5	hadware3
+26	[router] Encaminadores	5	hadware4
+27	[wap] Punto de acceso inal mbrico	5	hadware5
+28	[ue] Usuarios externos	8	personal1
+29	[ui] Usuarios internos	8	personal2
+30	[op] Operadores	8	personal3
+31	[adm] Administradores de sistemas	8	personal4
+32	[dba] Administradores de bases de datos	8	personal5
+33	[sec] Administradores de seguridad	8	personal6
+34	[des] Desarrolladores/Programadores	8	personal7
+35	[prov] Proveedores	8	personal8
+36	[PSNT] Red telef¢nica	6	redes1
+37	[radio] Comunicaciones radio	6	redes2
+38	[wifi] Red inal mbrica	6	redes3
+39	[mobile] Telefon¡a M¢vil	6	redes4
+61	Por Satelite	6	redes5
+40	[LAN] Red local	6	redes6
+41	[MAN] Red metropolitana	6	redes7
+42	[Internet] Internet	6	redes8
+54	[disk] Discos	7	soportes1
+55	[san] Almacenamiento en red	7	soportes2
+56	[cd] Cederr¢n (CD-ROM)	7	soportes3
+57	[usb] Memorias USB	7	soportes4
+58	[dvd] DVD	7	soportes5
+59	[mc] Tarjetas de memoria	7	soportes6
+60	[printed] Material impreso	7	soportes7
+62	[Browser] Navegador web	4	software1
+43	[prp] Desarrollo propio (In house)	4	software2
+44	[www] Servidor de presentaci¢n	4	software3
+45	[app] Servidor de aplicaciones	4	software4
+46	[email_client] Cliente de correo electr¢nico	4	software5
+47	[email_server] Servidor de correo electr¢nico	4	software6
+48	[file] Servidor de ficheros	4	software7
+49	[dbms] Sistema de gesti¢n de bases de datos	4	software8
+50	[office] Ofim tica	4	software9
+1	[adm] datos de inter‚s para la administraci¢n p£blica	1	activos1
+2	[vr] Datos vitales (registros de la organizaci¢n)	1	activos2
+3	[A] Nivel alto	1	activos3
+4	[M] Nivel medio	1	activos4
+\.
+
+
+--
+-- TOC entry 2034 (class 0 OID 16622)
+-- Dependencies: 177
+-- Data for Name: respuestas; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.respuestas (id_respuesta, id_pregunta, confidencialidad, integridad, disponibilidad) FROM stdin;
+\.
+
+
+--
+-- TOC entry 2047 (class 0 OID 0)
+-- Dependencies: 176
+-- Name: respuestas_id_respuesta_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.respuestas_id_respuesta_seq', 224, true);
+
+
+--
+-- TOC entry 2032 (class 0 OID 16557)
+-- Dependencies: 175
+-- Data for Name: resultado_confidencialidad; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.resultado_confidencialidad (id_estadoa, descripcion, id_pregunta, estado) FROM stdin;
+1	Tiene buena confidencialidad	activos1	Alto
+2	Estable en confidencialidad	activos1	Medio
+3	Debe mejorar la confidencialidad	activos1	Bajo
+4	Tiene buena confidencialidad	activos2	Alto
+5	Estable en confidencialidad	activos2	Medio
+6	Debe mejorar la confidencialidad	activos2	Bajo
+7	Tiene buena confidencialidad	activos3	Alto
+8	Estable en confidencialidad	activos3	Medio
+9	Debe mejorar la confidencialidad	activos3	Bajo
+10	Tiene buena confidencialidad	activos4	Alto
+11	Estable en confidencialidad	activos4	Medio
+12	Debe mejorar la confidencialidad	activos4	Bajo
+13	Tiene buena confidencialidad	Arquitectura1	Alto
+14	Estable en confidencialidad	Arquitectura1	Medio
+15	Debe mejorar la confidencialidad	Arquitectura1	Bajo
+16	Tiene buena confidencialidad	Arquitectura2	Alto
+17	Estable en confidencialidad	Arquitectura2	Medio
+18	Debe mejorar la confidencialidad	Arquitectura2	Bajo
+19	Tiene buena confidencialidad	Arquitectura3	Alto
+20	Estable en confidencialidad	Arquitectura3	Medio
+21	Debe mejorar la confidencialidad	Arquitectura3	Bajo
+22	Tiene buena confidencialidad	datos1	Alto
+23	Estable en confidencialidad	datos1	Medio
+24	Debe mejorar la confidencialidad	datos1	Bajo
+25	Tiene buena confidencialidad	datos2	Alto
+26	Estable en confidencialidad	datos2	Medio
+27	Debe mejorar la confidencialidad	datos2	Bajo
+28	Tiene buena confidencialidad	datos3	Alto
+29	Estable en confidencialidad	datos3	Medio
+30	Debe mejorar la confidencialidad	datos3	Bajo
+31	Tiene buena confidencialidad	datos4	Alto
+32	Estable en confidencialidad	datos4	Medio
+33	Debe mejorar la confidencialidad	datos4	Bajo
+34	Tiene buena confidencialidad	datos5	Alto
+35	Estable en confidencialidad	datos5	Medio
+36	Debe mejorar la confidencialidad	datos5	Bajo
+37	Tiene buena confidencialidad	datos6	Alto
+38	Estable en confidencialidad	datos6	Medio
+39	Debe mejorar la confidencialidad	datos6	Bajo
+40	Tiene buena confidencialidad	datos7	Alto
+41	Estable en confidencialidad	datos7	Medio
+42	Debe mejorar la confidencialidad	datos7	Bajo
+43	Tiene buena confidencialidad	datos8	Alto
+44	Estable en confidencialidad	datos8	Medio
+45	Debe mejorar la confidencialidad	datos8	Bajo
+46	Tiene buena confidencialidad	datos9	Alto
+47	Estable en confidencialidad	datos9	Medio
+48	Debe mejorar la confidencialidad	datos9	Bajo
+49	Tiene buena confidencialidad	datos10	Alto
+50	Estable en confidencialidad	datos10	Medio
+51	Debe mejorar la confidencialidad	datos10	Bajo
+52	Tiene buena confidencialidad	hadware1	Alto
+53	Estable en confidencialidad	hadware1	Medio
+54	Debe mejorar la confidencialidad	hadware1	Bajo
+55	Tiene buena confidencialidad	hadware2	Alto
+56	Estable en confidencialidad	hadware2	Medio
+57	Debe mejorar la confidencialidad	hadware2	Bajo
+58	Tiene buena confidencialidad	hadware3	Alto
+59	Estable en confidencialidad	hadware3	Medio
+60	Debe mejorar la confidencialidad	hadware3	Bajo
+61	Tiene buena confidencialidad	hadware4	Alto
+62	Estable en confidencialidad	hadware4	Medio
+63	Debe mejorar la confidencialidad	hadware4	Bajo
+64	Tiene buena confidencialidad	hadware5	Alto
+65	Estable en confidencialidad	hadware5	Medio
+66	Debe mejorar la confidencialidad	hadware5	Bajo
+67	Tiene buena confidencialidad	personal1	Alto
+68	Estable en confidencialidad	personal1	Medio
+69	Debe mejorar la confidencialidad	personal1	Bajo
+70	Tiene buena confidencialidad	personal2	Alto
+71	Estable en confidencialidad	personal2	Medio
+72	Debe mejorar la confidencialidad	personal2	Bajo
+73	Tiene buena confidencialidad	personal3	Alto
+74	Estable en confidencialidad	personal3	Medio
+75	Debe mejorar la confidencialidad	personal3	Bajo
+76	Tiene buena confidencialidad	personal4	Alto
+77	Estable en confidencialidad	personal4	Medio
+78	Debe mejorar la confidencialidad	personal4	Bajo
+79	Tiene buena confidencialidad	personal5	Alto
+80	Estable en confidencialidad	personal5	Medio
+81	Debe mejorar la confidencialidad	personal5	Bajo
+82	Tiene buena confidencialidad	personal6	Alto
+83	Estable en confidencialidad	personal6	Medio
+84	Debe mejorar la confidencialidad	personal6	Bajo
+85	Tiene buena confidencialidad	personal7	Alto
+86	Estable en confidencialidad	personal7	Medio
+87	Debe mejorar la confidencialidad	personal7	Bajo
+88	Tiene buena confidencialidad	personal8	Alto
+89	Estable en confidencialidad	personal8	Medio
+90	Debe mejorar la confidencialidad	personal8	Bajo
+91	Tiene buena confidencialidad	redes1	Alto
+92	Estable en confidencialidad	redes1	Medio
+93	Debe mejorar la confidencialidad	redes1	Bajo
+94	Tiene buena confidencialidad	redes2	Alto
+95	Estable en confidencialidad	redes2	Medio
+96	Debe mejorar la confidencialidad	redes2	Bajo
+97	Tiene buena confidencialidad	redes3	Alto
+98	Estable en confidencialidad	redes3	Medio
+99	Debe mejorar la confidencialidad	redes3	Bajo
+100	Tiene buena confidencialidad	redes4	Alto
+101	Estable en confidencialidad	redes4	Medio
+102	Debe mejorar la confidencialidad	redes4	Bajo
+103	Tiene buena confidencialidad	redes5	Alto
+104	Estable en confidencialidad	redes5	Medio
+105	Debe mejorar la confidencialidad	redes5	Bajo
+106	Tiene buena confidencialidad	redes6	Alto
+107	Estable en confidencialidad	redes6	Medio
+108	Debe mejorar la confidencialidad	redes6	Bajo
+109	Tiene buena confidencialidad	redes7	Alto
+110	Estable en confidencialidad	redes7	Medio
+111	Debe mejorar la confidencialidad	redes7	Bajo
+112	Tiene buena confidencialidad	redes8	Alto
+113	Estable en confidencialidad	redes8	Medio
+114	Debe mejorar la confidencialidad	redes8	Bajo
+115	Tiene buena confidencialidad	software1	Alto
+116	Estable en confidencialidad	software1	Medio
+117	Debe mejorar la confidencialidad	software1	Bajo
+118	Tiene buena confidencialidad	software2	Alto
+119	Estable en confidencialidad	software2	Medio
+120	Debe mejorar la confidencialidad	software2	Bajo
+121	Tiene buena confidencialidad	software3	Alto
+122	Estable en confidencialidad	software3	Medio
+123	Debe mejorar la confidencialidad	software3	Bajo
+124	Tiene buena confidencialidad	software4	Alto
+125	Estable en confidencialidad	software4	Medio
+126	Debe mejorar la confidencialidad	software4	Bajo
+127	Tiene buena confidencialidad	software5	Alto
+128	Estable en confidencialidad	software5	Medio
+129	Debe mejorar la confidencialidad	software5	Bajo
+130	Tiene buena confidencialidad	software6	Alto
+131	Estable en confidencialidad	software6	Medio
+132	Debe mejorar la confidencialidad	software6	Bajo
+133	Tiene buena confidencialidad	software7	Alto
+134	Estable en confidencialidad	software7	Medio
+135	Debe mejorar la confidencialidad	software7	Bajo
+136	Tiene buena confidencialidad	software8	Alto
+137	Estable en confidencialidad	software8	Medio
+138	Debe mejorar la confidencialidad	software8	Bajo
+139	Tiene buena confidencialidad	software9	Alto
+140	Estable en confidencialidad	software9	Medio
+141	Debe mejorar la confidencialidad	software9	Bajo
+142	Tiene buena confidencialidad	soportes1	Alto
+143	Estable en confidencialidad	soportes1	Medio
+144	Debe mejorar la confidencialidad	soportes1	Bajo
+145	Tiene buena confidencialidad	soportes2	Alto
+146	Estable en confidencialidad	soportes2	Medio
+147	Debe mejorar la confidencialidad	soportes2	Bajo
+148	Tiene buena confidencialidad	soportes3	Alto
+149	Estable en confidencialidad	soportes3	Medio
+150	Debe mejorar la confidencialidad	soportes3	Bajo
+151	Tiene buena confidencialidad	soportes4	Alto
+152	Estable en confidencialidad	soportes4	Medio
+153	Debe mejorar la confidencialidad	soportes4	Bajo
+154	Tiene buena confidencialidad	soportes5	Alto
+155	Estable en confidencialidad	soportes5	Medio
+156	Debe mejorar la confidencialidad	soportes5	Bajo
+157	Tiene buena confidencialidad	soportes6	Alto
+158	Estable en confidencialidad	soportes6	Medio
+159	Debe mejorar la confidencialidad	soportes6	Bajo
+160	Tiene buena confidencialidad	soportes7	Alto
+161	Estable en confidencialidad	soportes7	Medio
+162	Debe mejorar la confidencialidad	soportes7	Bajo
+\.
+
+
+--
+-- TOC entry 2035 (class 0 OID 16680)
+-- Dependencies: 178
+-- Data for Name: resultado_disponibilidad; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.resultado_disponibilidad (id_estadob, descripcion, id_pregunta, estado) FROM stdin;
+2	Estable en disponibilidad	activos1	Medio
+3	Debe mejorar la disponibilidad	activos1	Bajo
+4	Tiene buena disponibilidad	activos2	Alto
+5	Estable en disponibilidad	activos2	Medio
+6	Debe mejorar la disponibilidad	activos2	Bajo
+7	Tiene buena disponibilidad	activos3	Alto
+8	Estable en disponibilidad	activos3	Medio
+9	Debe mejorar la disponibilidad	activos3	Bajo
+10	Tiene buena disponibilidad	activos4	Alto
+11	Estable en disponibilidad	activos4	Medio
+12	Debe mejorar la disponibilidad	activos4	Bajo
+13	Tiene buena disponibilidad	Arquitectura1	Alto
+14	Estable en disponibilidad	Arquitectura1	Medio
+15	Debe mejorar la disponibilidad	Arquitectura1	Bajo
+16	Tiene buena disponibilidad	Arquitectura2	Alto
+17	Estable en disponibilidad	Arquitectura2	Medio
+18	Debe mejorar la disponibilidad	Arquitectura2	Bajo
+19	Tiene buena disponibilidad	Arquitectura3	Alto
+20	Estable en disponibilidad	Arquitectura3	Medio
+21	Debe mejorar la disponibilidad	Arquitectura3	Bajo
+22	Tiene buena disponibilidad	datos1	Alto
+23	Estable en disponibilidad	datos1	Medio
+24	Debe mejorar la disponibilidad	datos1	Bajo
+25	Tiene buena disponibilidad	datos2	Alto
+26	Estable en disponibilidad	datos2	Medio
+27	Debe mejorar la disponibilidad	datos2	Bajo
+28	Tiene buena disponibilidad	datos3	Alto
+29	Estable en disponibilidad	datos3	Medio
+30	Debe mejorar la disponibilidad	datos3	Bajo
+31	Tiene buena disponibilidad	datos4	Alto
+32	Estable en disponibilidad	datos4	Medio
+33	Debe mejorar la disponibilidad	datos4	Bajo
+34	Tiene buena disponibilidad	datos5	Alto
+35	Estable en disponibilidad	datos5	Medio
+36	Debe mejorar la disponibilidad	datos5	Bajo
+37	Tiene buena disponibilidad	datos6	Alto
+38	Estable en disponibilidad	datos6	Medio
+39	Debe mejorar la disponibilidad	datos6	Bajo
+40	Tiene buena disponibilidad	datos7	Alto
+41	Estable en disponibilidad	datos7	Medio
+42	Debe mejorar la disponibilidad	datos7	Bajo
+43	Tiene buena disponibilidad	datos8	Alto
+44	Estable en disponibilidad	datos8	Medio
+45	Debe mejorar la disponibilidad	datos8	Bajo
+46	Tiene buena disponibilidad	datos9	Alto
+47	Estable en disponibilidad	datos9	Medio
+48	Debe mejorar la disponibilidad	datos9	Bajo
+49	Tiene buena disponibilidad	datos10	Alto
+50	Estable en disponibilidad	datos10	Medio
+51	Debe mejorar la disponibilidad	datos10	Bajo
+52	Tiene buena disponibilidad	hadware1	Alto
+53	Estable en disponibilidad	hadware1	Medio
+54	Debe mejorar la disponibilidad	hadware1	Bajo
+55	Tiene buena disponibilidad	hadware2	Alto
+56	Estable en disponibilidad	hadware2	Medio
+57	Debe mejorar la disponibilidad	hadware2	Bajo
+58	Tiene buena disponibilidad	hadware3	Alto
+59	Estable en disponibilidad	hadware3	Medio
+60	Debe mejorar la disponibilidad	hadware3	Bajo
+61	Tiene buena disponibilidad	hadware4	Alto
+62	Estable en disponibilidad	hadware4	Medio
+63	Debe mejorar la disponibilidad	hadware4	Bajo
+64	Tiene buena disponibilidad	hadware5	Alto
+65	Estable en disponibilidad	hadware5	Medio
+66	Debe mejorar la disponibilidad	hadware5	Bajo
+67	Tiene buena disponibilidad	personal1	Alto
+68	Estable en disponibilidad	personal1	Medio
+69	Debe mejorar la disponibilidad	personal1	Bajo
+70	Tiene buena disponibilidad	personal2	Alto
+71	Estable en disponibilidad	personal2	Medio
+72	Debe mejorar la disponibilidad	personal2	Bajo
+73	Tiene buena disponibilidad	personal3	Alto
+74	Estable en disponibilidad	personal3	Medio
+75	Debe mejorar la disponibilidad	personal3	Bajo
+76	Tiene buena disponibilidad	personal4	Alto
+77	Estable en disponibilidad	personal4	Medio
+78	Debe mejorar la disponibilidad	personal4	Bajo
+79	Tiene buena disponibilidad	personal5	Alto
+80	Estable en disponibilidad	personal5	Medio
+81	Debe mejorar la disponibilidad	personal5	Bajo
+82	Tiene buena disponibilidad	personal6	Alto
+83	Estable en disponibilidad	personal6	Medio
+84	Debe mejorar la disponibilidad	personal6	Bajo
+85	Tiene buena disponibilidad	personal7	Alto
+86	Estable en disponibilidad	personal7	Medio
+87	Debe mejorar la disponibilidad	personal7	Bajo
+88	Tiene buena disponibilidad	personal8	Alto
+89	Estable en disponibilidad	personal8	Medio
+90	Debe mejorar la disponibilidad	personal8	Bajo
+91	Tiene buena disponibilidad	redes1	Alto
+92	Estable en disponibilidad	redes1	Medio
+93	Debe mejorar la disponibilidad	redes1	Bajo
+94	Tiene buena disponibilidad	redes2	Alto
+95	Estable en disponibilidad	redes2	Medio
+96	Debe mejorar la disponibilidad	redes2	Bajo
+97	Tiene buena disponibilidad	redes3	Alto
+98	Estable en disponibilidad	redes3	Medio
+99	Debe mejorar la disponibilidad	redes3	Bajo
+100	Tiene buena disponibilidad	redes4	Alto
+101	Estable en disponibilidad	redes4	Medio
+102	Debe mejorar la disponibilidad	redes4	Bajo
+103	Tiene buena disponibilidad	redes5	Alto
+104	Estable en disponibilidad	redes5	Medio
+105	Debe mejorar la disponibilidad	redes5	Bajo
+106	Tiene buena disponibilidad	redes6	Alto
+107	Estable en disponibilidad	redes6	Medio
+108	Debe mejorar la disponibilidad	redes6	Bajo
+109	Tiene buena disponibilidad	redes7	Alto
+110	Estable en disponibilidad	redes7	Medio
+111	Debe mejorar la disponibilidad	redes7	Bajo
+112	Tiene buena disponibilidad	redes8	Alto
+113	Estable en disponibilidad	redes8	Medio
+114	Debe mejorar la disponibilidad	redes8	Bajo
+115	Tiene buena disponibilidad	software1	Alto
+116	Estable en disponibilidad	software1	Medio
+117	Debe mejorar la disponibilidad	software1	Bajo
+118	Tiene buena disponibilidad	software2	Alto
+119	Estable en disponibilidad	software2	Medio
+120	Debe mejorar la disponibilidad	software2	Bajo
+121	Tiene buena disponibilidad	software3	Alto
+122	Estable en disponibilidad	software3	Medio
+123	Debe mejorar la disponibilidad	software3	Bajo
+124	Tiene buena disponibilidad	software4	Alto
+125	Estable en disponibilidad	software4	Medio
+126	Debe mejorar la disponibilidad	software4	Bajo
+127	Tiene buena disponibilidad	software5	Alto
+128	Estable en disponibilidad	software5	Medio
+129	Debe mejorar la disponibilidad	software5	Bajo
+130	Tiene buena disponibilidad	software6	Alto
+131	Estable en disponibilidad	software6	Medio
+132	Debe mejorar la disponibilidad	software6	Bajo
+133	Tiene buena disponibilidad	software7	Alto
+134	Estable en disponibilidad	software7	Medio
+135	Debe mejorar la disponibilidad	software7	Bajo
+136	Tiene buena disponibilidad	software8	Alto
+137	Estable en disponibilidad	software8	Medio
+138	Debe mejorar la disponibilidad	software8	Bajo
+139	Tiene buena disponibilidad	software9	Alto
+140	Estable en disponibilidad	software9	Medio
+141	Debe mejorar la disponibilidad	software9	Bajo
+142	Tiene buena disponibilidad	soportes1	Alto
+143	Estable en disponibilidad	soportes1	Medio
+144	Debe mejorar la disponibilidad	soportes1	Bajo
+145	Tiene buena disponibilidad	soportes2	Alto
+146	Estable en disponibilidad	soportes2	Medio
+147	Debe mejorar la disponibilidad	soportes2	Bajo
+148	Tiene buena disponibilidad	soportes3	Alto
+149	Estable en disponibilidad	soportes3	Medio
+150	Debe mejorar la disponibilidad	soportes3	Bajo
+151	Tiene buena disponibilidad	soportes4	Alto
+152	Estable en disponibilidad	soportes4	Medio
+153	Debe mejorar la disponibilidad	soportes4	Bajo
+154	Tiene buena disponibilidad	soportes5	Alto
+155	Estable en disponibilidad	soportes5	Medio
+156	Debe mejorar la disponibilidad	soportes5	Bajo
+157	Tiene buena disponibilidad	soportes6	Alto
+158	Estable en disponibilidad	soportes6	Medio
+159	Debe mejorar la disponibilidad	soportes6	Bajo
+160	Tiene buena disponibilidad	soportes7	Alto
+161	Estable en disponibilidad	soportes7	Medio
+162	Debe mejorar la disponibilidad	soportes7	Bajo
+1	Tiene buena disponibilidad	activos1	Alto
+\.
+
+
+--
+-- TOC entry 2036 (class 0 OID 16688)
+-- Dependencies: 179
+-- Data for Name: resultado_integridad; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.resultado_integridad (id_estadoc, descripcion, id_pregunta, estado) FROM stdin;
+2	Estable en integridad	activos1	Medio
+3	Debe mejorar la integridad	activos1	Bajo
+4	Tiene buena integridad	activos2	Alto
+5	Estable en integridad	activos2	Medio
+6	Debe mejorar la integridad	activos2	Bajo
+7	Tiene buena integridad	activos3	Alto
+8	Estable en integridad	activos3	Medio
+9	Debe mejorar la integridad	activos3	Bajo
+10	Tiene buena integridad	activos4	Alto
+11	Estable en integridad	activos4	Medio
+12	Debe mejorar la integridad	activos4	Bajo
+13	Tiene buena integridad	Arquitectura1	Alto
+14	Estable en integridad	Arquitectura1	Medio
+15	Debe mejorar la integridad	Arquitectura1	Bajo
+16	Tiene buena integridad	Arquitectura2	Alto
+17	Estable en integridad	Arquitectura2	Medio
+18	Debe mejorar la integridad	Arquitectura2	Bajo
+19	Tiene buena integridad	Arquitectura3	Alto
+20	Estable en integridad	Arquitectura3	Medio
+21	Debe mejorar la integridad	Arquitectura3	Bajo
+22	Tiene buena integridad	datos1	Alto
+23	Estable en integridad	datos1	Medio
+24	Debe mejorar la integridad	datos1	Bajo
+25	Tiene buena integridad	datos2	Alto
+26	Estable en integridad	datos2	Medio
+27	Debe mejorar la integridad	datos2	Bajo
+28	Tiene buena integridad	datos3	Alto
+29	Estable en integridad	datos3	Medio
+30	Debe mejorar la integridad	datos3	Bajo
+31	Tiene buena integridad	datos4	Alto
+32	Estable en integridad	datos4	Medio
+33	Debe mejorar la integridad	datos4	Bajo
+34	Tiene buena integridad	datos5	Alto
+35	Estable en integridad	datos5	Medio
+36	Debe mejorar la integridad	datos5	Bajo
+37	Tiene buena integridad	datos6	Alto
+38	Estable en integridad	datos6	Medio
+39	Debe mejorar la integridad	datos6	Bajo
+40	Tiene buena integridad	datos7	Alto
+41	Estable en integridad	datos7	Medio
+42	Debe mejorar la integridad	datos7	Bajo
+43	Tiene buena integridad	datos8	Alto
+44	Estable en integridad	datos8	Medio
+45	Debe mejorar la integridad	datos8	Bajo
+46	Tiene buena integridad	datos9	Alto
+47	Estable en integridad	datos9	Medio
+48	Debe mejorar la integridad	datos9	Bajo
+49	Tiene buena integridad	datos10	Alto
+50	Estable en integridad	datos10	Medio
+51	Debe mejorar la integridad	datos10	Bajo
+52	Tiene buena integridad	hadware1	Alto
+53	Estable en integridad	hadware1	Medio
+54	Debe mejorar la integridad	hadware1	Bajo
+55	Tiene buena integridad	hadware2	Alto
+56	Estable en integridad	hadware2	Medio
+57	Debe mejorar la integridad	hadware2	Bajo
+58	Tiene buena integridad	hadware3	Alto
+59	Estable en integridad	hadware3	Medio
+60	Debe mejorar la integridad	hadware3	Bajo
+61	Tiene buena integridad	hadware4	Alto
+62	Estable en integridad	hadware4	Medio
+63	Debe mejorar la integridad	hadware4	Bajo
+64	Tiene buena integridad	hadware5	Alto
+65	Estable en integridad	hadware5	Medio
+66	Debe mejorar la integridad	hadware5	Bajo
+67	Tiene buena integridad	personal1	Alto
+68	Estable en integridad	personal1	Medio
+69	Debe mejorar la integridad	personal1	Bajo
+70	Tiene buena integridad	personal2	Alto
+71	Estable en integridad	personal2	Medio
+72	Debe mejorar la integridad	personal2	Bajo
+73	Tiene buena integridad	personal3	Alto
+74	Estable en integridad	personal3	Medio
+75	Debe mejorar la integridad	personal3	Bajo
+76	Tiene buena integridad	personal4	Alto
+77	Estable en integridad	personal4	Medio
+78	Debe mejorar la integridad	personal4	Bajo
+79	Tiene buena integridad	personal5	Alto
+80	Estable en integridad	personal5	Medio
+81	Debe mejorar la integridad	personal5	Bajo
+82	Tiene buena integridad	personal6	Alto
+83	Estable en integridad	personal6	Medio
+84	Debe mejorar la integridad	personal6	Bajo
+85	Tiene buena integridad	personal7	Alto
+86	Estable en integridad	personal7	Medio
+87	Debe mejorar la integridad	personal7	Bajo
+88	Tiene buena integridad	personal8	Alto
+89	Estable en integridad	personal8	Medio
+90	Debe mejorar la integridad	personal8	Bajo
+91	Tiene buena integridad	redes1	Alto
+92	Estable en integridad	redes1	Medio
+93	Debe mejorar la integridad	redes1	Bajo
+94	Tiene buena integridad	redes2	Alto
+95	Estable en integridad	redes2	Medio
+96	Debe mejorar la integridad	redes2	Bajo
+97	Tiene buena integridad	redes3	Alto
+98	Estable en integridad	redes3	Medio
+99	Debe mejorar la integridad	redes3	Bajo
+100	Tiene buena integridad	redes4	Alto
+101	Estable en integridad	redes4	Medio
+102	Debe mejorar la integridad	redes4	Bajo
+103	Tiene buena integridad	redes5	Alto
+104	Estable en integridad	redes5	Medio
+105	Debe mejorar la integridad	redes5	Bajo
+106	Tiene buena integridad	redes6	Alto
+107	Estable en integridad	redes6	Medio
+108	Debe mejorar la integridad	redes6	Bajo
+109	Tiene buena integridad	redes7	Alto
+110	Estable en integridad	redes7	Medio
+111	Debe mejorar la integridad	redes7	Bajo
+112	Tiene buena integridad	redes8	Alto
+113	Estable en integridad	redes8	Medio
+114	Debe mejorar la integridad	redes8	Bajo
+115	Tiene buena integridad	software1	Alto
+116	Estable en integridad	software1	Medio
+117	Debe mejorar la integridad	software1	Bajo
+118	Tiene buena integridad	software2	Alto
+119	Estable en integridad	software2	Medio
+120	Debe mejorar la integridad	software2	Bajo
+121	Tiene buena integridad	software3	Alto
+122	Estable en integridad	software3	Medio
+123	Debe mejorar la integridad	software3	Bajo
+124	Tiene buena integridad	software4	Alto
+125	Estable en integridad	software4	Medio
+126	Debe mejorar la integridad	software4	Bajo
+127	Tiene buena integridad	software5	Alto
+128	Estable en integridad	software5	Medio
+129	Debe mejorar la integridad	software5	Bajo
+130	Tiene buena integridad	software6	Alto
+131	Estable en integridad	software6	Medio
+132	Debe mejorar la integridad	software6	Bajo
+133	Tiene buena integridad	software7	Alto
+134	Estable en integridad	software7	Medio
+135	Debe mejorar la integridad	software7	Bajo
+136	Tiene buena integridad	software8	Alto
+137	Estable en integridad	software8	Medio
+138	Debe mejorar la integridad	software8	Bajo
+139	Tiene buena integridad	software9	Alto
+140	Estable en integridad	software9	Medio
+141	Debe mejorar la integridad	software9	Bajo
+142	Tiene buena integridad	soportes1	Alto
+143	Estable en integridad	soportes1	Medio
+144	Debe mejorar la integridad	soportes1	Bajo
+145	Tiene buena integridad	soportes2	Alto
+146	Estable en integridad	soportes2	Medio
+147	Debe mejorar la integridad	soportes2	Bajo
+148	Tiene buena integridad	soportes3	Alto
+149	Estable en integridad	soportes3	Medio
+150	Debe mejorar la integridad	soportes3	Bajo
+151	Tiene buena integridad	soportes4	Alto
+152	Estable en integridad	soportes4	Medio
+153	Debe mejorar la integridad	soportes4	Bajo
+154	Tiene buena integridad	soportes5	Alto
+155	Estable en integridad	soportes5	Medio
+156	Debe mejorar la integridad	soportes5	Bajo
+157	Tiene buena integridad	soportes6	Alto
+158	Estable en integridad	soportes6	Medio
+159	Debe mejorar la integridad	soportes6	Bajo
+160	Tiene buena integridad	soportes7	Alto
+161	Estable en integridad	soportes7	Medio
+162	Debe mejorar la integridad	soportes7	Bajo
+1	Tiene buena integridad	activos1	Alto
+\.
+
+
+--
+-- TOC entry 1913 (class 2606 OID 16641)
+-- Name: estadoa_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY public.resultado_confidencialidad
+    ADD CONSTRAINT estadoa_pkey PRIMARY KEY (id_estadoa);
+
+
+--
+-- TOC entry 1917 (class 2606 OID 16687)
+-- Name: estadob_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY public.resultado_disponibilidad
+    ADD CONSTRAINT estadob_pkey PRIMARY KEY (id_estadob);
+
+
+--
+-- TOC entry 1919 (class 2606 OID 16695)
+-- Name: estadoc_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY public.resultado_integridad
+    ADD CONSTRAINT estadoc_pkey PRIMARY KEY (id_estadoc);
+
+
+--
+-- TOC entry 1908 (class 2606 OID 16473)
+-- Name: grupos_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY public.grupos
+    ADD CONSTRAINT grupos_pkey PRIMARY KEY (id_grupo);
+
+
+--
+-- TOC entry 1911 (class 2606 OID 16550)
+-- Name: item_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY public.item
+    ADD CONSTRAINT item_pkey PRIMARY KEY (id_item);
+
+
+--
+-- TOC entry 1915 (class 2606 OID 16627)
+-- Name: respuestas_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres; Tablespace: 
+--
+
+ALTER TABLE ONLY public.respuestas
+    ADD CONSTRAINT respuestas_pkey PRIMARY KEY (id_respuesta);
+
+
+--
+-- TOC entry 1909 (class 1259 OID 16556)
+-- Name: fki_fk_id_grupo; Type: INDEX; Schema: public; Owner: postgres; Tablespace: 
+--
+
+CREATE INDEX fki_fk_id_grupo ON public.item USING btree (fk_id_grupo);
+
+
+--
+-- TOC entry 1920 (class 2606 OID 16551)
+-- Name: fk_id_grupo; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.item
+    ADD CONSTRAINT fk_id_grupo FOREIGN KEY (fk_id_grupo) REFERENCES public.grupos(id_grupo);
+
+
+--
+-- TOC entry 2044 (class 0 OID 0)
+-- Dependencies: 7
+-- Name: SCHEMA public; Type: ACL; Schema: -; Owner: postgres
+--
+
+REVOKE ALL ON SCHEMA public FROM PUBLIC;
+REVOKE ALL ON SCHEMA public FROM postgres;
+GRANT ALL ON SCHEMA public TO postgres;
+GRANT ALL ON SCHEMA public TO PUBLIC;
+
+
+-- Completed on 2020-04-13 05:05:56
+
+--
+-- PostgreSQL database dump complete
+--
+

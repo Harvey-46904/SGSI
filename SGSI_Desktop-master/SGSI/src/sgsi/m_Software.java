@@ -1223,7 +1223,7 @@ public class m_Software extends javax.swing.JFrame {
                 cb61,cb62,cb63,cb64,cb65,cb66,cb67,cb68,cb69,cb70,cb71,cb72,cb73,
                 cb74,cb75,cb76,cb77,cb78);
          JRadioButton[] preguntas=new JRadioButton[9];
-        preguntas=AgregarPreguntas(p18,p18,p20,p21,p22,p23,p24,p25,p26);
+        preguntas=AgregarPreguntas(p18,p19,p20,p21,p22,p23,p24,p25,p26);
         for (int i = 0; i < preguntas.length; i++) {
             if(preguntas[i].isSelected()) {
                 for ( controlar =inicio; controlar <= finalizar; controlar++) {
