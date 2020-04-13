@@ -14,6 +14,7 @@ import javax.swing.JRadioButton;
  * @author Luis Efe
  */
 public class m_Personal extends javax.swing.JFrame {
+    String sl = System.getProperty("line.separator");
 
     /**
      * Creates new form activos_esenciales
@@ -65,6 +66,7 @@ public class m_Personal extends javax.swing.JFrame {
         cb142 = new javax.swing.JComboBox();
         cb143 = new javax.swing.JComboBox();
         cb144 = new javax.swing.JComboBox();
+        jLabel19 = new javax.swing.JLabel();
         pregunta49 = new javax.swing.JPanel();
         gen49 = new javax.swing.JPanel();
         p49 = new javax.swing.JRadioButton();
@@ -72,6 +74,7 @@ public class m_Personal extends javax.swing.JFrame {
         cb145 = new javax.swing.JComboBox();
         cb146 = new javax.swing.JComboBox();
         cb147 = new javax.swing.JComboBox();
+        jLabel20 = new javax.swing.JLabel();
         pregunta50 = new javax.swing.JPanel();
         gen50 = new javax.swing.JPanel();
         p50 = new javax.swing.JRadioButton();
@@ -79,6 +82,7 @@ public class m_Personal extends javax.swing.JFrame {
         cb148 = new javax.swing.JComboBox();
         cb149 = new javax.swing.JComboBox();
         cb150 = new javax.swing.JComboBox();
+        jLabel21 = new javax.swing.JLabel();
         pregunta51 = new javax.swing.JPanel();
         gen51 = new javax.swing.JPanel();
         p51 = new javax.swing.JRadioButton();
@@ -86,6 +90,7 @@ public class m_Personal extends javax.swing.JFrame {
         cb151 = new javax.swing.JComboBox();
         cb152 = new javax.swing.JComboBox();
         cb153 = new javax.swing.JComboBox();
+        jLabel22 = new javax.swing.JLabel();
         pregunta52 = new javax.swing.JPanel();
         gen52 = new javax.swing.JPanel();
         p52 = new javax.swing.JRadioButton();
@@ -93,6 +98,7 @@ public class m_Personal extends javax.swing.JFrame {
         cb154 = new javax.swing.JComboBox();
         cb155 = new javax.swing.JComboBox();
         cb156 = new javax.swing.JComboBox();
+        jLabel24 = new javax.swing.JLabel();
         pregunta53 = new javax.swing.JPanel();
         gen53 = new javax.swing.JPanel();
         p53 = new javax.swing.JRadioButton();
@@ -100,6 +106,7 @@ public class m_Personal extends javax.swing.JFrame {
         cb157 = new javax.swing.JComboBox();
         cb158 = new javax.swing.JComboBox();
         cb159 = new javax.swing.JComboBox();
+        jLabel25 = new javax.swing.JLabel();
         pregunta54 = new javax.swing.JPanel();
         gen54 = new javax.swing.JPanel();
         p54 = new javax.swing.JRadioButton();
@@ -107,6 +114,7 @@ public class m_Personal extends javax.swing.JFrame {
         cb160 = new javax.swing.JComboBox();
         cb161 = new javax.swing.JComboBox();
         cb162 = new javax.swing.JComboBox();
+        jLabel26 = new javax.swing.JLabel();
         pregunta55 = new javax.swing.JPanel();
         gen55 = new javax.swing.JPanel();
         p55 = new javax.swing.JRadioButton();
@@ -114,6 +122,7 @@ public class m_Personal extends javax.swing.JFrame {
         cb163 = new javax.swing.JComboBox();
         cb164 = new javax.swing.JComboBox();
         cb165 = new javax.swing.JComboBox();
+        jLabel27 = new javax.swing.JLabel();
 
         jLabel10.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel10.setText("Para más información sobre este módulo por favor dar un click ");
@@ -321,6 +330,13 @@ public class m_Personal extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jLabel19.setText("¿?");
+        jLabel19.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel19MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout pregunta48Layout = new javax.swing.GroupLayout(pregunta48);
         pregunta48.setLayout(pregunta48Layout);
         pregunta48Layout.setHorizontalGroup(
@@ -331,6 +347,11 @@ public class m_Personal extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(respuesta48, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(34, Short.MAX_VALUE))
+            .addGroup(pregunta48Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta48Layout.createSequentialGroup()
+                    .addGap(268, 268, 268)
+                    .addComponent(jLabel19)
+                    .addContainerGap(269, Short.MAX_VALUE)))
         );
         pregunta48Layout.setVerticalGroup(
             pregunta48Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -342,6 +363,11 @@ public class m_Personal extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(respuesta48, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(pregunta48Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta48Layout.createSequentialGroup()
+                    .addGap(25, 25, 25)
+                    .addComponent(jLabel19)
+                    .addContainerGap(25, Short.MAX_VALUE)))
         );
 
         p49.setText("[ui] Usuarios internos");
@@ -410,6 +436,13 @@ public class m_Personal extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jLabel20.setText("¿?");
+        jLabel20.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel20MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout pregunta49Layout = new javax.swing.GroupLayout(pregunta49);
         pregunta49.setLayout(pregunta49Layout);
         pregunta49Layout.setHorizontalGroup(
@@ -420,6 +453,11 @@ public class m_Personal extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(respuesta49, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(54, Short.MAX_VALUE))
+            .addGroup(pregunta49Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta49Layout.createSequentialGroup()
+                    .addGap(278, 278, 278)
+                    .addComponent(jLabel20)
+                    .addContainerGap(279, Short.MAX_VALUE)))
         );
         pregunta49Layout.setVerticalGroup(
             pregunta49Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -431,6 +469,11 @@ public class m_Personal extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(respuesta49, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(pregunta49Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta49Layout.createSequentialGroup()
+                    .addGap(25, 25, 25)
+                    .addComponent(jLabel20)
+                    .addContainerGap(25, Short.MAX_VALUE)))
         );
 
         p50.setText("[op] Operadores");
@@ -499,6 +542,13 @@ public class m_Personal extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jLabel21.setText("¿?");
+        jLabel21.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel21MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout pregunta50Layout = new javax.swing.GroupLayout(pregunta50);
         pregunta50.setLayout(pregunta50Layout);
         pregunta50Layout.setHorizontalGroup(
@@ -509,6 +559,11 @@ public class m_Personal extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(respuesta50, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(34, Short.MAX_VALUE))
+            .addGroup(pregunta50Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta50Layout.createSequentialGroup()
+                    .addGap(268, 268, 268)
+                    .addComponent(jLabel21)
+                    .addContainerGap(269, Short.MAX_VALUE)))
         );
         pregunta50Layout.setVerticalGroup(
             pregunta50Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -520,6 +575,11 @@ public class m_Personal extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(respuesta50, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(pregunta50Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta50Layout.createSequentialGroup()
+                    .addGap(25, 25, 25)
+                    .addComponent(jLabel21)
+                    .addContainerGap(25, Short.MAX_VALUE)))
         );
 
         p51.setText("[adm] Administradores de sistemas");
@@ -588,6 +648,13 @@ public class m_Personal extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jLabel22.setText("¿?");
+        jLabel22.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel22MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout pregunta51Layout = new javax.swing.GroupLayout(pregunta51);
         pregunta51.setLayout(pregunta51Layout);
         pregunta51Layout.setHorizontalGroup(
@@ -598,6 +665,11 @@ public class m_Personal extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(respuesta51, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(34, Short.MAX_VALUE))
+            .addGroup(pregunta51Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta51Layout.createSequentialGroup()
+                    .addGap(268, 268, 268)
+                    .addComponent(jLabel22)
+                    .addContainerGap(269, Short.MAX_VALUE)))
         );
         pregunta51Layout.setVerticalGroup(
             pregunta51Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -609,6 +681,11 @@ public class m_Personal extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(respuesta51, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(pregunta51Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta51Layout.createSequentialGroup()
+                    .addGap(25, 25, 25)
+                    .addComponent(jLabel22)
+                    .addContainerGap(25, Short.MAX_VALUE)))
         );
 
         p52.setText("[dba] Administradores de bases de datos");
@@ -677,6 +754,13 @@ public class m_Personal extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jLabel24.setText("¿?");
+        jLabel24.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel24MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout pregunta52Layout = new javax.swing.GroupLayout(pregunta52);
         pregunta52.setLayout(pregunta52Layout);
         pregunta52Layout.setHorizontalGroup(
@@ -687,6 +771,11 @@ public class m_Personal extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(respuesta52, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(34, Short.MAX_VALUE))
+            .addGroup(pregunta52Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta52Layout.createSequentialGroup()
+                    .addGap(268, 268, 268)
+                    .addComponent(jLabel24)
+                    .addContainerGap(269, Short.MAX_VALUE)))
         );
         pregunta52Layout.setVerticalGroup(
             pregunta52Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -698,6 +787,11 @@ public class m_Personal extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(respuesta52, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(pregunta52Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta52Layout.createSequentialGroup()
+                    .addGap(25, 25, 25)
+                    .addComponent(jLabel24)
+                    .addContainerGap(25, Short.MAX_VALUE)))
         );
 
         p53.setText("[sec] Administradores de seguridad");
@@ -766,6 +860,13 @@ public class m_Personal extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jLabel25.setText("¿?");
+        jLabel25.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel25MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout pregunta53Layout = new javax.swing.GroupLayout(pregunta53);
         pregunta53.setLayout(pregunta53Layout);
         pregunta53Layout.setHorizontalGroup(
@@ -776,6 +877,11 @@ public class m_Personal extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(respuesta53, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(34, Short.MAX_VALUE))
+            .addGroup(pregunta53Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta53Layout.createSequentialGroup()
+                    .addGap(268, 268, 268)
+                    .addComponent(jLabel25)
+                    .addContainerGap(269, Short.MAX_VALUE)))
         );
         pregunta53Layout.setVerticalGroup(
             pregunta53Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -787,6 +893,11 @@ public class m_Personal extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(respuesta53, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(pregunta53Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta53Layout.createSequentialGroup()
+                    .addGap(25, 25, 25)
+                    .addComponent(jLabel25)
+                    .addContainerGap(25, Short.MAX_VALUE)))
         );
 
         p54.setText("[des] Desarrolladores/Programadores");
@@ -855,6 +966,13 @@ public class m_Personal extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jLabel26.setText("¿?");
+        jLabel26.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel26MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout pregunta54Layout = new javax.swing.GroupLayout(pregunta54);
         pregunta54.setLayout(pregunta54Layout);
         pregunta54Layout.setHorizontalGroup(
@@ -865,6 +983,11 @@ public class m_Personal extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(respuesta54, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(34, Short.MAX_VALUE))
+            .addGroup(pregunta54Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta54Layout.createSequentialGroup()
+                    .addGap(268, 268, 268)
+                    .addComponent(jLabel26)
+                    .addContainerGap(269, Short.MAX_VALUE)))
         );
         pregunta54Layout.setVerticalGroup(
             pregunta54Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -876,6 +999,11 @@ public class m_Personal extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(respuesta54, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(pregunta54Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta54Layout.createSequentialGroup()
+                    .addGap(25, 25, 25)
+                    .addComponent(jLabel26)
+                    .addContainerGap(25, Short.MAX_VALUE)))
         );
 
         p55.setText("[prov] Proveedores");
@@ -944,6 +1072,13 @@ public class m_Personal extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jLabel27.setText("¿?");
+        jLabel27.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel27MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout pregunta55Layout = new javax.swing.GroupLayout(pregunta55);
         pregunta55.setLayout(pregunta55Layout);
         pregunta55Layout.setHorizontalGroup(
@@ -954,6 +1089,11 @@ public class m_Personal extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(respuesta55, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(34, Short.MAX_VALUE))
+            .addGroup(pregunta55Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta55Layout.createSequentialGroup()
+                    .addGap(268, 268, 268)
+                    .addComponent(jLabel27)
+                    .addContainerGap(269, Short.MAX_VALUE)))
         );
         pregunta55Layout.setVerticalGroup(
             pregunta55Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -965,6 +1105,11 @@ public class m_Personal extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(respuesta55, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(pregunta55Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta55Layout.createSequentialGroup()
+                    .addGap(25, 25, 25)
+                    .addComponent(jLabel27)
+                    .addContainerGap(25, Short.MAX_VALUE)))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -982,7 +1127,7 @@ public class m_Personal extends javax.swing.JFrame {
                     .addComponent(pregunta50, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(pregunta49, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(pregunta48, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(180, Short.MAX_VALUE))
+                .addContainerGap(184, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1002,7 +1147,7 @@ public class m_Personal extends javax.swing.JFrame {
                 .addComponent(pregunta54, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(pregunta55, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 75, Short.MAX_VALUE))
+                .addGap(0, 12, Short.MAX_VALUE))
         );
 
         jScrollPane2.setViewportView(jPanel1);
@@ -1150,6 +1295,11 @@ public class m_Personal extends javax.swing.JFrame {
         m_Arquitectura m=new m_Arquitectura();
         m.subir(puntos);
         m.volver();
+        
+        Principal principal = new Principal();
+        principal.setVisible(true);
+        this.dispose();
+        
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void p48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p48ActionPerformed
@@ -1280,6 +1430,49 @@ public class m_Personal extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_cb165ActionPerformed
 
+    private void jLabel19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel19MouseClicked
+
+        JOptionPane.showMessageDialog(rootPane, "", "[ue] Usuarios externos", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_jLabel19MouseClicked
+
+    private void jLabel20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel20MouseClicked
+
+    }//GEN-LAST:event_jLabel20MouseClicked
+
+    private void jLabel21MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel21MouseClicked
+
+    }//GEN-LAST:event_jLabel21MouseClicked
+
+    private void jLabel22MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel22MouseClicked
+
+        JOptionPane.showMessageDialog(rootPane, "Garantiza el rendimiento, uso de recursos y seguridad de los servidores"
+            + " que administra de forma dinámica", "[adm] Administradores de sistemas", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_jLabel22MouseClicked
+
+    private void jLabel24MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel24MouseClicked
+
+        JOptionPane.showMessageDialog(rootPane, "Profesionales encargados de reorganizar las bases de datos para hacerlas más"
+            + sl + "rápidas, fluidas y fáciles de usar. Crean sistemas de respaldo por si la información"
+            + sl + "llegase a perderse", "[dba] Administradores de bases de datos", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_jLabel24MouseClicked
+
+    private void jLabel25MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel25MouseClicked
+
+        JOptionPane.showMessageDialog(rootPane, "Profesional encargado de lograr exactitud, integridad y protección de todos"
+            + sl + "los recursos y/o procesos de los sistemas de información", "[backup] Copias de respaldo", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_jLabel25MouseClicked
+
+    private void jLabel26MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel26MouseClicked
+
+        JOptionPane.showMessageDialog(rootPane, "Profesional que desarrolla programas para computadores o dispositivos móviles,"
+            + sl+"escribe, depura y mantiene el código fuente","[des] Desarrolladores/Programadores", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_jLabel26MouseClicked
+
+    private void jLabel27MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel27MouseClicked
+
+        JOptionPane.showMessageDialog(rootPane, "Empresa o persona física que provee de bienes y/o servicios  a otras personas y/o empresas","[prov] Proveedores", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_jLabel27MouseClicked
+
     public JRadioButton[] AgregarPreguntas(JRadioButton... arrayOpciones) {
         JRadioButton[] preguntas = new JRadioButton[arrayOpciones.length];
         for (int i = 0; i < arrayOpciones.length; i++) {
@@ -1403,6 +1596,14 @@ public class m_Personal extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;

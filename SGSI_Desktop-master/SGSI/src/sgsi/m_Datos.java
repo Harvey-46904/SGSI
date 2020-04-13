@@ -66,6 +66,7 @@ public class m_Datos extends javax.swing.JFrame {
         cb22 = new javax.swing.JComboBox();
         cb23 = new javax.swing.JComboBox();
         cb24 = new javax.swing.JComboBox();
+        jLabel4 = new javax.swing.JLabel();
         pregunta9 = new javax.swing.JPanel();
         gen9 = new javax.swing.JPanel();
         p9 = new javax.swing.JRadioButton();
@@ -73,6 +74,7 @@ public class m_Datos extends javax.swing.JFrame {
         cb25 = new javax.swing.JComboBox();
         cb26 = new javax.swing.JComboBox();
         cb27 = new javax.swing.JComboBox();
+        jLabel8 = new javax.swing.JLabel();
         pregunta10 = new javax.swing.JPanel();
         gen10 = new javax.swing.JPanel();
         p10 = new javax.swing.JRadioButton();
@@ -80,6 +82,7 @@ public class m_Datos extends javax.swing.JFrame {
         cb28 = new javax.swing.JComboBox();
         cb29 = new javax.swing.JComboBox();
         cb30 = new javax.swing.JComboBox();
+        jLabel1 = new javax.swing.JLabel();
         pregunta11 = new javax.swing.JPanel();
         gen11 = new javax.swing.JPanel();
         p11 = new javax.swing.JRadioButton();
@@ -87,6 +90,7 @@ public class m_Datos extends javax.swing.JFrame {
         cb31 = new javax.swing.JComboBox();
         cb32 = new javax.swing.JComboBox();
         cb33 = new javax.swing.JComboBox();
+        jLabel9 = new javax.swing.JLabel();
         pregunta12 = new javax.swing.JPanel();
         gen12 = new javax.swing.JPanel();
         p12 = new javax.swing.JRadioButton();
@@ -94,6 +98,7 @@ public class m_Datos extends javax.swing.JFrame {
         cb34 = new javax.swing.JComboBox();
         cb35 = new javax.swing.JComboBox();
         cb36 = new javax.swing.JComboBox();
+        jLabel11 = new javax.swing.JLabel();
         pregunta13 = new javax.swing.JPanel();
         gen13 = new javax.swing.JPanel();
         p13 = new javax.swing.JRadioButton();
@@ -101,6 +106,7 @@ public class m_Datos extends javax.swing.JFrame {
         cb37 = new javax.swing.JComboBox();
         cb38 = new javax.swing.JComboBox();
         cb39 = new javax.swing.JComboBox();
+        jLabel12 = new javax.swing.JLabel();
         pregunta14 = new javax.swing.JPanel();
         gen14 = new javax.swing.JPanel();
         p14 = new javax.swing.JRadioButton();
@@ -115,6 +121,7 @@ public class m_Datos extends javax.swing.JFrame {
         cb43 = new javax.swing.JComboBox();
         cb44 = new javax.swing.JComboBox();
         cb45 = new javax.swing.JComboBox();
+        jLabel2 = new javax.swing.JLabel();
         pregunta16 = new javax.swing.JPanel();
         gen16 = new javax.swing.JPanel();
         p16 = new javax.swing.JRadioButton();
@@ -122,6 +129,7 @@ public class m_Datos extends javax.swing.JFrame {
         cb46 = new javax.swing.JComboBox();
         cb47 = new javax.swing.JComboBox();
         cb48 = new javax.swing.JComboBox();
+        jLabel13 = new javax.swing.JLabel();
         pregunta17 = new javax.swing.JPanel();
         gen17 = new javax.swing.JPanel();
         p17 = new javax.swing.JRadioButton();
@@ -129,6 +137,7 @@ public class m_Datos extends javax.swing.JFrame {
         cb49 = new javax.swing.JComboBox();
         cb50 = new javax.swing.JComboBox();
         cb51 = new javax.swing.JComboBox();
+        jLabel14 = new javax.swing.JLabel();
 
         jLabel10.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel10.setText("Para más información sobre este módulo por favor dar un click ");
@@ -281,10 +290,7 @@ public class m_Datos extends javax.swing.JFrame {
         gen8.setLayout(gen8Layout);
         gen8Layout.setHorizontalGroup(
             gen8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, gen8Layout.createSequentialGroup()
-                .addContainerGap(17, Short.MAX_VALUE)
-                .addComponent(p8, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(14, 14, 14))
+            .addComponent(p8, javax.swing.GroupLayout.DEFAULT_SIZE, 245, Short.MAX_VALUE)
         );
         gen8Layout.setVerticalGroup(
             gen8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -336,6 +342,13 @@ public class m_Datos extends javax.swing.JFrame {
                 .addGap(54, 54, 54))
         );
 
+        jLabel4.setText("¿?");
+        jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel4MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout pregunta8Layout = new javax.swing.GroupLayout(pregunta8);
         pregunta8.setLayout(pregunta8Layout);
         pregunta8Layout.setHorizontalGroup(
@@ -343,9 +356,14 @@ public class m_Datos extends javax.swing.JFrame {
             .addGroup(pregunta8Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(gen8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, Short.MAX_VALUE)
+                .addGap(18, 25, Short.MAX_VALUE)
                 .addComponent(respuesta8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(17, Short.MAX_VALUE))
+            .addGroup(pregunta8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta8Layout.createSequentialGroup()
+                    .addGap(256, 256, 256)
+                    .addComponent(jLabel4)
+                    .addContainerGap(257, Short.MAX_VALUE)))
         );
         pregunta8Layout.setVerticalGroup(
             pregunta8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -357,6 +375,11 @@ public class m_Datos extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(respuesta8, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(pregunta8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta8Layout.createSequentialGroup()
+                    .addGap(25, 25, 25)
+                    .addComponent(jLabel4)
+                    .addContainerGap(25, Short.MAX_VALUE)))
         );
 
         p9.setText("[backup] Copias de respaldo");
@@ -370,10 +393,7 @@ public class m_Datos extends javax.swing.JFrame {
         gen9.setLayout(gen9Layout);
         gen9Layout.setHorizontalGroup(
             gen9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, gen9Layout.createSequentialGroup()
-                .addContainerGap(17, Short.MAX_VALUE)
-                .addComponent(p9, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(14, 14, 14))
+            .addComponent(p9, javax.swing.GroupLayout.DEFAULT_SIZE, 245, Short.MAX_VALUE)
         );
         gen9Layout.setVerticalGroup(
             gen9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -425,6 +445,13 @@ public class m_Datos extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jLabel8.setText("¿?");
+        jLabel8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel8MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout pregunta9Layout = new javax.swing.GroupLayout(pregunta9);
         pregunta9.setLayout(pregunta9Layout);
         pregunta9Layout.setHorizontalGroup(
@@ -434,7 +461,12 @@ public class m_Datos extends javax.swing.JFrame {
                 .addComponent(gen9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(respuesta9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(24, Short.MAX_VALUE))
+            .addGroup(pregunta9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta9Layout.createSequentialGroup()
+                    .addGap(256, 256, 256)
+                    .addComponent(jLabel8)
+                    .addContainerGap(257, Short.MAX_VALUE)))
         );
         pregunta9Layout.setVerticalGroup(
             pregunta9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -446,6 +478,11 @@ public class m_Datos extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(respuesta9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(pregunta9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta9Layout.createSequentialGroup()
+                    .addGap(25, 25, 25)
+                    .addComponent(jLabel8)
+                    .addContainerGap(25, Short.MAX_VALUE)))
         );
 
         p10.setText("[conf]  Datos de configuración");
@@ -459,10 +496,7 @@ public class m_Datos extends javax.swing.JFrame {
         gen10.setLayout(gen10Layout);
         gen10Layout.setHorizontalGroup(
             gen10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, gen10Layout.createSequentialGroup()
-                .addContainerGap(17, Short.MAX_VALUE)
-                .addComponent(p10, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(14, 14, 14))
+            .addComponent(p10, javax.swing.GroupLayout.DEFAULT_SIZE, 245, Short.MAX_VALUE)
         );
         gen10Layout.setVerticalGroup(
             gen10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -514,6 +548,13 @@ public class m_Datos extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jLabel1.setText("¿?");
+        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel1MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout pregunta10Layout = new javax.swing.GroupLayout(pregunta10);
         pregunta10.setLayout(pregunta10Layout);
         pregunta10Layout.setHorizontalGroup(
@@ -523,7 +564,12 @@ public class m_Datos extends javax.swing.JFrame {
                 .addComponent(gen10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(respuesta10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(24, Short.MAX_VALUE))
+            .addGroup(pregunta10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta10Layout.createSequentialGroup()
+                    .addGap(256, 256, 256)
+                    .addComponent(jLabel1)
+                    .addContainerGap(257, Short.MAX_VALUE)))
         );
         pregunta10Layout.setVerticalGroup(
             pregunta10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -535,6 +581,11 @@ public class m_Datos extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(respuesta10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(pregunta10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta10Layout.createSequentialGroup()
+                    .addGap(25, 25, 25)
+                    .addComponent(jLabel1)
+                    .addContainerGap(25, Short.MAX_VALUE)))
         );
 
         p11.setText("[int] Datos de gestión interna");
@@ -548,10 +599,7 @@ public class m_Datos extends javax.swing.JFrame {
         gen11.setLayout(gen11Layout);
         gen11Layout.setHorizontalGroup(
             gen11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, gen11Layout.createSequentialGroup()
-                .addContainerGap(17, Short.MAX_VALUE)
-                .addComponent(p11, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(14, 14, 14))
+            .addComponent(p11, javax.swing.GroupLayout.DEFAULT_SIZE, 245, Short.MAX_VALUE)
         );
         gen11Layout.setVerticalGroup(
             gen11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -603,6 +651,13 @@ public class m_Datos extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jLabel9.setText("¿?");
+        jLabel9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel9MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout pregunta11Layout = new javax.swing.GroupLayout(pregunta11);
         pregunta11.setLayout(pregunta11Layout);
         pregunta11Layout.setHorizontalGroup(
@@ -612,7 +667,12 @@ public class m_Datos extends javax.swing.JFrame {
                 .addComponent(gen11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(respuesta11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(24, Short.MAX_VALUE))
+            .addGroup(pregunta11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta11Layout.createSequentialGroup()
+                    .addGap(256, 256, 256)
+                    .addComponent(jLabel9)
+                    .addContainerGap(257, Short.MAX_VALUE)))
         );
         pregunta11Layout.setVerticalGroup(
             pregunta11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -624,6 +684,11 @@ public class m_Datos extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(respuesta11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(pregunta11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta11Layout.createSequentialGroup()
+                    .addGap(25, 25, 25)
+                    .addComponent(jLabel9)
+                    .addContainerGap(25, Short.MAX_VALUE)))
         );
 
         p12.setText("[password] Credenciales/Contraseñas");
@@ -637,10 +702,7 @@ public class m_Datos extends javax.swing.JFrame {
         gen12.setLayout(gen12Layout);
         gen12Layout.setHorizontalGroup(
             gen12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, gen12Layout.createSequentialGroup()
-                .addContainerGap(17, Short.MAX_VALUE)
-                .addComponent(p12, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(14, 14, 14))
+            .addComponent(p12, javax.swing.GroupLayout.DEFAULT_SIZE, 245, Short.MAX_VALUE)
         );
         gen12Layout.setVerticalGroup(
             gen12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -692,6 +754,13 @@ public class m_Datos extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jLabel11.setText("¿?");
+        jLabel11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel11MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout pregunta12Layout = new javax.swing.GroupLayout(pregunta12);
         pregunta12.setLayout(pregunta12Layout);
         pregunta12Layout.setHorizontalGroup(
@@ -701,7 +770,12 @@ public class m_Datos extends javax.swing.JFrame {
                 .addComponent(gen12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(respuesta12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(24, Short.MAX_VALUE))
+            .addGroup(pregunta12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta12Layout.createSequentialGroup()
+                    .addGap(256, 256, 256)
+                    .addComponent(jLabel11)
+                    .addContainerGap(257, Short.MAX_VALUE)))
         );
         pregunta12Layout.setVerticalGroup(
             pregunta12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -713,6 +787,11 @@ public class m_Datos extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(respuesta12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(pregunta12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta12Layout.createSequentialGroup()
+                    .addGap(25, 25, 25)
+                    .addComponent(jLabel11)
+                    .addContainerGap(25, Short.MAX_VALUE)))
         );
 
         p13.setText("[auth] Datos de validación de credenciales");
@@ -726,10 +805,7 @@ public class m_Datos extends javax.swing.JFrame {
         gen13.setLayout(gen13Layout);
         gen13Layout.setHorizontalGroup(
             gen13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, gen13Layout.createSequentialGroup()
-                .addContainerGap(17, Short.MAX_VALUE)
-                .addComponent(p13, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(14, 14, 14))
+            .addComponent(p13, javax.swing.GroupLayout.DEFAULT_SIZE, 245, Short.MAX_VALUE)
         );
         gen13Layout.setVerticalGroup(
             gen13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -781,6 +857,13 @@ public class m_Datos extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jLabel12.setText("¿?");
+        jLabel12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel12MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout pregunta13Layout = new javax.swing.GroupLayout(pregunta13);
         pregunta13.setLayout(pregunta13Layout);
         pregunta13Layout.setHorizontalGroup(
@@ -790,7 +873,12 @@ public class m_Datos extends javax.swing.JFrame {
                 .addComponent(gen13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(respuesta13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(24, Short.MAX_VALUE))
+            .addGroup(pregunta13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta13Layout.createSequentialGroup()
+                    .addGap(256, 256, 256)
+                    .addComponent(jLabel12)
+                    .addContainerGap(257, Short.MAX_VALUE)))
         );
         pregunta13Layout.setVerticalGroup(
             pregunta13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -804,6 +892,11 @@ public class m_Datos extends javax.swing.JFrame {
                         .addComponent(respuesta13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
+            .addGroup(pregunta13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta13Layout.createSequentialGroup()
+                    .addGap(25, 25, 25)
+                    .addComponent(jLabel12)
+                    .addContainerGap(25, Short.MAX_VALUE)))
         );
 
         p14.setText("[acl] Datos de control de acceso");
@@ -906,10 +999,7 @@ public class m_Datos extends javax.swing.JFrame {
         gen15.setLayout(gen15Layout);
         gen15Layout.setHorizontalGroup(
             gen15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, gen15Layout.createSequentialGroup()
-                .addContainerGap(17, Short.MAX_VALUE)
-                .addComponent(p15, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(14, 14, 14))
+            .addComponent(p15, javax.swing.GroupLayout.DEFAULT_SIZE, 245, Short.MAX_VALUE)
         );
         gen15Layout.setVerticalGroup(
             gen15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -961,6 +1051,16 @@ public class m_Datos extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jLabel2.setText("¿?");
+        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel2MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel2MouseEntered(evt);
+            }
+        });
+
         javax.swing.GroupLayout pregunta15Layout = new javax.swing.GroupLayout(pregunta15);
         pregunta15.setLayout(pregunta15Layout);
         pregunta15Layout.setHorizontalGroup(
@@ -970,7 +1070,12 @@ public class m_Datos extends javax.swing.JFrame {
                 .addComponent(gen15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(respuesta15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(24, Short.MAX_VALUE))
+            .addGroup(pregunta15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta15Layout.createSequentialGroup()
+                    .addGap(256, 256, 256)
+                    .addComponent(jLabel2)
+                    .addContainerGap(257, Short.MAX_VALUE)))
         );
         pregunta15Layout.setVerticalGroup(
             pregunta15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -982,6 +1087,11 @@ public class m_Datos extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(respuesta15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(pregunta15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta15Layout.createSequentialGroup()
+                    .addGap(25, 25, 25)
+                    .addComponent(jLabel2)
+                    .addContainerGap(25, Short.MAX_VALUE)))
         );
 
         p16.setText("[source]Código fuente");
@@ -995,10 +1105,7 @@ public class m_Datos extends javax.swing.JFrame {
         gen16.setLayout(gen16Layout);
         gen16Layout.setHorizontalGroup(
             gen16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, gen16Layout.createSequentialGroup()
-                .addContainerGap(17, Short.MAX_VALUE)
-                .addComponent(p16, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(14, 14, 14))
+            .addComponent(p16, javax.swing.GroupLayout.DEFAULT_SIZE, 245, Short.MAX_VALUE)
         );
         gen16Layout.setVerticalGroup(
             gen16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1050,6 +1157,13 @@ public class m_Datos extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jLabel13.setText("¿?");
+        jLabel13.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel13MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout pregunta16Layout = new javax.swing.GroupLayout(pregunta16);
         pregunta16.setLayout(pregunta16Layout);
         pregunta16Layout.setHorizontalGroup(
@@ -1059,7 +1173,12 @@ public class m_Datos extends javax.swing.JFrame {
                 .addComponent(gen16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(respuesta16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(24, Short.MAX_VALUE))
+            .addGroup(pregunta16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta16Layout.createSequentialGroup()
+                    .addGap(256, 256, 256)
+                    .addComponent(jLabel13)
+                    .addContainerGap(257, Short.MAX_VALUE)))
         );
         pregunta16Layout.setVerticalGroup(
             pregunta16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1071,6 +1190,11 @@ public class m_Datos extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(respuesta16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(pregunta16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta16Layout.createSequentialGroup()
+                    .addGap(25, 25, 25)
+                    .addComponent(jLabel13)
+                    .addContainerGap(25, Short.MAX_VALUE)))
         );
 
         p17.setText("[exe] Código ejecutable");
@@ -1084,10 +1208,7 @@ public class m_Datos extends javax.swing.JFrame {
         gen17.setLayout(gen17Layout);
         gen17Layout.setHorizontalGroup(
             gen17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, gen17Layout.createSequentialGroup()
-                .addContainerGap(17, Short.MAX_VALUE)
-                .addComponent(p17, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(14, 14, 14))
+            .addComponent(p17, javax.swing.GroupLayout.DEFAULT_SIZE, 245, Short.MAX_VALUE)
         );
         gen17Layout.setVerticalGroup(
             gen17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1139,6 +1260,13 @@ public class m_Datos extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jLabel14.setText("¿?");
+        jLabel14.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel14MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout pregunta17Layout = new javax.swing.GroupLayout(pregunta17);
         pregunta17.setLayout(pregunta17Layout);
         pregunta17Layout.setHorizontalGroup(
@@ -1148,7 +1276,12 @@ public class m_Datos extends javax.swing.JFrame {
                 .addComponent(gen17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(respuesta17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(34, Short.MAX_VALUE))
+                .addContainerGap(48, Short.MAX_VALUE))
+            .addGroup(pregunta17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta17Layout.createSequentialGroup()
+                    .addGap(268, 268, 268)
+                    .addComponent(jLabel14)
+                    .addContainerGap(269, Short.MAX_VALUE)))
         );
         pregunta17Layout.setVerticalGroup(
             pregunta17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1160,6 +1293,11 @@ public class m_Datos extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(respuesta17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(pregunta17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta17Layout.createSequentialGroup()
+                    .addGap(25, 25, 25)
+                    .addComponent(jLabel14)
+                    .addContainerGap(25, Short.MAX_VALUE)))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -1204,7 +1342,7 @@ public class m_Datos extends javax.swing.JFrame {
                 .addComponent(pregunta16, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(pregunta17, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 83, Short.MAX_VALUE))
+                .addGap(0, 71, Short.MAX_VALUE))
         );
 
         jScrollPane2.setViewportView(jPanel1);
@@ -1346,6 +1484,10 @@ public class m_Datos extends javax.swing.JFrame {
         m_Arquitectura m=new m_Arquitectura();
         m.subir(puntos);
         m.volver();
+        
+        Principal principal = new Principal();
+        principal.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void p8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p8ActionPerformed
@@ -1508,6 +1650,71 @@ public class m_Datos extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_cb25ActionPerformed
 
+    private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
+        String sl = System.getProperty("line.separator");
+        JOptionPane.showMessageDialog(rootPane, "Denominado también como archivo, consiste en una unidad de información en "
+            +sl+ "la que se almacena el resultado de utilizar un programa de proceso de textos, "
+            + sl+"base de datos o cualquier otro tipo de aplicación"
+            ,"[Files] Ficheros", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:// TODO add your handling code here:
+
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel4MouseClicked
+
+    private void jLabel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseClicked
+
+        String sl = System.getProperty("line.separator");
+        JOptionPane.showMessageDialog(rootPane, "Copia de Respaldo o Seguridad. Acción de copiar archivos o datos de forma que"
+            +sl+ "estén disponibles en caso de que un fallo produzca la perdida de los originales","[backup] Copias de respaldo", JOptionPane.INFORMATION_MESSAGE);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel8MouseClicked
+
+    private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
+
+        String sl = System.getProperty("line.separator");
+        JOptionPane.showMessageDialog(rootPane,"Los datos de configuración son críticos para mantener la funcionalidad de las partes y del conjunto del sistema de información.","[conf]  Datos de configuración",JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:
+    }//GEN-LAST:event_jLabel1MouseClicked
+
+    private void jLabel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseClicked
+        String sl = System.getProperty("line.separator");
+        JOptionPane.showMessageDialog(rootPane, "xxxxxxxxxxxxxxxxxx","[int] Datos de gestión interna", JOptionPane.INFORMATION_MESSAGE);
+
+    }//GEN-LAST:event_jLabel9MouseClicked
+
+    private void jLabel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseClicked
+        String sl = System.getProperty("line.separator");
+        JOptionPane.showMessageDialog(rootPane, "Se denomina así al método de seguridad que se utiliza para identificar a un usuario. "
+            + sl+"Es frecuente su uso en redes. Se utiliza para dar acceso a personas con determinados permisos.","[password] Credenciales/Contraseñas", JOptionPane.INFORMATION_MESSAGE);        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel11MouseClicked
+
+    private void jLabel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel12MouseClicked
+
+    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
+
+        String sl = System.getProperty("line.separator");
+        JOptionPane.showMessageDialog(rootPane,"Los registros de actividad sustancian los requisitos de trazabilidad.","[log] Registro de actividad",JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:
+    }//GEN-LAST:event_jLabel2MouseClicked
+
+    private void jLabel2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseEntered
+        // TODO add your handling code here:
+
+    }//GEN-LAST:event_jLabel2MouseEntered
+
+    private void jLabel13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel13MouseClicked
+
+        String sl = System.getProperty("line.separator");
+        JOptionPane.showMessageDialog(rootPane, "Es el texto que contiene las instrucciones del programa, escritas en el lenguaje de programación."
+            + sl+"Se trata de un archivo de texto legible que se puede copiar, modificar e imprimir sin dificultad.","[source]Código fuente", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:
+    }//GEN-LAST:event_jLabel13MouseClicked
+
+    private void jLabel14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel14MouseClicked
+
+        String sl = System.getProperty("line.separator");
+        JOptionPane.showMessageDialog(rootPane, "Es un texto escrito en un lenguaje de programación para crear el programa. "
+            + sl+"Es la forma del programa legible por el programador.","[exe] Código ejecutable", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:
+    }//GEN-LAST:event_jLabel14MouseClicked
+
     public  JRadioButton[] AgregarPreguntas(JRadioButton... arrayOpciones)
 {
   JRadioButton[] preguntas=new JRadioButton[arrayOpciones.length];
@@ -1647,8 +1854,17 @@ public class m_Datos extends javax.swing.JFrame {
     private javax.swing.JPanel gen9;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;

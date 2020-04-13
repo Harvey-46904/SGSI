@@ -14,6 +14,7 @@ import javax.swing.JRadioButton;
  * @author Luis Efe
  */
 public class m_Redes extends javax.swing.JFrame {
+    String sl = System.getProperty("line.separator");
 
     /**
      * Creates new form activos_esenciales
@@ -65,6 +66,7 @@ public class m_Redes extends javax.swing.JFrame {
         cb94 = new javax.swing.JComboBox();
         cb95 = new javax.swing.JComboBox();
         cb96 = new javax.swing.JComboBox();
+        jLabel27 = new javax.swing.JLabel();
         pregunta33 = new javax.swing.JPanel();
         gen33 = new javax.swing.JPanel();
         p33 = new javax.swing.JRadioButton();
@@ -72,6 +74,7 @@ public class m_Redes extends javax.swing.JFrame {
         cb97 = new javax.swing.JComboBox();
         cb98 = new javax.swing.JComboBox();
         cb99 = new javax.swing.JComboBox();
+        jLabel28 = new javax.swing.JLabel();
         pregunta34 = new javax.swing.JPanel();
         gen34 = new javax.swing.JPanel();
         p34 = new javax.swing.JRadioButton();
@@ -79,6 +82,7 @@ public class m_Redes extends javax.swing.JFrame {
         cb100 = new javax.swing.JComboBox();
         cb101 = new javax.swing.JComboBox();
         cb102 = new javax.swing.JComboBox();
+        jLabel29 = new javax.swing.JLabel();
         pregunta35 = new javax.swing.JPanel();
         gen35 = new javax.swing.JPanel();
         p35 = new javax.swing.JRadioButton();
@@ -86,6 +90,7 @@ public class m_Redes extends javax.swing.JFrame {
         cb103 = new javax.swing.JComboBox();
         cb104 = new javax.swing.JComboBox();
         cb105 = new javax.swing.JComboBox();
+        jLabel30 = new javax.swing.JLabel();
         pregunta36 = new javax.swing.JPanel();
         gen36 = new javax.swing.JPanel();
         p36 = new javax.swing.JRadioButton();
@@ -93,6 +98,7 @@ public class m_Redes extends javax.swing.JFrame {
         cb106 = new javax.swing.JComboBox();
         cb107 = new javax.swing.JComboBox();
         cb108 = new javax.swing.JComboBox();
+        jLabel31 = new javax.swing.JLabel();
         pregunta37 = new javax.swing.JPanel();
         gen37 = new javax.swing.JPanel();
         p37 = new javax.swing.JRadioButton();
@@ -100,6 +106,7 @@ public class m_Redes extends javax.swing.JFrame {
         cb109 = new javax.swing.JComboBox();
         cb110 = new javax.swing.JComboBox();
         cb111 = new javax.swing.JComboBox();
+        jLabel32 = new javax.swing.JLabel();
         pregunta38 = new javax.swing.JPanel();
         gen38 = new javax.swing.JPanel();
         p38 = new javax.swing.JRadioButton();
@@ -107,6 +114,7 @@ public class m_Redes extends javax.swing.JFrame {
         cb112 = new javax.swing.JComboBox();
         cb113 = new javax.swing.JComboBox();
         cb114 = new javax.swing.JComboBox();
+        jLabel33 = new javax.swing.JLabel();
         pregunta39 = new javax.swing.JPanel();
         gen39 = new javax.swing.JPanel();
         p39 = new javax.swing.JRadioButton();
@@ -114,6 +122,7 @@ public class m_Redes extends javax.swing.JFrame {
         cb115 = new javax.swing.JComboBox();
         cb116 = new javax.swing.JComboBox();
         cb117 = new javax.swing.JComboBox();
+        jLabel34 = new javax.swing.JLabel();
 
         jLabel10.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel10.setText("Para más información sobre este módulo por favor dar un click ");
@@ -321,6 +330,13 @@ public class m_Redes extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jLabel27.setText("¿?");
+        jLabel27.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel27MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout pregunta32Layout = new javax.swing.GroupLayout(pregunta32);
         pregunta32.setLayout(pregunta32Layout);
         pregunta32Layout.setHorizontalGroup(
@@ -331,6 +347,11 @@ public class m_Redes extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(respuesta32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(34, Short.MAX_VALUE))
+            .addGroup(pregunta32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta32Layout.createSequentialGroup()
+                    .addGap(268, 268, 268)
+                    .addComponent(jLabel27)
+                    .addContainerGap(269, Short.MAX_VALUE)))
         );
         pregunta32Layout.setVerticalGroup(
             pregunta32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -342,6 +363,11 @@ public class m_Redes extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(respuesta32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(pregunta32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta32Layout.createSequentialGroup()
+                    .addGap(25, 25, 25)
+                    .addComponent(jLabel27)
+                    .addContainerGap(25, Short.MAX_VALUE)))
         );
 
         p33.setText("[radio] Comunicaciones radio");
@@ -410,6 +436,13 @@ public class m_Redes extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jLabel28.setText("¿?");
+        jLabel28.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel28MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout pregunta33Layout = new javax.swing.GroupLayout(pregunta33);
         pregunta33.setLayout(pregunta33Layout);
         pregunta33Layout.setHorizontalGroup(
@@ -420,6 +453,11 @@ public class m_Redes extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(respuesta33, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(54, Short.MAX_VALUE))
+            .addGroup(pregunta33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta33Layout.createSequentialGroup()
+                    .addGap(278, 278, 278)
+                    .addComponent(jLabel28)
+                    .addContainerGap(279, Short.MAX_VALUE)))
         );
         pregunta33Layout.setVerticalGroup(
             pregunta33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -431,6 +469,11 @@ public class m_Redes extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(respuesta33, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(pregunta33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta33Layout.createSequentialGroup()
+                    .addGap(25, 25, 25)
+                    .addComponent(jLabel28)
+                    .addContainerGap(25, Short.MAX_VALUE)))
         );
 
         p34.setText("[wifi] Red inalámbrica");
@@ -499,6 +542,13 @@ public class m_Redes extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jLabel29.setText("¿?");
+        jLabel29.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel29MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout pregunta34Layout = new javax.swing.GroupLayout(pregunta34);
         pregunta34.setLayout(pregunta34Layout);
         pregunta34Layout.setHorizontalGroup(
@@ -509,6 +559,11 @@ public class m_Redes extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(respuesta34, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(34, Short.MAX_VALUE))
+            .addGroup(pregunta34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta34Layout.createSequentialGroup()
+                    .addGap(268, 268, 268)
+                    .addComponent(jLabel29)
+                    .addContainerGap(269, Short.MAX_VALUE)))
         );
         pregunta34Layout.setVerticalGroup(
             pregunta34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -520,6 +575,11 @@ public class m_Redes extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(respuesta34, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(pregunta34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta34Layout.createSequentialGroup()
+                    .addGap(25, 25, 25)
+                    .addComponent(jLabel29)
+                    .addContainerGap(25, Short.MAX_VALUE)))
         );
 
         p35.setText("[mobile] Telefonía Móvil");
@@ -588,6 +648,13 @@ public class m_Redes extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jLabel30.setText("¿?");
+        jLabel30.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel30MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout pregunta35Layout = new javax.swing.GroupLayout(pregunta35);
         pregunta35.setLayout(pregunta35Layout);
         pregunta35Layout.setHorizontalGroup(
@@ -598,6 +665,11 @@ public class m_Redes extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(respuesta35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(34, Short.MAX_VALUE))
+            .addGroup(pregunta35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta35Layout.createSequentialGroup()
+                    .addGap(268, 268, 268)
+                    .addComponent(jLabel30)
+                    .addContainerGap(269, Short.MAX_VALUE)))
         );
         pregunta35Layout.setVerticalGroup(
             pregunta35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -609,6 +681,11 @@ public class m_Redes extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(respuesta35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(pregunta35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta35Layout.createSequentialGroup()
+                    .addGap(25, 25, 25)
+                    .addComponent(jLabel30)
+                    .addContainerGap(25, Short.MAX_VALUE)))
         );
 
         p36.setText("[sat] Por satélite");
@@ -677,6 +754,13 @@ public class m_Redes extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jLabel31.setText("¿?");
+        jLabel31.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel31MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout pregunta36Layout = new javax.swing.GroupLayout(pregunta36);
         pregunta36.setLayout(pregunta36Layout);
         pregunta36Layout.setHorizontalGroup(
@@ -687,6 +771,11 @@ public class m_Redes extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(respuesta36, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(34, Short.MAX_VALUE))
+            .addGroup(pregunta36Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta36Layout.createSequentialGroup()
+                    .addGap(268, 268, 268)
+                    .addComponent(jLabel31)
+                    .addContainerGap(269, Short.MAX_VALUE)))
         );
         pregunta36Layout.setVerticalGroup(
             pregunta36Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -698,6 +787,11 @@ public class m_Redes extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(respuesta36, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(pregunta36Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta36Layout.createSequentialGroup()
+                    .addGap(25, 25, 25)
+                    .addComponent(jLabel31)
+                    .addContainerGap(25, Short.MAX_VALUE)))
         );
 
         p37.setText("[LAN] Red local");
@@ -766,6 +860,13 @@ public class m_Redes extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jLabel32.setText("¿?");
+        jLabel32.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel32MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout pregunta37Layout = new javax.swing.GroupLayout(pregunta37);
         pregunta37.setLayout(pregunta37Layout);
         pregunta37Layout.setHorizontalGroup(
@@ -776,6 +877,11 @@ public class m_Redes extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(respuesta37, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(34, Short.MAX_VALUE))
+            .addGroup(pregunta37Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta37Layout.createSequentialGroup()
+                    .addGap(268, 268, 268)
+                    .addComponent(jLabel32)
+                    .addContainerGap(269, Short.MAX_VALUE)))
         );
         pregunta37Layout.setVerticalGroup(
             pregunta37Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -787,6 +893,11 @@ public class m_Redes extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(respuesta37, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(pregunta37Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta37Layout.createSequentialGroup()
+                    .addGap(25, 25, 25)
+                    .addComponent(jLabel32)
+                    .addContainerGap(25, Short.MAX_VALUE)))
         );
 
         p38.setText("[MAN] Red metropolitana");
@@ -855,6 +966,13 @@ public class m_Redes extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jLabel33.setText("¿?");
+        jLabel33.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel33MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout pregunta38Layout = new javax.swing.GroupLayout(pregunta38);
         pregunta38.setLayout(pregunta38Layout);
         pregunta38Layout.setHorizontalGroup(
@@ -865,6 +983,11 @@ public class m_Redes extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(respuesta38, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(34, Short.MAX_VALUE))
+            .addGroup(pregunta38Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta38Layout.createSequentialGroup()
+                    .addGap(268, 268, 268)
+                    .addComponent(jLabel33)
+                    .addContainerGap(269, Short.MAX_VALUE)))
         );
         pregunta38Layout.setVerticalGroup(
             pregunta38Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -876,6 +999,11 @@ public class m_Redes extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(respuesta38, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(pregunta38Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta38Layout.createSequentialGroup()
+                    .addGap(25, 25, 25)
+                    .addComponent(jLabel33)
+                    .addContainerGap(25, Short.MAX_VALUE)))
         );
 
         p39.setText("[Internet] Internet");
@@ -944,6 +1072,13 @@ public class m_Redes extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jLabel34.setText("¿?");
+        jLabel34.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel34MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout pregunta39Layout = new javax.swing.GroupLayout(pregunta39);
         pregunta39.setLayout(pregunta39Layout);
         pregunta39Layout.setHorizontalGroup(
@@ -954,6 +1089,11 @@ public class m_Redes extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(respuesta39, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(34, Short.MAX_VALUE))
+            .addGroup(pregunta39Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta39Layout.createSequentialGroup()
+                    .addGap(268, 268, 268)
+                    .addComponent(jLabel34)
+                    .addContainerGap(269, Short.MAX_VALUE)))
         );
         pregunta39Layout.setVerticalGroup(
             pregunta39Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -965,6 +1105,11 @@ public class m_Redes extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(respuesta39, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(pregunta39Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta39Layout.createSequentialGroup()
+                    .addGap(25, 25, 25)
+                    .addComponent(jLabel34)
+                    .addContainerGap(25, Short.MAX_VALUE)))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -1002,7 +1147,7 @@ public class m_Redes extends javax.swing.JFrame {
                 .addComponent(pregunta38, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(pregunta39, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 97, Short.MAX_VALUE))
+                .addGap(0, 17, Short.MAX_VALUE))
         );
 
         jScrollPane2.setViewportView(jPanel1);
@@ -1146,6 +1291,10 @@ public class m_Redes extends javax.swing.JFrame {
         m_Arquitectura m=new m_Arquitectura();
         m.subir(puntos);
         m.volver();
+        
+        Principal principal = new Principal();
+        principal.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void p32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p32ActionPerformed
@@ -1276,6 +1425,49 @@ public class m_Redes extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_cb117ActionPerformed
 
+    private void jLabel27MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel27MouseClicked
+
+        JOptionPane.showMessageDialog(rootPane, "Red de comunicaciones usada para llamar entre dos o más partes","[PSNT] Red telefónica", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_jLabel27MouseClicked
+
+    private void jLabel28MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel28MouseClicked
+
+        JOptionPane.showMessageDialog(rootPane, "Comunicación realizada a través de ondas","[radio] Comunicaciones radio", JOptionPane.INFORMATION_MESSAGE);
+
+    }//GEN-LAST:event_jLabel28MouseClicked
+
+    private void jLabel29MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel29MouseClicked
+
+        JOptionPane.showMessageDialog(rootPane, "Tecnología de comunicación inalámbrica que permite conectar a internet dipositivos"
+            + sl+" electrónicos como computadores, celulares, tablets, etc.","[wifi] Red inalámbrica", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_jLabel29MouseClicked
+
+    private void jLabel30MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel30MouseClicked
+
+        JOptionPane.showMessageDialog(rootPane, "Medio de comunicación inalámbrico","[mobile] Telefonía móvil", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_jLabel30MouseClicked
+
+    private void jLabel31MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel31MouseClicked
+
+        JOptionPane.showMessageDialog(rootPane, "Red de computadores que abarca un espacio reducido (casa, apto, edificio)","[LAN] Red local", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_jLabel31MouseClicked
+
+    private void jLabel32MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel32MouseClicked
+
+        JOptionPane.showMessageDialog(rootPane, "Red de computadores que abarca un espacio reducido (casa, apto, edificio)","[LAN] Red local", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_jLabel32MouseClicked
+
+    private void jLabel33MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel33MouseClicked
+
+        JOptionPane.showMessageDialog(rootPane, "Red de alta velocidad que brinda cobertura a un área extensa","[MAN] Red metropolitana", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_jLabel33MouseClicked
+
+    private void jLabel34MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel34MouseClicked
+
+        JOptionPane.showMessageDialog(rootPane, "Conjunto de redes de comunicación interconectadas entre sí que ofrecen diversos"
+            + sl+" recursos como por ejemplo el acceso a  archivos a través de la red","[Internet] Internet", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_jLabel34MouseClicked
+
     public JRadioButton[] AgregarPreguntas(JRadioButton... arrayOpciones) {
         JRadioButton[] preguntas = new JRadioButton[arrayOpciones.length];
         for (int i = 0; i < arrayOpciones.length; i++) {
@@ -1399,7 +1591,15 @@ public class m_Redes extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;

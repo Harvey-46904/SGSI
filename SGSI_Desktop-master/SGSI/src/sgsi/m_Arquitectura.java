@@ -64,6 +64,7 @@ public class m_Arquitectura extends javax.swing.JFrame {
         cb16 = new javax.swing.JComboBox();
         cb17 = new javax.swing.JComboBox();
         cb18 = new javax.swing.JComboBox();
+        jLabel2 = new javax.swing.JLabel();
         pregunta7 = new javax.swing.JPanel();
         gen7 = new javax.swing.JPanel();
         p7 = new javax.swing.JRadioButton();
@@ -71,6 +72,7 @@ public class m_Arquitectura extends javax.swing.JFrame {
         cb19 = new javax.swing.JComboBox();
         cb20 = new javax.swing.JComboBox();
         cb21 = new javax.swing.JComboBox();
+        jLabel4 = new javax.swing.JLabel();
         pregunta5 = new javax.swing.JPanel();
         gen5 = new javax.swing.JPanel();
         p5 = new javax.swing.JRadioButton();
@@ -285,6 +287,16 @@ public class m_Arquitectura extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jLabel2.setText("¿?");
+        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel2MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel2MouseEntered(evt);
+            }
+        });
+
         javax.swing.GroupLayout pregunta6Layout = new javax.swing.GroupLayout(pregunta6);
         pregunta6.setLayout(pregunta6Layout);
         pregunta6Layout.setHorizontalGroup(
@@ -295,6 +307,11 @@ public class m_Arquitectura extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(respuesta6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(pregunta6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta6Layout.createSequentialGroup()
+                    .addGap(263, 263, 263)
+                    .addComponent(jLabel2)
+                    .addContainerGap(263, Short.MAX_VALUE)))
         );
         pregunta6Layout.setVerticalGroup(
             pregunta6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -306,6 +323,11 @@ public class m_Arquitectura extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(respuesta6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(pregunta6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta6Layout.createSequentialGroup()
+                    .addGap(25, 25, 25)
+                    .addComponent(jLabel2)
+                    .addContainerGap(25, Short.MAX_VALUE)))
         );
 
         p7.setText("[ext]  Proporcionado por terceros");
@@ -374,6 +396,16 @@ public class m_Arquitectura extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jLabel4.setText("¿?");
+        jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel4MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel4MouseEntered(evt);
+            }
+        });
+
         javax.swing.GroupLayout pregunta7Layout = new javax.swing.GroupLayout(pregunta7);
         pregunta7.setLayout(pregunta7Layout);
         pregunta7Layout.setHorizontalGroup(
@@ -384,6 +416,11 @@ public class m_Arquitectura extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(respuesta7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(23, Short.MAX_VALUE))
+            .addGroup(pregunta7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta7Layout.createSequentialGroup()
+                    .addGap(263, 263, 263)
+                    .addComponent(jLabel4)
+                    .addContainerGap(263, Short.MAX_VALUE)))
         );
         pregunta7Layout.setVerticalGroup(
             pregunta7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -395,6 +432,11 @@ public class m_Arquitectura extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(respuesta7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(pregunta7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta7Layout.createSequentialGroup()
+                    .addGap(25, 25, 25)
+                    .addComponent(jLabel4)
+                    .addContainerGap(25, Short.MAX_VALUE)))
         );
 
         p5.setText("[sap] Punto de acceso al servicio ");
@@ -627,6 +669,11 @@ public class m_Arquitectura extends javax.swing.JFrame {
         System.out.println(puntos);
         subir(puntos);
         volver();
+        
+        Principal principal = new Principal();
+        principal.setVisible(true);
+        this.dispose();
+        
     }//GEN-LAST:event_jButton2ActionPerformed
 public void subir(ArrayList<String> pila){
          clsConecta ob=new clsConecta();
@@ -689,6 +736,28 @@ public void volver(){
     private void cb21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb21ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_cb21ActionPerformed
+
+    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
+
+        String sl = System.getProperty("line.separator");
+        JOptionPane.showMessageDialog(rootPane,"Establece una frontera inter-pares: cuando dos sistemas se interconectan para intercambiar información.","[ip] Punto de interconexión",JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:
+    }//GEN-LAST:event_jLabel2MouseClicked
+
+    private void jLabel2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseEntered
+        // TODO add your handling code here:
+
+    }//GEN-LAST:event_jLabel2MouseEntered
+
+    private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
+
+        String sl = System.getProperty("line.separator");
+        JOptionPane.showMessageDialog(rootPane,"Establece una frontera inferior, cuando para la prestación de nuestros servicios recurrimos a un tercero.","[ext]  Proporcionado por terceros",JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:
+    }//GEN-LAST:event_jLabel4MouseClicked
+
+    private void jLabel4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseEntered
+        // TODO add your handling code here:
+
+    }//GEN-LAST:event_jLabel4MouseEntered
 
     public  JRadioButton[] AgregarPreguntas(JRadioButton... arrayOpciones)
 {
@@ -794,7 +863,9 @@ public void volver(){
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JRadioButton p5;
     private javax.swing.JRadioButton p6;

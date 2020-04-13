@@ -14,6 +14,7 @@ import javax.swing.JRadioButton;
  * @author Luis Efe
  */
 public class m_Soportes extends javax.swing.JFrame {
+    String sl = System.getProperty("line.separator");
 
     /**
      * Creates new form activos_esenciales
@@ -72,6 +73,7 @@ public class m_Soportes extends javax.swing.JFrame {
         cb121 = new javax.swing.JComboBox();
         cb122 = new javax.swing.JComboBox();
         cb123 = new javax.swing.JComboBox();
+        jLabel27 = new javax.swing.JLabel();
         pregunta42 = new javax.swing.JPanel();
         gen42 = new javax.swing.JPanel();
         p42 = new javax.swing.JRadioButton();
@@ -100,6 +102,7 @@ public class m_Soportes extends javax.swing.JFrame {
         cb133 = new javax.swing.JComboBox();
         cb134 = new javax.swing.JComboBox();
         cb135 = new javax.swing.JComboBox();
+        jLabel29 = new javax.swing.JLabel();
         pregunta46 = new javax.swing.JPanel();
         gen46 = new javax.swing.JPanel();
         p46 = new javax.swing.JRadioButton();
@@ -191,7 +194,7 @@ public class m_Soportes extends javax.swing.JFrame {
                     .addComponent(b)
                     .addComponent(c)
                     .addComponent(d))
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addContainerGap(33, Short.MAX_VALUE))
         );
         SuperiorLayout.setVerticalGroup(
             SuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -403,6 +406,13 @@ public class m_Soportes extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jLabel27.setText("¿?");
+        jLabel27.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel27MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout pregunta41Layout = new javax.swing.GroupLayout(pregunta41);
         pregunta41.setLayout(pregunta41Layout);
         pregunta41Layout.setHorizontalGroup(
@@ -413,6 +423,11 @@ public class m_Soportes extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(respuesta41, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(34, Short.MAX_VALUE))
+            .addGroup(pregunta41Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta41Layout.createSequentialGroup()
+                    .addGap(268, 268, 268)
+                    .addComponent(jLabel27)
+                    .addContainerGap(269, Short.MAX_VALUE)))
         );
         pregunta41Layout.setVerticalGroup(
             pregunta41Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -424,6 +439,11 @@ public class m_Soportes extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(respuesta41, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(pregunta41Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta41Layout.createSequentialGroup()
+                    .addGap(25, 25, 25)
+                    .addComponent(jLabel27)
+                    .addContainerGap(25, Short.MAX_VALUE)))
         );
 
         p42.setText("[cd] Cederrón (CD-ROM)");
@@ -759,6 +779,13 @@ public class m_Soportes extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jLabel29.setText("¿?");
+        jLabel29.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel29MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout pregunta45Layout = new javax.swing.GroupLayout(pregunta45);
         pregunta45.setLayout(pregunta45Layout);
         pregunta45Layout.setHorizontalGroup(
@@ -769,6 +796,11 @@ public class m_Soportes extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(respuesta45, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(34, Short.MAX_VALUE))
+            .addGroup(pregunta45Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta45Layout.createSequentialGroup()
+                    .addGap(268, 268, 268)
+                    .addComponent(jLabel29)
+                    .addContainerGap(269, Short.MAX_VALUE)))
         );
         pregunta45Layout.setVerticalGroup(
             pregunta45Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -780,6 +812,11 @@ public class m_Soportes extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(respuesta45, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(pregunta45Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta45Layout.createSequentialGroup()
+                    .addGap(25, 25, 25)
+                    .addComponent(jLabel29)
+                    .addContainerGap(25, Short.MAX_VALUE)))
         );
 
         p46.setText("[printed] Material impreso");
@@ -885,7 +922,7 @@ public class m_Soportes extends javax.swing.JFrame {
                     .addComponent(pregunta42, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(pregunta41, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(pregunta40, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(208, Short.MAX_VALUE))
+                .addContainerGap(226, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -903,7 +940,7 @@ public class m_Soportes extends javax.swing.JFrame {
                 .addComponent(pregunta45, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(pregunta46, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 191, Short.MAX_VALUE))
+                .addGap(0, 37, Short.MAX_VALUE))
         );
 
         jScrollPane2.setViewportView(jPanel1);
@@ -969,21 +1006,20 @@ public class m_Soportes extends javax.swing.JFrame {
 
     private void d12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_d12MouseClicked
 
-        String sl = System.getProperty("line.separator");
+        
         JOptionPane.showMessageDialog(rootPane, "La información no se pone a disposición ni se revela a individuos, entidades o procesos no autorizados.",
                 "[Confidencialidad]", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:
     }//GEN-LAST:event_d12MouseClicked
 
     private void d13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_d13MouseClicked
 
-        String sl = System.getProperty("line.separator");
+        
         JOptionPane.showMessageDialog(rootPane, "Mantenimiento de la exactitud y completitud de la información y sus métodos de proceso.",
                 "[Integridad]", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:// TODO add your handling code here:
     }//GEN-LAST:event_d13MouseClicked
 
     private void d14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_d14MouseClicked
 
-        String sl = System.getProperty("line.separator");
         JOptionPane.showMessageDialog(rootPane, "Acceso y utilización de la información y los sistemas de tratamiento de la misma"
                 + sl + "por parte de los individuos, entidades o procesos autorizados cuando lo requieran.",
                 "[Disponibilidad]", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:// TODO add your handling code here:
@@ -1051,6 +1087,10 @@ public class m_Soportes extends javax.swing.JFrame {
         m_Arquitectura m=new m_Arquitectura();
         m.subir(puntos);
         m.volver();
+        
+        Principal principal = new Principal();
+        principal.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void p40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p40ActionPerformed
@@ -1164,6 +1204,15 @@ public class m_Soportes extends javax.swing.JFrame {
     private void cb138ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb138ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_cb138ActionPerformed
+
+    private void jLabel27MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel27MouseClicked
+
+        JOptionPane.showMessageDialog(rootPane, "Discos duros internos o externos y de estado sólido","[disk] Discos", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_jLabel27MouseClicked
+
+    private void jLabel29MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel29MouseClicked
+        JOptionPane.showMessageDialog(rootPane, "Disposito de almacenamiento encontrado comunmente en teléfonos celulares, camarás","[mc] Tarjetas de memoria", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_jLabel29MouseClicked
 
     public JRadioButton[] AgregarPreguntas(JRadioButton... arrayOpciones) {
         JRadioButton[] preguntas = new JRadioButton[arrayOpciones.length];
@@ -1284,6 +1333,8 @@ public class m_Soportes extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;

@@ -62,6 +62,7 @@ public class m_Hardware extends javax.swing.JFrame {
         cb79 = new javax.swing.JComboBox();
         cb80 = new javax.swing.JComboBox();
         cb81 = new javax.swing.JComboBox();
+        jLabel14 = new javax.swing.JLabel();
         pregunta28 = new javax.swing.JPanel();
         gen28 = new javax.swing.JPanel();
         p28 = new javax.swing.JRadioButton();
@@ -69,6 +70,7 @@ public class m_Hardware extends javax.swing.JFrame {
         cb82 = new javax.swing.JComboBox();
         cb83 = new javax.swing.JComboBox();
         cb84 = new javax.swing.JComboBox();
+        jLabel15 = new javax.swing.JLabel();
         pregunta29 = new javax.swing.JPanel();
         gen29 = new javax.swing.JPanel();
         p29 = new javax.swing.JRadioButton();
@@ -76,6 +78,7 @@ public class m_Hardware extends javax.swing.JFrame {
         cb85 = new javax.swing.JComboBox();
         cb86 = new javax.swing.JComboBox();
         cb87 = new javax.swing.JComboBox();
+        jLabel16 = new javax.swing.JLabel();
         pregunta30 = new javax.swing.JPanel();
         gen30 = new javax.swing.JPanel();
         p30 = new javax.swing.JRadioButton();
@@ -83,6 +86,7 @@ public class m_Hardware extends javax.swing.JFrame {
         cb88 = new javax.swing.JComboBox();
         cb89 = new javax.swing.JComboBox();
         cb90 = new javax.swing.JComboBox();
+        jLabel17 = new javax.swing.JLabel();
         pregunta31 = new javax.swing.JPanel();
         gen31 = new javax.swing.JPanel();
         p31 = new javax.swing.JRadioButton();
@@ -90,6 +94,7 @@ public class m_Hardware extends javax.swing.JFrame {
         cb91 = new javax.swing.JComboBox();
         cb92 = new javax.swing.JComboBox();
         cb93 = new javax.swing.JComboBox();
+        jLabel19 = new javax.swing.JLabel();
 
         jLabel10.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel10.setText("Para más información sobre este módulo por favor dar un click ");
@@ -297,6 +302,13 @@ public class m_Hardware extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jLabel14.setText("¿?");
+        jLabel14.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel14MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout pregunta27Layout = new javax.swing.GroupLayout(pregunta27);
         pregunta27.setLayout(pregunta27Layout);
         pregunta27Layout.setHorizontalGroup(
@@ -307,6 +319,11 @@ public class m_Hardware extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(respuesta27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(34, Short.MAX_VALUE))
+            .addGroup(pregunta27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta27Layout.createSequentialGroup()
+                    .addGap(268, 268, 268)
+                    .addComponent(jLabel14)
+                    .addContainerGap(269, Short.MAX_VALUE)))
         );
         pregunta27Layout.setVerticalGroup(
             pregunta27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -318,6 +335,11 @@ public class m_Hardware extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(respuesta27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(pregunta27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta27Layout.createSequentialGroup()
+                    .addGap(25, 25, 25)
+                    .addComponent(jLabel14)
+                    .addContainerGap(25, Short.MAX_VALUE)))
         );
 
         p28.setText("[hub] Concentradores");
@@ -373,7 +395,7 @@ public class m_Hardware extends javax.swing.JFrame {
                 .addComponent(cb83, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(cb84, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(27, Short.MAX_VALUE))
+                .addContainerGap(36, Short.MAX_VALUE))
         );
         respuesta28Layout.setVerticalGroup(
             respuesta28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -386,6 +408,13 @@ public class m_Hardware extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jLabel15.setText("¿?");
+        jLabel15.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel15MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout pregunta28Layout = new javax.swing.GroupLayout(pregunta28);
         pregunta28.setLayout(pregunta28Layout);
         pregunta28Layout.setHorizontalGroup(
@@ -393,7 +422,9 @@ public class m_Hardware extends javax.swing.JFrame {
             .addGroup(pregunta28Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(gen28, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel15)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(respuesta28, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(34, Short.MAX_VALUE))
         );
@@ -408,6 +439,10 @@ public class m_Hardware extends javax.swing.JFrame {
                         .addContainerGap()
                         .addComponent(respuesta28, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(65, 65, 65))
+            .addGroup(pregunta28Layout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addComponent(jLabel15)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         p29.setText("[switch] Conmutadores");
@@ -476,6 +511,13 @@ public class m_Hardware extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jLabel16.setText("¿?");
+        jLabel16.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel16MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout pregunta29Layout = new javax.swing.GroupLayout(pregunta29);
         pregunta29.setLayout(pregunta29Layout);
         pregunta29Layout.setHorizontalGroup(
@@ -486,6 +528,11 @@ public class m_Hardware extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(respuesta29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(34, Short.MAX_VALUE))
+            .addGroup(pregunta29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta29Layout.createSequentialGroup()
+                    .addGap(268, 268, 268)
+                    .addComponent(jLabel16)
+                    .addContainerGap(269, Short.MAX_VALUE)))
         );
         pregunta29Layout.setVerticalGroup(
             pregunta29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -497,6 +544,11 @@ public class m_Hardware extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(respuesta29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(pregunta29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta29Layout.createSequentialGroup()
+                    .addGap(25, 25, 25)
+                    .addComponent(jLabel16)
+                    .addContainerGap(25, Short.MAX_VALUE)))
         );
 
         p30.setText("[router] Encaminadores");
@@ -565,6 +617,13 @@ public class m_Hardware extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jLabel17.setText("¿?");
+        jLabel17.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel17MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout pregunta30Layout = new javax.swing.GroupLayout(pregunta30);
         pregunta30.setLayout(pregunta30Layout);
         pregunta30Layout.setHorizontalGroup(
@@ -575,6 +634,11 @@ public class m_Hardware extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(respuesta30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(34, Short.MAX_VALUE))
+            .addGroup(pregunta30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta30Layout.createSequentialGroup()
+                    .addGap(268, 268, 268)
+                    .addComponent(jLabel17)
+                    .addContainerGap(269, Short.MAX_VALUE)))
         );
         pregunta30Layout.setVerticalGroup(
             pregunta30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -586,6 +650,11 @@ public class m_Hardware extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(respuesta30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(pregunta30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta30Layout.createSequentialGroup()
+                    .addGap(25, 25, 25)
+                    .addComponent(jLabel17)
+                    .addContainerGap(25, Short.MAX_VALUE)))
         );
 
         p31.setText("[wap] Punto de acceso inalámbrico");
@@ -654,6 +723,13 @@ public class m_Hardware extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jLabel19.setText("¿?");
+        jLabel19.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel19MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout pregunta31Layout = new javax.swing.GroupLayout(pregunta31);
         pregunta31.setLayout(pregunta31Layout);
         pregunta31Layout.setHorizontalGroup(
@@ -664,6 +740,11 @@ public class m_Hardware extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(respuesta31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(34, Short.MAX_VALUE))
+            .addGroup(pregunta31Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta31Layout.createSequentialGroup()
+                    .addGap(268, 268, 268)
+                    .addComponent(jLabel19)
+                    .addContainerGap(269, Short.MAX_VALUE)))
         );
         pregunta31Layout.setVerticalGroup(
             pregunta31Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -675,6 +756,11 @@ public class m_Hardware extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(respuesta31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(pregunta31Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta31Layout.createSequentialGroup()
+                    .addGap(25, 25, 25)
+                    .addComponent(jLabel19)
+                    .addContainerGap(25, Short.MAX_VALUE)))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -826,6 +912,10 @@ public class m_Hardware extends javax.swing.JFrame {
         m_Arquitectura m=new m_Arquitectura();
         m.subir(puntos);
         m.volver();
+        
+        Principal principal = new Principal();
+        principal.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void p27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p27ActionPerformed
@@ -907,6 +997,39 @@ public class m_Hardware extends javax.swing.JFrame {
     private void cb93ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb93ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_cb93ActionPerformed
+
+    private void jLabel14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel14MouseClicked
+
+        String sl = System.getProperty("line.separator");
+        JOptionPane.showMessageDialog(rootPane, "Dispositivo que se conecta al equipo informático y permite "
+            +sl+ "intercambiar información con otros dispositivos a través de"
+            +sl+ " la red telefónica","[modem] Módems", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:
+    }//GEN-LAST:event_jLabel14MouseClicked
+
+    private void jLabel16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel16MouseClicked
+        String sl = System.getProperty("line.separator");
+        JOptionPane.showMessageDialog(rootPane, "Dispositivo capaz de decidir los puertos de destino a los que enviará cada paquete","[switch] Conmutadores", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_jLabel16MouseClicked
+
+    private void jLabel17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel17MouseClicked
+
+        String sl = System.getProperty("line.separator");
+        JOptionPane.showMessageDialog(rootPane, "Dispositivo encargado de analizar paquete por paquete el origen "
+            + sl+"y el destino y buscará el camino más corto de uno a otro.","[router] Encaminadores", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:
+    }//GEN-LAST:event_jLabel17MouseClicked
+
+    private void jLabel19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel19MouseClicked
+
+        String sl = System.getProperty("line.separator");
+        JOptionPane.showMessageDialog(rootPane, "Es un protocolo que define una nueva forma de acceso a datos a través del teléfono móvil","[backup] Copias de respaldo", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:
+    }//GEN-LAST:event_jLabel19MouseClicked
+
+    private void jLabel15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel15MouseClicked
+
+        String sl = System.getProperty("line.separator");
+        JOptionPane.showMessageDialog(rootPane, "Dispositivo que permite centralizar el cableado de una red de "
+            + "computadores para luego poder ampliarla","[hub] Concentradores", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_jLabel15MouseClicked
 
     public JRadioButton[] AgregarPreguntas(JRadioButton... arrayOpciones) {
         JRadioButton[] preguntas = new JRadioButton[arrayOpciones.length];
@@ -1019,6 +1142,11 @@ public class m_Hardware extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JRadioButton p27;
