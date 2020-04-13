@@ -43,6 +43,11 @@ public class m_Redes extends javax.swing.JFrame {
         jLabel10 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         c6 = new javax.swing.JLabel();
+        Info = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
         Inferior = new javax.swing.JPanel();
         d6 = new javax.swing.JLabel();
         d10 = new javax.swing.JLabel();
@@ -70,11 +75,11 @@ public class m_Redes extends javax.swing.JFrame {
         pregunta33 = new javax.swing.JPanel();
         gen33 = new javax.swing.JPanel();
         p33 = new javax.swing.JRadioButton();
+        jLabel28 = new javax.swing.JLabel();
         respuesta33 = new javax.swing.JPanel();
         cb97 = new javax.swing.JComboBox();
         cb98 = new javax.swing.JComboBox();
         cb99 = new javax.swing.JComboBox();
-        jLabel28 = new javax.swing.JLabel();
         pregunta34 = new javax.swing.JPanel();
         gen34 = new javax.swing.JPanel();
         p34 = new javax.swing.JRadioButton();
@@ -144,6 +149,44 @@ public class m_Redes extends javax.swing.JFrame {
             }
         });
 
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel1.setText("Ítem");
+
+        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel5.setText("C");
+
+        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel6.setText("I");
+
+        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel7.setText("D");
+
+        javax.swing.GroupLayout InfoLayout = new javax.swing.GroupLayout(Info);
+        Info.setLayout(InfoLayout);
+        InfoLayout.setHorizontalGroup(
+            InfoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(InfoLayout.createSequentialGroup()
+                .addGap(42, 42, 42)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 245, Short.MAX_VALUE)
+                .addComponent(jLabel5)
+                .addGap(55, 55, 55)
+                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(50, 50, 50)
+                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(41, 41, 41))
+        );
+        InfoLayout.setVerticalGroup(
+            InfoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, InfoLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(InfoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(jLabel5)
+                    .addComponent(jLabel6)
+                    .addComponent(jLabel7)))
+        );
+
         Inferior.setBackground(new java.awt.Color(173, 15, 55));
 
         d6.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
@@ -207,7 +250,7 @@ public class m_Redes extends javax.swing.JFrame {
                     .addComponent(b)
                     .addComponent(c)
                     .addComponent(d))
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         SuperiorLayout.setVerticalGroup(
             SuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -377,6 +420,13 @@ public class m_Redes extends javax.swing.JFrame {
             }
         });
 
+        jLabel28.setText("¿?");
+        jLabel28.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel28MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout gen33Layout = new javax.swing.GroupLayout(gen33);
         gen33.setLayout(gen33Layout);
         gen33Layout.setHorizontalGroup(
@@ -384,11 +434,14 @@ public class m_Redes extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, gen33Layout.createSequentialGroup()
                 .addContainerGap(17, Short.MAX_VALUE)
                 .addComponent(p33, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(14, 14, 14))
+                .addGap(10, 10, 10)
+                .addComponent(jLabel28))
         );
         gen33Layout.setVerticalGroup(
             gen33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(p33, javax.swing.GroupLayout.DEFAULT_SIZE, 37, Short.MAX_VALUE)
+            .addGroup(gen33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addComponent(p33, javax.swing.GroupLayout.DEFAULT_SIZE, 37, Short.MAX_VALUE)
+                .addComponent(jLabel28))
         );
 
         cb97.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Bajo", "Medio", "Alto" }));
@@ -423,7 +476,7 @@ public class m_Redes extends javax.swing.JFrame {
                 .addComponent(cb98, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(cb99, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(27, Short.MAX_VALUE))
+                .addContainerGap(35, Short.MAX_VALUE))
         );
         respuesta33Layout.setVerticalGroup(
             respuesta33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -436,13 +489,6 @@ public class m_Redes extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jLabel28.setText("¿?");
-        jLabel28.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel28MouseClicked(evt);
-            }
-        });
-
         javax.swing.GroupLayout pregunta33Layout = new javax.swing.GroupLayout(pregunta33);
         pregunta33.setLayout(pregunta33Layout);
         pregunta33Layout.setHorizontalGroup(
@@ -450,14 +496,9 @@ public class m_Redes extends javax.swing.JFrame {
             .addGroup(pregunta33Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(gen33, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(respuesta33, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(54, Short.MAX_VALUE))
-            .addGroup(pregunta33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(pregunta33Layout.createSequentialGroup()
-                    .addGap(278, 278, 278)
-                    .addComponent(jLabel28)
-                    .addContainerGap(279, Short.MAX_VALUE)))
         );
         pregunta33Layout.setVerticalGroup(
             pregunta33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -469,11 +510,6 @@ public class m_Redes extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(respuesta33, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(pregunta33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(pregunta33Layout.createSequentialGroup()
-                    .addGap(25, 25, 25)
-                    .addComponent(jLabel28)
-                    .addContainerGap(25, Short.MAX_VALUE)))
         );
 
         p34.setText("[wifi] Red inalámbrica");
@@ -1117,7 +1153,7 @@ public class m_Redes extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(192, 192, 192)
+                .addContainerGap(192, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(pregunta39, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(pregunta38, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1127,7 +1163,7 @@ public class m_Redes extends javax.swing.JFrame {
                     .addComponent(pregunta34, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(pregunta33, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(pregunta32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(162, 162, 162))
+                .addGap(156, 156, 156))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1176,13 +1212,18 @@ public class m_Redes extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jScrollPane2)
                 .addContainerGap())
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(229, 229, 229)
+                    .addComponent(Info, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(230, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(Superior, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 303, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 291, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(d11)
@@ -1193,6 +1234,11 @@ public class m_Redes extends javax.swing.JFrame {
                     .addComponent(jButton2))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Inferior, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(105, 105, 105)
+                    .addComponent(Info, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(385, Short.MAX_VALUE)))
         );
 
         pack();
@@ -1544,6 +1590,7 @@ public class m_Redes extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Inferior;
+    private javax.swing.JPanel Info;
     private javax.swing.JPanel Superior;
     private javax.swing.JLabel a;
     private javax.swing.JLabel b;
@@ -1590,6 +1637,7 @@ public class m_Redes extends javax.swing.JFrame {
     private javax.swing.JPanel gen39;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
@@ -1600,6 +1648,9 @@ public class m_Redes extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;

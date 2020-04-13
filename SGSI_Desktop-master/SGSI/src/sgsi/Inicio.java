@@ -82,6 +82,11 @@ public class Inicio extends javax.swing.JFrame {
                 jButton2MouseClicked(evt);
             }
         });
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jLabel4.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         jLabel4.setText("(SISTEMA DE GESTIÓN DE SEGURIDAD DE LA INFORMACIÓN) ");
@@ -260,10 +265,10 @@ public class Inicio extends javax.swing.JFrame {
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
 
-        Principal principal = new Principal ();
-        principal.setVisible(true);
-        Inicio ini= new Inicio();
-        ini.setVisible(false);
+        loggin logg = new loggin ();
+        logg.setVisible(true);
+        //Inicio ini= new Inicio();
+        //ini.setVisible(false);
         this.dispose();// TODO add your handling code here:
     }//GEN-LAST:event_jButton1MouseClicked
 
@@ -281,6 +286,10 @@ public class Inicio extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null,"Por favor continue con la evaluación","Sistema de evaluación SGSI",JOptionPane.INFORMATION_MESSAGE);
         }
     }//GEN-LAST:event_jButton2MouseClicked
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments

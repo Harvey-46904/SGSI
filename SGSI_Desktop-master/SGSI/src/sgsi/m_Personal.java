@@ -43,20 +43,11 @@ public class m_Personal extends javax.swing.JFrame {
         jLabel10 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         c6 = new javax.swing.JLabel();
-        Inferior = new javax.swing.JPanel();
-        d6 = new javax.swing.JLabel();
-        d10 = new javax.swing.JLabel();
-        Superior = new javax.swing.JPanel();
-        a = new javax.swing.JLabel();
-        b = new javax.swing.JLabel();
-        c = new javax.swing.JLabel();
-        d = new javax.swing.JLabel();
-        d11 = new javax.swing.JLabel();
-        d12 = new javax.swing.JLabel();
-        d13 = new javax.swing.JLabel();
-        d14 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        Info = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jPanel1 = new javax.swing.JPanel();
         pregunta48 = new javax.swing.JPanel();
@@ -123,6 +114,20 @@ public class m_Personal extends javax.swing.JFrame {
         cb164 = new javax.swing.JComboBox();
         cb165 = new javax.swing.JComboBox();
         jLabel27 = new javax.swing.JLabel();
+        Inferior = new javax.swing.JPanel();
+        d6 = new javax.swing.JLabel();
+        d10 = new javax.swing.JLabel();
+        Superior = new javax.swing.JPanel();
+        a = new javax.swing.JLabel();
+        b = new javax.swing.JLabel();
+        c = new javax.swing.JLabel();
+        d = new javax.swing.JLabel();
+        d11 = new javax.swing.JLabel();
+        d12 = new javax.swing.JLabel();
+        d13 = new javax.swing.JLabel();
+        d14 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
 
         jLabel10.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel10.setText("Para más información sobre este módulo por favor dar un click ");
@@ -144,125 +149,43 @@ public class m_Personal extends javax.swing.JFrame {
             }
         });
 
-        Inferior.setBackground(new java.awt.Color(173, 15, 55));
+        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel5.setText("Ítem");
 
-        d6.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        d6.setForeground(new java.awt.Color(255, 255, 255));
-        d6.setText("Desarrollado por: Luis Fernando Díaz Muñoz - Juan Sebastián Erazo Chamorro");
+        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel6.setText("C");
 
-        d10.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        d10.setForeground(new java.awt.Color(255, 255, 255));
-        d10.setText("Ingeniería de sistemas UNICESMAG");
+        jLabel11.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel11.setText("I");
 
-        javax.swing.GroupLayout InferiorLayout = new javax.swing.GroupLayout(Inferior);
-        Inferior.setLayout(InferiorLayout);
-        InferiorLayout.setHorizontalGroup(
-            InferiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(InferiorLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(InferiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, InferiorLayout.createSequentialGroup()
-                        .addComponent(d6)
-                        .addGap(218, 218, 218))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, InferiorLayout.createSequentialGroup()
-                        .addComponent(d10)
-                        .addGap(348, 348, 348))))
+        jLabel15.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel15.setText("D");
+
+        javax.swing.GroupLayout InfoLayout = new javax.swing.GroupLayout(Info);
+        Info.setLayout(InfoLayout);
+        InfoLayout.setHorizontalGroup(
+            InfoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(InfoLayout.createSequentialGroup()
+                .addGap(42, 42, 42)
+                .addComponent(jLabel5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 228, Short.MAX_VALUE)
+                .addComponent(jLabel6)
+                .addGap(55, 55, 55)
+                .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(50, 50, 50)
+                .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(41, 41, 41))
         );
-        InferiorLayout.setVerticalGroup(
-            InferiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(InferiorLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(d6)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(d10)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        InfoLayout.setVerticalGroup(
+            InfoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, InfoLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(InfoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5)
+                    .addComponent(jLabel6)
+                    .addComponent(jLabel11)
+                    .addComponent(jLabel15)))
         );
-
-        Superior.setBackground(new java.awt.Color(53, 96, 183));
-
-        a.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        a.setForeground(new java.awt.Color(255, 255, 255));
-        a.setText("[Módulo Personal]");
-
-        b.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        b.setForeground(new java.awt.Color(255, 255, 255));
-        b.setText("y luego debe asignar valores entre 0 y 9  de acuerdo al conocimiento que tenga sobre los niveles de confidencialidad, integridad y disponibilidad de los mismos .");
-
-        c.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        c.setForeground(new java.awt.Color(255, 255, 255));
-        c.setText("Para continuar por favor no olvide que como paso inicial debe marcar los activos con los cuales cuente su organización, posteriormente dar click en \"Seleccionar y evaluar\"");
-
-        d.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        d.setForeground(new java.awt.Color(255, 255, 255));
-        d.setText("Nota: Para más información sobre los activos click en los signos de interrogación. Recuerde que (0) es el valor más bajo y (9) es el valor más alto de valoración. ");
-
-        javax.swing.GroupLayout SuperiorLayout = new javax.swing.GroupLayout(Superior);
-        Superior.setLayout(SuperiorLayout);
-        SuperiorLayout.setHorizontalGroup(
-            SuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(SuperiorLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(SuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(a)
-                    .addComponent(b)
-                    .addComponent(c)
-                    .addComponent(d))
-                .addContainerGap(15, Short.MAX_VALUE))
-        );
-        SuperiorLayout.setVerticalGroup(
-            SuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(SuperiorLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(a)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(c)
-                .addGap(2, 2, 2)
-                .addComponent(b)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(d)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        d11.setFont(new java.awt.Font("Arial", 3, 10)); // NOI18N
-        d11.setText("Info (Click en etiquetas):");
-
-        d12.setFont(new java.awt.Font("Arial", 3, 10)); // NOI18N
-        d12.setText("Confidencialidad ||");
-        d12.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                d12MouseClicked(evt);
-            }
-        });
-
-        d13.setFont(new java.awt.Font("Arial", 3, 10)); // NOI18N
-        d13.setText("Integridad ||");
-        d13.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                d13MouseClicked(evt);
-            }
-        });
-
-        d14.setFont(new java.awt.Font("Arial", 3, 10)); // NOI18N
-        d14.setText("Disponibilidad");
-        d14.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                d14MouseClicked(evt);
-            }
-        });
-
-        jButton1.setText("Comprobador");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-
-        jButton2.setText("activador");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
 
         p48.setText("[ue] Usuarios externos");
         p48.addActionListener(new java.awt.event.ActionListener() {
@@ -1116,8 +1039,8 @@ public class m_Personal extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(191, 191, 191)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(217, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(pregunta55, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(pregunta54, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1127,7 +1050,7 @@ public class m_Personal extends javax.swing.JFrame {
                     .addComponent(pregunta50, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(pregunta49, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(pregunta48, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(184, Short.MAX_VALUE))
+                .addGap(141, 141, 141))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1147,10 +1070,130 @@ public class m_Personal extends javax.swing.JFrame {
                 .addComponent(pregunta54, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(pregunta55, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 12, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         jScrollPane2.setViewportView(jPanel1);
+
+        Inferior.setBackground(new java.awt.Color(173, 15, 55));
+
+        d6.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        d6.setForeground(new java.awt.Color(255, 255, 255));
+        d6.setText("Desarrollado por: Luis Fernando Díaz Muñoz - Juan Sebastián Erazo Chamorro");
+
+        d10.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        d10.setForeground(new java.awt.Color(255, 255, 255));
+        d10.setText("Ingeniería de sistemas UNICESMAG");
+
+        javax.swing.GroupLayout InferiorLayout = new javax.swing.GroupLayout(Inferior);
+        Inferior.setLayout(InferiorLayout);
+        InferiorLayout.setHorizontalGroup(
+            InferiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(InferiorLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(InferiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, InferiorLayout.createSequentialGroup()
+                        .addComponent(d6)
+                        .addGap(218, 218, 218))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, InferiorLayout.createSequentialGroup()
+                        .addComponent(d10)
+                        .addGap(348, 348, 348))))
+        );
+        InferiorLayout.setVerticalGroup(
+            InferiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(InferiorLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(d6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(d10)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        Superior.setBackground(new java.awt.Color(53, 96, 183));
+
+        a.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        a.setForeground(new java.awt.Color(255, 255, 255));
+        a.setText("[Módulo Personal]");
+
+        b.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        b.setForeground(new java.awt.Color(255, 255, 255));
+        b.setText("y luego debe asignar valores entre 0 y 9  de acuerdo al conocimiento que tenga sobre los niveles de confidencialidad, integridad y disponibilidad de los mismos .");
+
+        c.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        c.setForeground(new java.awt.Color(255, 255, 255));
+        c.setText("Para continuar por favor no olvide que como paso inicial debe marcar los activos con los cuales cuente su organización, posteriormente dar click en \"Seleccionar y evaluar\"");
+
+        d.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        d.setForeground(new java.awt.Color(255, 255, 255));
+        d.setText("Nota: Para más información sobre los activos click en los signos de interrogación. Recuerde que (0) es el valor más bajo y (9) es el valor más alto de valoración. ");
+
+        javax.swing.GroupLayout SuperiorLayout = new javax.swing.GroupLayout(Superior);
+        Superior.setLayout(SuperiorLayout);
+        SuperiorLayout.setHorizontalGroup(
+            SuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SuperiorLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(SuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(a)
+                    .addComponent(b)
+                    .addComponent(c)
+                    .addComponent(d))
+                .addContainerGap(19, Short.MAX_VALUE))
+        );
+        SuperiorLayout.setVerticalGroup(
+            SuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SuperiorLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(a)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(c)
+                .addGap(2, 2, 2)
+                .addComponent(b)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(d)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        d11.setFont(new java.awt.Font("Arial", 3, 10)); // NOI18N
+        d11.setText("Info (Click en etiquetas):");
+
+        d12.setFont(new java.awt.Font("Arial", 3, 10)); // NOI18N
+        d12.setText("Confidencialidad ||");
+        d12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                d12MouseClicked(evt);
+            }
+        });
+
+        d13.setFont(new java.awt.Font("Arial", 3, 10)); // NOI18N
+        d13.setText("Integridad ||");
+        d13.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                d13MouseClicked(evt);
+            }
+        });
+
+        d14.setFont(new java.awt.Font("Arial", 3, 10)); // NOI18N
+        d14.setText("Disponibilidad");
+        d14.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                d14MouseClicked(evt);
+            }
+        });
+
+        jButton1.setText("Comprobador");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
+        jButton2.setText("activador");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -1177,6 +1220,11 @@ public class m_Personal extends javax.swing.JFrame {
                     .addContainerGap()
                     .addComponent(jScrollPane2)
                     .addContainerGap()))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(279, 279, 279)
+                    .addComponent(Info, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(201, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1194,9 +1242,14 @@ public class m_Personal extends javax.swing.JFrame {
                 .addComponent(Inferior, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                    .addContainerGap(114, Short.MAX_VALUE)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 303, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(124, Short.MAX_VALUE)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 293, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addContainerGap(88, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(109, 109, 109)
+                    .addComponent(Info, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(381, Short.MAX_VALUE)))
         );
 
         pack();
@@ -1549,6 +1602,8 @@ public class m_Personal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Inferior;
+    private javax.swing.JPanel Info;
+    private javax.swing.JPanel Info1;
     private javax.swing.JPanel Superior;
     private javax.swing.JLabel a;
     private javax.swing.JLabel b;
@@ -1596,7 +1651,10 @@ public class m_Personal extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
@@ -1605,6 +1663,11 @@ public class m_Personal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
