@@ -264,7 +264,7 @@ public class Inicio extends javax.swing.JFrame {
         principal.setVisible(true);
         Inicio ini= new Inicio();
         ini.setVisible(false);
-        //this.dispose();// TODO add your handling code here:
+        this.dispose();// TODO add your handling code here:
     }//GEN-LAST:event_jButton1MouseClicked
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed

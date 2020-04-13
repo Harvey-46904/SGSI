@@ -23,7 +23,7 @@ public class m_Soportes extends javax.swing.JFrame {
         this.setLocationRelativeTo(null);
         ;
         JPanel ocultar[] = AgregarRespuestas(respuesta40, respuesta41,respuesta42,respuesta43,
-                respuesta44,respuesta45,respuesta46,respuesta47);
+                respuesta44,respuesta45,respuesta46);
         for (int i = 0; i < ocultar.length; i++) {
             ocultar[i].setVisible(false);
         }
@@ -107,13 +107,6 @@ public class m_Soportes extends javax.swing.JFrame {
         cb136 = new javax.swing.JComboBox();
         cb137 = new javax.swing.JComboBox();
         cb138 = new javax.swing.JComboBox();
-        pregunta47 = new javax.swing.JPanel();
-        gen47 = new javax.swing.JPanel();
-        p47 = new javax.swing.JRadioButton();
-        respuesta47 = new javax.swing.JPanel();
-        cb139 = new javax.swing.JComboBox();
-        cb140 = new javax.swing.JComboBox();
-        cb141 = new javax.swing.JComboBox();
 
         jLabel10.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel10.setText("Para más información sobre este módulo por favor dar un click ");
@@ -878,95 +871,6 @@ public class m_Soportes extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        p47.setText("[tape] Cinta de papel");
-        p47.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                p47ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout gen47Layout = new javax.swing.GroupLayout(gen47);
-        gen47.setLayout(gen47Layout);
-        gen47Layout.setHorizontalGroup(
-            gen47Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, gen47Layout.createSequentialGroup()
-                .addContainerGap(17, Short.MAX_VALUE)
-                .addComponent(p47, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(14, 14, 14))
-        );
-        gen47Layout.setVerticalGroup(
-            gen47Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(p47, javax.swing.GroupLayout.DEFAULT_SIZE, 37, Short.MAX_VALUE)
-        );
-
-        cb139.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Bajo", "Medio", "Alto" }));
-        cb139.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cb139ActionPerformed(evt);
-            }
-        });
-
-        cb140.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Bajo", "Medio", "Alto" }));
-        cb140.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cb140ActionPerformed(evt);
-            }
-        });
-
-        cb141.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Bajo", "Medio", "Alto" }));
-        cb141.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cb141ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout respuesta47Layout = new javax.swing.GroupLayout(respuesta47);
-        respuesta47.setLayout(respuesta47Layout);
-        respuesta47Layout.setHorizontalGroup(
-            respuesta47Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(respuesta47Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(cb139, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(cb140, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(cb141, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(27, Short.MAX_VALUE))
-        );
-        respuesta47Layout.setVerticalGroup(
-            respuesta47Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, respuesta47Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(respuesta47Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(cb139, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cb140, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cb141, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap())
-        );
-
-        javax.swing.GroupLayout pregunta47Layout = new javax.swing.GroupLayout(pregunta47);
-        pregunta47.setLayout(pregunta47Layout);
-        pregunta47Layout.setHorizontalGroup(
-            pregunta47Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pregunta47Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(gen47, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(respuesta47, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(34, Short.MAX_VALUE))
-        );
-        pregunta47Layout.setVerticalGroup(
-            pregunta47Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pregunta47Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(gen47, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-            .addGroup(pregunta47Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(respuesta47, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -974,7 +878,6 @@ public class m_Soportes extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(183, 183, 183)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(pregunta47, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(pregunta46, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(pregunta45, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(pregunta44, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1000,9 +903,7 @@ public class m_Soportes extends javax.swing.JFrame {
                 .addComponent(pregunta45, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(pregunta46, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(pregunta47, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 137, Short.MAX_VALUE))
+                .addGap(0, 191, Short.MAX_VALUE))
         );
 
         jScrollPane2.setViewportView(jPanel1);
@@ -1102,16 +1003,16 @@ public class m_Soportes extends javax.swing.JFrame {
          */
         JPanel[] controlador_preguntas = new JPanel[8];
         controlador_preguntas = Preguntas(pregunta40,pregunta41,pregunta42,pregunta43,pregunta44,pregunta45,
-                pregunta46,pregunta47);
+                pregunta46);
         JRadioButton[] preguntas = new JRadioButton[8];
-        preguntas = AgregarPreguntas(p40,p41,p42,p43,p44,p45,p46,p47);
+        preguntas = AgregarPreguntas(p40,p41,p42,p43,p44,p45,p46);
         for (int i = 0; i < preguntas.length; i++) {
             if (!preguntas[i].isSelected()) {
                 controlador_preguntas[i].setVisible(false);
             }
         }
         JPanel mostrar[] = AgregarRespuestas(respuesta40, respuesta41,respuesta42,respuesta43,
-                respuesta44,respuesta45,respuesta46,respuesta47);
+                respuesta44,respuesta45,respuesta46);
         for (int i = 0; i < mostrar.length; i++) {
             mostrar[i].setVisible(true);
         }
@@ -1126,9 +1027,9 @@ public class m_Soportes extends javax.swing.JFrame {
         String datos = "";
         JComboBox[] opciones = new JComboBox[24];
         opciones = respuestas(cb118,cb119,cb120,cb121,cb122,cb123,cb124,cb125,cb126,cb127,cb128,cb129,cb130,
-                cb131,cb132,cb133,cb134,cb135,cb136,cb137,cb138,cb139,cb140,cb141);
+                cb131,cb132,cb133,cb134,cb135,cb136,cb137,cb138);
         JRadioButton[] preguntas = new JRadioButton[8];
-        preguntas = AgregarPreguntas(p40,p41,p42,p43,p44,p45,p46,p47);
+        preguntas = AgregarPreguntas(p40,p41,p42,p43,p44,p45,p46);
         for (int i = 0; i < preguntas.length; i++) {
             if (preguntas[i].isSelected()) {
                 for (controlar = inicio; controlar <= finalizar; controlar++) {
@@ -1141,12 +1042,15 @@ public class m_Soportes extends javax.swing.JFrame {
                 finalizar = inicio + 2;
             }
             if (datos != "") {
-                puntos.add("grupo " + (i + 1) + "/activos " + (i + 1) + "/" + datos);
+                puntos.add("soportes" + (i + 1) + "/" + datos);
                 datos = "";
             }
 
         }
         System.out.println(puntos);
+        m_Arquitectura m=new m_Arquitectura();
+        m.subir(puntos);
+        m.volver();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void p40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p40ActionPerformed
@@ -1261,22 +1165,6 @@ public class m_Soportes extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_cb138ActionPerformed
 
-    private void p47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p47ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_p47ActionPerformed
-
-    private void cb139ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb139ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cb139ActionPerformed
-
-    private void cb140ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb140ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cb140ActionPerformed
-
-    private void cb141ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb141ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cb141ActionPerformed
-
     public JRadioButton[] AgregarPreguntas(JRadioButton... arrayOpciones) {
         JRadioButton[] preguntas = new JRadioButton[arrayOpciones.length];
         for (int i = 0; i < arrayOpciones.length; i++) {
@@ -1379,9 +1267,6 @@ public class m_Soportes extends javax.swing.JFrame {
     private javax.swing.JComboBox cb136;
     private javax.swing.JComboBox cb137;
     private javax.swing.JComboBox cb138;
-    private javax.swing.JComboBox cb139;
-    private javax.swing.JComboBox cb140;
-    private javax.swing.JComboBox cb141;
     private javax.swing.JLabel d;
     private javax.swing.JLabel d10;
     private javax.swing.JLabel d11;
@@ -1396,7 +1281,6 @@ public class m_Soportes extends javax.swing.JFrame {
     private javax.swing.JPanel gen44;
     private javax.swing.JPanel gen45;
     private javax.swing.JPanel gen46;
-    private javax.swing.JPanel gen47;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel10;
@@ -1411,7 +1295,6 @@ public class m_Soportes extends javax.swing.JFrame {
     private javax.swing.JRadioButton p44;
     private javax.swing.JRadioButton p45;
     private javax.swing.JRadioButton p46;
-    private javax.swing.JRadioButton p47;
     private javax.swing.JPanel pregunta40;
     private javax.swing.JPanel pregunta41;
     private javax.swing.JPanel pregunta42;
@@ -1419,7 +1302,6 @@ public class m_Soportes extends javax.swing.JFrame {
     private javax.swing.JPanel pregunta44;
     private javax.swing.JPanel pregunta45;
     private javax.swing.JPanel pregunta46;
-    private javax.swing.JPanel pregunta47;
     private javax.swing.JPanel respuesta40;
     private javax.swing.JPanel respuesta41;
     private javax.swing.JPanel respuesta42;
@@ -1427,6 +1309,5 @@ public class m_Soportes extends javax.swing.JFrame {
     private javax.swing.JPanel respuesta44;
     private javax.swing.JPanel respuesta45;
     private javax.swing.JPanel respuesta46;
-    private javax.swing.JPanel respuesta47;
     // End of variables declaration//GEN-END:variables
 }

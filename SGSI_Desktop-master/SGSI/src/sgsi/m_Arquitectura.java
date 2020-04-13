@@ -9,6 +9,7 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
+import pkqControlador.clsConecta;
 
 /**
  *
@@ -618,14 +619,29 @@ public class m_Arquitectura extends javax.swing.JFrame {
              finalizar=inicio+2;
             }
         if(datos!=""){
-            puntos.add("Grupo "+(i+1)+"/Arquitectura del sistema "+(i+1)+"/"+datos);
+            puntos.add("Arquitectura"+(i+1)+"/"+datos);
             datos="";
         }
         
         }
         System.out.println(puntos);
+        subir(puntos);
+        volver();
     }//GEN-LAST:event_jButton2ActionPerformed
-
+public void subir(ArrayList<String> pila){
+         clsConecta ob=new clsConecta();
+        for (int i = 0; i < pila.size(); i++) {
+        String datos[] =pila.get(i).split("/");
+     String sql= "INSERT INTO respuestas VALUES (default, '"+datos[0]+"', '"+datos[1]+"', '"+datos[2]+"','"+datos[3]+"')";  
+        ob.insertar(sql);
+        }
+        
+    }
+public void volver(){
+        Principal action=new Principal();
+        action.setVisible(true);
+        this.dispose();
+}
     private void p5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p5ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_p5ActionPerformed

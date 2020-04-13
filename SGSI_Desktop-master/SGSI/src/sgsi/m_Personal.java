@@ -1141,12 +1141,15 @@ public class m_Personal extends javax.swing.JFrame {
                 finalizar = inicio + 2;
             }
             if (datos != "") {
-                puntos.add("grupo " + (i + 1) + "/activos " + (i + 1) + "/" + datos);
+                puntos.add("personal" + (i + 1) + "/" + datos);
                 datos = "";
             }
 
         }
         System.out.println(puntos);
+        m_Arquitectura m=new m_Arquitectura();
+        m.subir(puntos);
+        m.volver();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void p48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p48ActionPerformed

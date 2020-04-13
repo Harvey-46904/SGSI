@@ -173,7 +173,7 @@ COPY public.grupos (id_grupo, nombre) FROM stdin;
 -- Data for Name: item; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.item (id_item, nombre, "FK_id_grupo") FROM stdin;
+COPY public.item (id_item, nombre, FK_id_grupo) FROM stdin;
 1	[adm] datos de interés para la administración pública	1
 2	[vr] Datos vitales (registros de la organización)	1
 3	[A] Nivel alto	1

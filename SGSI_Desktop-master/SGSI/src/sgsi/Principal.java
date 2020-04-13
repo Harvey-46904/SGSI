@@ -438,7 +438,7 @@ public class Principal extends javax.swing.JFrame {
             m_Activos activos = new m_Activos();
             activos.setVisible(true);
             this.dispose();
-            
+    
         } else if (g2.isSelected()) {
             m_Arquitectura arquitectura = new m_Arquitectura();
             arquitectura.setVisible(true);

@@ -1200,7 +1200,7 @@ public class m_Software extends javax.swing.JFrame {
        controlador_preguntas=Preguntas(pregunta18,pregunta19,pregunta20,
                pregunta21,pregunta22,pregunta23,pregunta24,pregunta25,pregunta26);
        JRadioButton[] preguntas=new JRadioButton[9];
-      preguntas=AgregarPreguntas(p18,p18,p20,p21,p22,p23,p24,p25,p26);
+      preguntas=AgregarPreguntas(p18,p19,p20,p21,p22,p23,p24,p25,p26);
         for (int i = 0; i < preguntas.length; i++) {
             if(!preguntas[i].isSelected())controlador_preguntas[i].setVisible(false);
         }
@@ -1236,12 +1236,15 @@ public class m_Software extends javax.swing.JFrame {
              finalizar=inicio+2;
             }
         if(datos!=""){
-            puntos.add("grupo "+(i+1)+"/activos "+(i+1)+"/"+datos);
+            puntos.add("software"+(i+1)+"/"+datos);
             datos="";
         }
         
         }
         System.out.println(puntos);
+        m_Arquitectura m=new m_Arquitectura();
+        m.subir(puntos);
+        m.volver();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void p18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p18ActionPerformed
