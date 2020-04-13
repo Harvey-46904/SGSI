@@ -12,6 +12,8 @@ import javax.swing.JOptionPane;
  * @author Luis Efe
  */
 public class Principal extends javax.swing.JFrame {
+    
+    String sl = System.getProperty("line.separator");
 
     /**
      * Creates new form principal
@@ -46,7 +48,6 @@ public class Principal extends javax.swing.JFrame {
         g6 = new javax.swing.JRadioButton();
         g7 = new javax.swing.JRadioButton();
         g8 = new javax.swing.JRadioButton();
-        g9 = new javax.swing.JRadioButton();
         g10 = new javax.swing.JRadioButton();
         aquí1 = new javax.swing.JButton();
         aquí2 = new javax.swing.JButton();
@@ -56,7 +57,6 @@ public class Principal extends javax.swing.JFrame {
         aquí6 = new javax.swing.JButton();
         aquí7 = new javax.swing.JButton();
         aquí8 = new javax.swing.JButton();
-        aquí9 = new javax.swing.JButton();
         aquí10 = new javax.swing.JButton();
         Superio = new javax.swing.JPanel();
         a = new javax.swing.JLabel();
@@ -140,15 +140,6 @@ public class Principal extends javax.swing.JFrame {
         g8.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         g8.setText("Soportes de información");
 
-        Grupos.add(g9);
-        g9.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        g9.setText("Equipamiento auxiliar");
-        g9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                g9ActionPerformed(evt);
-            }
-        });
-
         Grupos.add(g10);
         g10.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         g10.setText("Personal");
@@ -214,13 +205,6 @@ public class Principal extends javax.swing.JFrame {
             }
         });
 
-        aquí9.setText("Información");
-        aquí9.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                aquí9MouseClicked(evt);
-            }
-        });
-
         aquí10.setText("Información");
         aquí10.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -239,10 +223,6 @@ public class Principal extends javax.swing.JFrame {
                         .addComponent(g10)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(aquí10))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PrincipalLayout.createSequentialGroup()
-                        .addComponent(g9)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(aquí9))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PrincipalLayout.createSequentialGroup()
                         .addComponent(g8)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -275,7 +255,7 @@ public class Principal extends javax.swing.JFrame {
                         .addGroup(PrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(aquí2)
                             .addComponent(aquí1))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(321, Short.MAX_VALUE))
         );
         PrincipalLayout.setVerticalGroup(
             PrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -312,15 +292,11 @@ public class Principal extends javax.swing.JFrame {
                 .addGroup(PrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(g8)
                     .addComponent(aquí8))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(PrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(g9)
-                    .addComponent(aquí9))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(PrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(g10)
                     .addComponent(aquí10))
-                .addContainerGap())
+                .addGap(43, 43, 43))
         );
 
         Superio.setBackground(new java.awt.Color(53, 96, 183));
@@ -478,17 +454,13 @@ public class Principal extends javax.swing.JFrame {
     private void verificarGruposActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_verificarGruposActionPerformed
 
         if (g1.isSelected() || g2.isSelected() || g3.isSelected() || g4.isSelected() || g5.isSelected() || g6.isSelected()
-                || g7.isSelected() || g8.isSelected() || g9.isSelected() || g10.isSelected()) {
+                || g7.isSelected() || g8.isSelected() || g10.isSelected()) {
             validarGrupos();                       
         } else {
             JOptionPane.showMessageDialog(rootPane, "Por favor elija un grupo para evaluar");
         }
 
     }//GEN-LAST:event_verificarGruposActionPerformed
-
-    private void g9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_g9ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_g9ActionPerformed
 
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
         // TODO add your handling code here:
@@ -511,13 +483,11 @@ public class Principal extends javax.swing.JFrame {
 
     private void aquí1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_aquí1MouseClicked
         // TODO add your handling code here:
-        String sl = System.getProperty("line.separator");
-        JOptionPane.showMessageDialog(rootPane, "" + sl + "En un sistema de información hay dos cosas esenciales:" + sl + ""
-                + "La información que se maneja y los servicios que prestan." + sl + ""
-                + "" + sl + "Estos activos esenciales marcan los requisitos de seguridad para todos los demás componentes del sistema. " + sl
-                + "Dentro de la información que se maneja, puede ser interesante considerar algunas características formales " + sl
-                + "tales como si son de carácter personal, con requisitos legales, o si están sometidos a alguna clasificación " + sl
-                + "de seguridad, con requisitos normativos", "[essential] activos esenciales", JOptionPane.INFORMATION_MESSAGE);
+        
+        JOptionPane.showMessageDialog(rootPane, "En un sistema de información hay dos cosas esenciales: "
+                + sl+"La información que se maneja y los servicios que prestan. "
+                + sl+"Estos activos esenciales marcan los requisitos de seguridad para "
+                + sl+"todos los demás componentes del sistema","[essential] activos esenciales", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_aquí1MouseClicked
 
     private void aquí1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aquí1ActionPerformed
@@ -526,67 +496,54 @@ public class Principal extends javax.swing.JFrame {
 
     private void aquí2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_aquí2MouseClicked
         // TODO add your handling code here:
-        String sl = System.getProperty("line.separator");
-        JOptionPane.showMessageDialog(null, "Se trata de elementos que permiten estructurar el sistema," + sl + "definiendo su arquitectura interna y sus relaciones con el exterior.", "[arch] Arquitectura del sistema", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(null, "Se trata de elementos que permiten estructurar el sistema "
+                + sl+"definiendo su arquitectura interna y sus relaciones con el exterior", "[arch] Arquitectura del sistema", JOptionPane.INFORMATION_MESSAGE);
 
     }//GEN-LAST:event_aquí2MouseClicked
 
     private void aquí3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_aquí3MouseClicked
         // TODO add your handling code here:
-        String sl = System.getProperty("line.separator");
+        
         JOptionPane.showMessageDialog(null, "Los datos son el corazón que permite a una organización prestar sus servicios. La información es" + sl + ""
-                + "un activo abstracto que será almacenado en equipos o soportes de información (normalmente " + sl
-                + "agrupado como ficheros o bases de datos) o será transferido de un lugar a otro por los medios" + sl + "de"
-                + " transmisión de datos.", "[D] Datos/Información", JOptionPane.INFORMATION_MESSAGE);
+                + "un activo abstracto que es almacenado en equipos o soportes de información", "[D] Datos/Información", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_aquí3MouseClicked
 
     private void aquí4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_aquí4MouseClicked
         // TODO add your handling code here:
-        String sl = System.getProperty("line.separator");
-        JOptionPane.showMessageDialog(rootPane, "Función que satisface una necesidad de los usuarios (del servicio). Esta sección contempla servicios prestados por el sistema.", "[S] Servicios", JOptionPane.INFORMATION_MESSAGE);
+        
+        JOptionPane.showMessageDialog(rootPane, "Esta sección contempla servicios prestados por el sistema."
+                +sl+ "auxiliares que se necesitan para poder organizar el sistema", "[S] Servicios", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_aquí4MouseClicked
 
     private void aquí5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_aquí5MouseClicked
         // TODO add your handling code here:
-        String sl = System.getProperty("line.separator");
-        JOptionPane.showMessageDialog(rootPane, "" + sl + "Con múltiples denominaciones (programas, aplicativos, desarrollos, etc.)este epígrafe se refiere a " + sl + "tareas que han sido automatizadas para su desempeño por un equipo informático."
-                + " Las aplicaciones" + sl + "gestionan, analizan y transforman los datos permitiendo la explotación de la información para la" + sl + "prestación de los servicios" + sl + "" + sl
-                + "No preocupa en este apartado el denominado “código fuente” o programas que serán datos de " + sl + ""
-                + "interés comercial, a valorar y proteger como tales. Dicho código aparecería como datos.", "[SW] Aplicaciones (Software)", JOptionPane.INFORMATION_MESSAGE);
+        
+        JOptionPane.showMessageDialog(rootPane, "" + sl + "Software que permite manejar los datos de información", "[SW] Aplicaciones (Software)", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_aquí5MouseClicked
 
     private void aquí6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_aquí6MouseClicked
         // TODO add your handling code here:
-        String sl = System.getProperty("line.separator");
-        JOptionPane.showMessageDialog(rootPane, "" + sl + "Dícese de los medios materiales, físicos, destinados a soportar directa o indirectamente los servicios que" + sl + "presta la organización, siendo pues depositarios temporales o permanentes de los datos soporte de" + sl + " ejecución de las aplicaciones informáticas o responsables del procesado o la transmisión de datos.", "[HW] Equipos informáticos (hardware)", JOptionPane.INFORMATION_MESSAGE);
+        
+        JOptionPane.showMessageDialog(rootPane, "Dispositivos o equipos informáticos que permiten hospedar datos, aplicaciones o servicios", "[HW] Equipos informáticos (hardware)", JOptionPane.INFORMATION_MESSAGE);
 
     }//GEN-LAST:event_aquí6MouseClicked
 
     private void aquí7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_aquí7MouseClicked
         // TODO add your handling code here:
-        String sl = System.getProperty("line.separator");
-        JOptionPane.showMessageDialog(rootPane, "" + sl + "Incluyendo tanto instalaciones dedicadas como servicios de comunicaciones contratados a terceros" + sl + ""
-                + "pero siempre centrándose en que son medios de transporte que llevan datos de un sitio a otro.", "[COM] Redes de comunicaciones", JOptionPane.INFORMATION_MESSAGE);
+        
+        JOptionPane.showMessageDialog(rootPane, "Son medios de transporte que permiten el intercambio de datos de un sitio a otro", "[COM] Redes de comunicaciones", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_aquí7MouseClicked
 
     private void aquí8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_aquí8MouseClicked
         // TODO add your handling code here:
-        String sl = System.getProperty("line.separator");
-        JOptionPane.showMessageDialog(rootPane, "En este epígrafe se consideran dispositivos físicos que permiten almacenar" + sl
-                + "información de forma permanente o, al menos, durante largos periodos de" + sl + " tiempo.", "[Media] Soportes de información", JOptionPane.INFORMATION_MESSAGE);
+        
+        JOptionPane.showMessageDialog(rootPane, "Dispositivos que permiten almacenar información de forma permanente o, al menos, durante largos periodos de tiempo.", "[Media] Soportes de información", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_aquí8MouseClicked
-
-    private void aquí9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_aquí9MouseClicked
-        // TODO add your handling code here:
-        String sl = System.getProperty("line.separator");
-        JOptionPane.showMessageDialog(rootPane, "En este epígrafe se consideran otros equipos que sirven de soporte a los" + sl
-                + "sistemas de información, sin estar directamente relacionados con datos.", "[AUX] Equipamiento auxiliar", JOptionPane.INFORMATION_MESSAGE);
-    }//GEN-LAST:event_aquí9MouseClicked
 
     private void aquí10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_aquí10MouseClicked
         // TODO add your handling code here:
-        String sl = System.getProperty("line.separator");
-        JOptionPane.showMessageDialog(rootPane, "En este epígrafe aparecen las personas relacionadas con los sistemas de información.", "[P] Personal", JOptionPane.INFORMATION_MESSAGE);
+        
+        JOptionPane.showMessageDialog(rootPane, "Personas que manipula u operan todos los elementos anteriormente mencionados","[P] Personal", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_aquí10MouseClicked
 
     /**
@@ -640,7 +597,6 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JButton aquí6;
     private javax.swing.JButton aquí7;
     private javax.swing.JButton aquí8;
-    private javax.swing.JButton aquí9;
     private javax.swing.JLabel b;
     private javax.swing.JLabel b1;
     private javax.swing.JLabel d;
@@ -656,7 +612,6 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JRadioButton g6;
     private javax.swing.JRadioButton g7;
     private javax.swing.JRadioButton g8;
-    private javax.swing.JRadioButton g9;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton verificarGrupos;
     private javax.swing.JButton verificarGrupos1;

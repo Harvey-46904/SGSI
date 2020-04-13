@@ -16,6 +16,7 @@ import pkqControlador.clsConecta;
  * @author Luis Efe
  */
 public class m_Arquitectura extends javax.swing.JFrame {
+    String sl = System.getProperty("line.separator");
 
     /**
      * Creates new form activos_esenciales
@@ -48,6 +49,11 @@ public class m_Arquitectura extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
+        Ayuda = new javax.swing.JPanel();
+        d11 = new javax.swing.JLabel();
+        d12 = new javax.swing.JLabel();
+        d13 = new javax.swing.JLabel();
+        d14 = new javax.swing.JLabel();
         Inferior = new javax.swing.JPanel();
         d6 = new javax.swing.JLabel();
         d10 = new javax.swing.JLabel();
@@ -56,10 +62,6 @@ public class m_Arquitectura extends javax.swing.JFrame {
         b = new javax.swing.JLabel();
         c = new javax.swing.JLabel();
         d = new javax.swing.JLabel();
-        d11 = new javax.swing.JLabel();
-        d12 = new javax.swing.JLabel();
-        d13 = new javax.swing.JLabel();
-        d14 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         pregunta6 = new javax.swing.JPanel();
@@ -144,6 +146,64 @@ public class m_Arquitectura extends javax.swing.JFrame {
                     .addComponent(jLabel7)))
         );
 
+        d11.setFont(new java.awt.Font("Arial", 3, 10)); // NOI18N
+        d11.setText("Info (Click en etiquetas):");
+
+        d12.setFont(new java.awt.Font("Arial", 3, 10)); // NOI18N
+        d12.setText("Confidencialidad ||");
+        d12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                d12MouseClicked(evt);
+            }
+        });
+
+        d13.setFont(new java.awt.Font("Arial", 3, 10)); // NOI18N
+        d13.setText("Integridad ||");
+        d13.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                d13MouseClicked(evt);
+            }
+        });
+
+        d14.setFont(new java.awt.Font("Arial", 3, 10)); // NOI18N
+        d14.setText("Disponibilidad");
+        d14.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                d14MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout AyudaLayout = new javax.swing.GroupLayout(Ayuda);
+        Ayuda.setLayout(AyudaLayout);
+        AyudaLayout.setHorizontalGroup(
+            AyudaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 369, Short.MAX_VALUE)
+            .addGroup(AyudaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(AyudaLayout.createSequentialGroup()
+                    .addGap(4, 4, 4)
+                    .addComponent(d11)
+                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addComponent(d12)
+                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addComponent(d13)
+                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addComponent(d14)
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+        );
+        AyudaLayout.setVerticalGroup(
+            AyudaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(AyudaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(AyudaLayout.createSequentialGroup()
+                    .addGap(2, 2, 2)
+                    .addGroup(AyudaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(d11)
+                        .addComponent(d12)
+                        .addComponent(d13)
+                        .addComponent(d14))
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+        );
+
         Inferior.setBackground(new java.awt.Color(173, 15, 55));
 
         d6.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
@@ -223,41 +283,14 @@ public class m_Arquitectura extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        d11.setFont(new java.awt.Font("Arial", 3, 10)); // NOI18N
-        d11.setText("Info (Click en etiquetas):");
-
-        d12.setFont(new java.awt.Font("Arial", 3, 10)); // NOI18N
-        d12.setText("Confidencialidad ||");
-        d12.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                d12MouseClicked(evt);
-            }
-        });
-
-        d13.setFont(new java.awt.Font("Arial", 3, 10)); // NOI18N
-        d13.setText("Integridad ||");
-        d13.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                d13MouseClicked(evt);
-            }
-        });
-
-        d14.setFont(new java.awt.Font("Arial", 3, 10)); // NOI18N
-        d14.setText("Disponibilidad");
-        d14.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                d14MouseClicked(evt);
-            }
-        });
-
-        jButton1.setText("Comprobador");
+        jButton1.setText("Seleccionar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
 
-        jButton2.setText("activador");
+        jButton2.setText("Guardar y continuar");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -579,19 +612,13 @@ public class m_Arquitectura extends javax.swing.JFrame {
             .addComponent(Inferior, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(Superior, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addComponent(d11)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(d12)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(d13)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(d14)
+                .addContainerGap()
+                .addComponent(Ayuda, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton1)
                 .addGap(18, 18, 18)
                 .addComponent(jButton2)
-                .addGap(323, 323, 323))
+                .addGap(78, 78, 78))
             .addGroup(layout.createSequentialGroup()
                 .addGap(210, 210, 210)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -614,14 +641,12 @@ public class m_Arquitectura extends javax.swing.JFrame {
                 .addComponent(pregunta6, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(pregunta7, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 97, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(d11)
-                    .addComponent(d12)
-                    .addComponent(d13)
-                    .addComponent(d14)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jButton1)
+                        .addComponent(jButton2))
+                    .addComponent(Ayuda, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Inferior, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
@@ -637,29 +662,6 @@ public class m_Arquitectura extends javax.swing.JFrame {
          */
 // TODO add your handling code here:
     }//GEN-LAST:event_formWindowActivated
-
-    private void d12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_d12MouseClicked
- 
-        String sl = System.getProperty("line.separator");
-        JOptionPane.showMessageDialog(rootPane, "La información no se pone a disposición ni se revela a individuos, entidades o procesos no autorizados.",
-        "[Confidencialidad]", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:
-    }//GEN-LAST:event_d12MouseClicked
-
-    private void d13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_d13MouseClicked
-
-        String sl = System.getProperty("line.separator");
-        JOptionPane.showMessageDialog(rootPane, "Mantenimiento de la exactitud y completitud de la información y sus métodos de proceso.",
-        "[Integridad]", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:// TODO add your handling code here:
-    }//GEN-LAST:event_d13MouseClicked
-
-    private void d14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_d14MouseClicked
-
-        String sl = System.getProperty("line.separator");
-        JOptionPane.showMessageDialog(rootPane, "Acceso y utilización de la información y los sistemas de tratamiento de la misma"
-                +sl+ "por parte de los individuos, entidades o procesos autorizados cuando lo requieran.",
-        "[Disponibilidad]", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:// TODO add your handling code here:
-        // TODO add your handling code here:
-    }//GEN-LAST:event_d14MouseClicked
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
@@ -806,6 +808,33 @@ public void volver(){
 
     }//GEN-LAST:event_jLabel4MouseEntered
 
+    private void d12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_d12MouseClicked
+
+        JOptionPane.showMessageDialog(rootPane, "La información no se pone a disposición ni se revela a individuos, "
+            + sl+ "entidades o procesos no autorizados"
+            +sl+""
+            + sl+"Valoración: ¿Qué daño causaría que lo conociera quién no debe?",
+            "[Confidencialidad]", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:
+    }//GEN-LAST:event_d12MouseClicked
+
+    private void d13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_d13MouseClicked
+
+        JOptionPane.showMessageDialog(rootPane, "Mantenimiento de la exactitud y completitud de la información y sus"
+            + sl+"métodos de proceso."
+            +sl+""
+            +sl+"Valoración: ¿Qué perjuicio causaría qué estuviera dañado o corrupto?","[Integridad]", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:// TODO add your handling code here:
+    }//GEN-LAST:event_d13MouseClicked
+
+    private void d14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_d14MouseClicked
+
+        JOptionPane.showMessageDialog(rootPane, "Acceso y utilización de la información y los sistemas de tratamiento de la misma"
+            + sl + "por parte de los individuos, entidades o procesos autorizados cuando lo requieran "
+            +sl+""
+            + sl+ "Valoración: ¿Qué perjuicio causaría no tenerlo o no poder utilizarlo?",
+            "[Disponibilidad]", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:// TODO add your handling code here:
+        // TODO add your handling code here:
+    }//GEN-LAST:event_d14MouseClicked
+
     public  JRadioButton[] AgregarPreguntas(JRadioButton... arrayOpciones)
 {
   JRadioButton[] preguntas=new JRadioButton[arrayOpciones.length];
@@ -882,6 +911,7 @@ public void volver(){
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel Ayuda;
     private javax.swing.JPanel Inferior;
     private javax.swing.JPanel Info;
     private javax.swing.JPanel Superior;
