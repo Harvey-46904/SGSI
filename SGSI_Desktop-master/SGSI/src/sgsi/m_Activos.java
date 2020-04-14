@@ -853,9 +853,7 @@ public class m_Activos extends javax.swing.JFrame {
         System.out.println(puntos.size());
         subir(puntos);
         volver();
-        Principal principal = new Principal();
-            principal.setVisible(true);
-            this.dispose();
+     
         
     }//GEN-LAST:event_jButton2ActionPerformed
     public void subir(ArrayList<String> pila){
@@ -870,7 +868,8 @@ public class m_Activos extends javax.swing.JFrame {
     public void volver(){
     Principal action=new Principal();
         action.setVisible(true);
-        this.dispose();
+        this.setVisible(false);
+       
     }
     
     private void cb1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb1ActionPerformed

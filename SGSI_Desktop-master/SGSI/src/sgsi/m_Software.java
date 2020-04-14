@@ -1463,14 +1463,15 @@ public class m_Software extends javax.swing.JFrame {
         System.out.println(puntos);
         m_Arquitectura m=new m_Arquitectura();
         m.subir(puntos);
-        m.volver();
-        
-        Principal principal = new Principal();
-        principal.setVisible(true);
-        this.dispose();        
+        volver();
+           
         
     }//GEN-LAST:event_jButton2ActionPerformed
-
+public void volver(){
+        Principal action=new Principal();
+        action.setVisible(true);
+       this.dispose();
+}
     private void p18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p18ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_p18ActionPerformed

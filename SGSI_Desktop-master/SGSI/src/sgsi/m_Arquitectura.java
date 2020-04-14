@@ -717,12 +717,7 @@ public class m_Arquitectura extends javax.swing.JFrame {
         }
         System.out.println(puntos);
         subir(puntos);
-        volver();
-        
-        Principal principal = new Principal();
-        principal.setVisible(true);
-        this.dispose();
-        
+        volver();   
     }//GEN-LAST:event_jButton2ActionPerformed
 public void subir(ArrayList<String> pila){
          clsConecta ob=new clsConecta();
@@ -736,7 +731,7 @@ public void subir(ArrayList<String> pila){
 public void volver(){
         Principal action=new Principal();
         action.setVisible(true);
-        this.dispose();
+       this.dispose();
 }
     private void p5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p5ActionPerformed
         // TODO add your handling code here:

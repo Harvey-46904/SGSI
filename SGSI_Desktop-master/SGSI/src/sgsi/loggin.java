@@ -6,6 +6,7 @@
 package sgsi;
 
 import javax.swing.JOptionPane;
+import pkqControlador.clsConecta;
 
 /**
  *
@@ -195,6 +196,9 @@ public class loggin extends javax.swing.JFrame {
             Principal principal = new Principal();
             principal.setVisible(true);
             this.setVisible(false);
+            clsConecta ob=new clsConecta();
+            String borrar="delete from respuestas";
+            ob.consulta(borrar);
             //this.dispose();
         }else{
             JOptionPane.showMessageDialog(null, "Usuario o contraseña incorrectos");

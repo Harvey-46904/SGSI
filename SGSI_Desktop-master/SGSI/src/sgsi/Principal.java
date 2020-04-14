@@ -9,6 +9,7 @@ import com.itextpdf.text.DocumentException;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JFileChooser;
@@ -28,7 +29,6 @@ public class Principal extends javax.swing.JFrame {
     public Principal() {
         initComponents();
         this.setLocationRelativeTo(null);
-        Reporte reporte = new Reporte();
        // reporte.setVisible(true);
         //this.setExtendedState(MAXIMIZED_BOTH);
     }
@@ -420,12 +420,11 @@ public class Principal extends javax.swing.JFrame {
         if (g1.isSelected()) {
             m_Activos activos = new m_Activos();
             activos.setVisible(true);
-            this.dispose();
-    
+           this.dispose();
         } else if (g2.isSelected()) {
             m_Arquitectura arquitectura = new m_Arquitectura();
             arquitectura.setVisible(true);
-            this.dispose();
+          this.dispose();
         } else if (g3.isSelected()) {
             m_Datos datos = new m_Datos();
             datos.setVisible(true);
@@ -433,27 +432,33 @@ public class Principal extends javax.swing.JFrame {
         } else if (g3.isSelected()) {
             m_Datos datos = new m_Datos();
             datos.setVisible(true);
-            this.dispose();
+            
+             this.setVisible(false);
         } else if (g5.isSelected()) {
             m_Software software = new m_Software();
             software.setVisible(true);
-            this.dispose();
+            
+             this.setVisible(false);
         } else if (g6.isSelected()) {
             m_Hardware hardware = new m_Hardware();
             hardware.setVisible(true);
-            this.dispose();
+          
+             this.setVisible(false);
         } else if (g7.isSelected()) {
             m_Redes redes = new m_Redes();
             redes.setVisible(true);
-            this.dispose();
+        
+             this.setVisible(false);
         } else if (g8.isSelected()) {
             m_Soportes soportes = new m_Soportes();
             soportes.setVisible(true);
-            this.dispose();
+           
+             this.setVisible(false);
         } else if (g10.isSelected()) {
             m_Personal personal = new m_Personal();
             personal.setVisible(true);
-            this.dispose();
+            
+             this.setVisible(false);
         }
 
     }
@@ -462,7 +467,7 @@ public class Principal extends javax.swing.JFrame {
 
         if (g1.isSelected() || g2.isSelected() || g3.isSelected() || g4.isSelected() || g5.isSelected() || g6.isSelected()
                 || g7.isSelected() || g8.isSelected() || g10.isSelected()) {
-            validarGrupos();                       
+            validarGrupos();        
         } else {
             JOptionPane.showMessageDialog(rootPane, "Por favor elija un grupo para evaluar");
         }
@@ -486,16 +491,20 @@ public class Principal extends javax.swing.JFrame {
         JFileChooser seleccion=new JFileChooser();
         FileOutputStream Archivo = null;
         if(seleccion.showDialog(null,"Guardar")== JFileChooser.APPROVE_OPTION){
-            System.out.println("gracias");
-            String ruta=seleccion.getSelectedFile()+".pdf";
             try {
+                System.out.println("gracias");
+                String ruta=seleccion.getSelectedFile()+".pdf";
+                
                 r.crearPDF(ruta);
                 JOptionPane.showMessageDialog(null,"Se a creado correctamente el reporte");
             } catch (FileNotFoundException ex) {
                 Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
             } catch (DocumentException ex) {
                 Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (SQLException ex) {
+                Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
             }
+            
         }
     }//GEN-LAST:event_verificarGrupos1ActionPerformed
 

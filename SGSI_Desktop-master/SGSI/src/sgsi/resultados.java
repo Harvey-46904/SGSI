@@ -22,12 +22,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 
 /**
  *
  * @author Family
  */
 public class resultados extends javax.swing.JFrame {
+    private Object sqle;
 
     /**
      * Creates new form resultados
@@ -94,6 +96,8 @@ public class resultados extends javax.swing.JFrame {
             Logger.getLogger(resultados.class.getName()).log(Level.SEVERE, null, ex);
         } catch (DocumentException ex) {
             Logger.getLogger(resultados.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (SQLException ex) {
+            Logger.getLogger(resultados.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_jButton1ActionPerformed
    public javax.swing.DefaultListModel listar(){
@@ -157,7 +161,7 @@ return tem;
             }
         });
     }
- public void crearPDF(String ruta) throws FileNotFoundException, DocumentException {
+ public void crearPDF(String ruta) throws FileNotFoundException, DocumentException, SQLException {
         // Se crea el documento
      pkqControlador.clsConecta objConecta;
        objConecta=new pkqControlador.clsConecta();
@@ -257,8 +261,8 @@ while(hoja_resultado.next()){
            
 }
    documento.close();
-}catch (SQLException ex){
-	   System.out.println("error con sql");
+}finally{
+    System.out.println("fifi");
 }
         
     }

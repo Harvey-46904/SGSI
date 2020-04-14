@@ -1557,13 +1557,14 @@ public class m_Datos extends javax.swing.JFrame {
         System.out.println(puntos);
         m_Arquitectura m=new m_Arquitectura();
         m.subir(puntos);
-        m.volver();
+        volver();
         
-        Principal principal = new Principal();
-        principal.setVisible(true);
-        this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
-
+public void volver(){
+        Principal action=new Principal();
+        action.setVisible(true);
+       this.dispose();
+}
     private void p8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p8ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_p8ActionPerformed
