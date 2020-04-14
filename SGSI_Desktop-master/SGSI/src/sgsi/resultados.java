@@ -89,7 +89,7 @@ public class resultados extends javax.swing.JFrame {
         // TODO add your handling code here:
         tabla.setModel(listar());
         try {
-            crearPDF();
+            crearPDF("ee");
         } catch (FileNotFoundException ex) {
             Logger.getLogger(resultados.class.getName()).log(Level.SEVERE, null, ex);
         } catch (DocumentException ex) {
@@ -157,14 +157,13 @@ return tem;
             }
         });
     }
- public static void crearPDF() throws FileNotFoundException, DocumentException {
+ public void crearPDF(String ruta) throws FileNotFoundException, DocumentException {
         // Se crea el documento
      pkqControlador.clsConecta objConecta;
        objConecta=new pkqControlador.clsConecta();
        Document documento = new Document();
-       FileOutputStream ficheroPDF = new FileOutputStream("resultados.pdf");
-       PdfWriter.getInstance(documento, ficheroPDF);
-        
+       FileOutputStream ficheroPDF = new FileOutputStream(ruta);
+       PdfWriter.getInstance(documento, ficheroPDF); 
 try{
     
 	java.sql.ResultSet hoja_resultado =null;

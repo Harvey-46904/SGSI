@@ -5,6 +5,13 @@
  */
 package sgsi;
 
+import com.itextpdf.text.DocumentException;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 
 /**
@@ -475,10 +482,21 @@ public class Principal extends javax.swing.JFrame {
 
     private void verificarGrupos1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_verificarGrupos1ActionPerformed
         // TODO add your handling code here:
-
-        Reporte reporte = new Reporte();
-        reporte.setVisible(true);
-        this.dispose();
+        resultados r=new resultados();
+        JFileChooser seleccion=new JFileChooser();
+        FileOutputStream Archivo = null;
+        if(seleccion.showDialog(null,"Guardar")== JFileChooser.APPROVE_OPTION){
+            System.out.println("gracias");
+            String ruta=seleccion.getSelectedFile()+".pdf";
+            try {
+                r.crearPDF(ruta);
+                JOptionPane.showMessageDialog(null,"Se a creado correctamente el reporte");
+            } catch (FileNotFoundException ex) {
+                Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (DocumentException ex) {
+                Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
     }//GEN-LAST:event_verificarGrupos1ActionPerformed
 
     private void aquí1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_aquí1MouseClicked
