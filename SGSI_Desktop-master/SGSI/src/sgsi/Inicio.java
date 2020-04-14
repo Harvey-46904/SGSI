@@ -53,7 +53,6 @@ public class Inicio extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
         Inferior = new javax.swing.JPanel();
         d6 = new javax.swing.JLabel();
         d24 = new javax.swing.JLabel();
@@ -116,13 +115,6 @@ public class Inicio extends javax.swing.JFrame {
         jLabel10.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel10.setText("como resultado inmediato medidas correctivas o preventivas que usted debe aplicar en los mismos");
 
-        jButton3.setText("jButton3");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout PrincipalLayout = new javax.swing.GroupLayout(Principal);
         Principal.setLayout(PrincipalLayout);
         PrincipalLayout.setHorizontalGroup(
@@ -152,8 +144,6 @@ public class Inicio extends javax.swing.JFrame {
                         .addGroup(PrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel7)
                             .addGroup(PrincipalLayout.createSequentialGroup()
-                                .addComponent(jButton3)
-                                .addGap(276, 276, 276)
                                 .addComponent(jButton2)
                                 .addGap(18, 18, 18)
                                 .addComponent(jButton1)))
@@ -179,8 +169,7 @@ public class Inicio extends javax.swing.JFrame {
                 .addGap(27, 27, 27)
                 .addGroup(PrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1)
-                    .addComponent(jButton2)
-                    .addComponent(jButton3))
+                    .addComponent(jButton2))
                 .addContainerGap())
         );
 
@@ -310,11 +299,6 @@ public class Inicio extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
-       
-    }//GEN-LAST:event_jButton3ActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -358,7 +342,6 @@ public class Inicio extends javax.swing.JFrame {
     private javax.swing.JLabel d6;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
