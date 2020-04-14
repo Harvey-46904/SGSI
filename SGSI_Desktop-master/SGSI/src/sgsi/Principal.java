@@ -484,17 +484,33 @@ public class Principal extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Por favor continue con la evaluación", "Sistema de evaluación SGSI", JOptionPane.INFORMATION_MESSAGE);
         }
     }//GEN-LAST:event_jButton2MouseClicked
-
+public int comprueba(){
+ int a=0;
+         pkqControlador.clsConecta objConecta;
+       objConecta=new pkqControlador.clsConecta();
+	java.sql.ResultSet hoja_resultado =null;
+	String SQL = "select * from respuestas";
+	hoja_resultado=objConecta.consulta(SQL);
+        try {
+            while(hoja_resultado.next()){
+                a++;
+            }
+            System.out.println(a);
+        } catch (SQLException ex) {
+            Logger.getLogger(Inicio.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return a;
+}
     private void verificarGrupos1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_verificarGrupos1ActionPerformed
         // TODO add your handling code here:
         resultados r=new resultados();
         JFileChooser seleccion=new JFileChooser();
         FileOutputStream Archivo = null;
+          if(comprueba()!=0){
         if(seleccion.showDialog(null,"Guardar")== JFileChooser.APPROVE_OPTION){
+          
             try {
-                System.out.println("gracias");
                 String ruta=seleccion.getSelectedFile()+".pdf";
-                
                 r.crearPDF(ruta);
                 JOptionPane.showMessageDialog(null,"Se a creado correctamente el reporte");
             } catch (FileNotFoundException ex) {
@@ -504,8 +520,11 @@ public class Principal extends javax.swing.JFrame {
             } catch (SQLException ex) {
                 Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
             }
-            
+              
         }
+          }else{
+              JOptionPane.showMessageDialog(null,"Debe contestar los items para generar reporte");
+          }
     }//GEN-LAST:event_verificarGrupos1ActionPerformed
 
     private void aquí1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_aquí1MouseClicked
