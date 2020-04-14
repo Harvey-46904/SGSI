@@ -237,11 +237,20 @@ while(hoja_resultado.next()){
                         BaseColor.BLACK
                         )
         );
+                PdfPTable tabla = new PdfPTable(3);
+        tabla.addCell("CONFIDENCIALIDAD");
+        tabla.addCell("INTEGRIDAD");
+        tabla.addCell("DISPONIBILIDAD");
+        tabla.addCell(hoja_resultado.getString("confidencialidad"));
+        tabla.addCell(hoja_resultado.getString("integridad"));
+        tabla.addCell(hoja_resultado.getString("disponibilidad"));
+        
         documento.add(grupo);
         documento.add(item);
-        documento.add(confidencialidad);
-        documento.add(integridad);
-        documento.add(disponibilidad); 
+       // documento.add(confidencialidad);
+        //documento.add(integridad);
+        //documento.add(disponibilidad); 
+        documento.add(tabla);
         documento.add(recomendaciones);
         documento.add(rc);
         documento.add(ri);
