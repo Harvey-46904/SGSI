@@ -8,6 +8,20 @@ package sgsi;
 import java.sql.SQLException;
 import javax.swing.DefaultListCellRenderer.UIResource;
 import javax.swing.SwingConstants;
+import com.itextpdf.text.BaseColor;
+import com.itextpdf.text.Document;
+import com.itextpdf.text.DocumentException;
+import com.itextpdf.text.FontFactory;
+import com.itextpdf.text.Paragraph;
+import com.itextpdf.text.pdf.PdfPTable;
+import com.itextpdf.text.pdf.PdfWriter;
+import java.awt.Font;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -74,7 +88,13 @@ public class resultados extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         tabla.setModel(listar());
-        
+        try {
+            crearPDF();
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(resultados.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (DocumentException ex) {
+            Logger.getLogger(resultados.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
    public javax.swing.DefaultListModel listar(){
        pkqControlador.clsConecta objConecta;
@@ -136,6 +156,103 @@ return tem;
                 new resultados().setVisible(true);
             }
         });
+    }
+ public static void crearPDF() throws FileNotFoundException, DocumentException {
+        // Se crea el documento
+     pkqControlador.clsConecta objConecta;
+       objConecta=new pkqControlador.clsConecta();
+       Document documento = new Document();
+       FileOutputStream ficheroPDF = new FileOutputStream("resultados.pdf");
+       PdfWriter.getInstance(documento, ficheroPDF);
+        
+try{
+    
+	java.sql.ResultSet hoja_resultado =null;
+	String SQL = "select g.nombre as Grupo,i.nombre Item,r.confidencialidad,rc.descripcion as RECOMENDACION_CONFIDENCIALIDAD,r.integridad,ri.descripcion as RECOMENDACION_INTEGRIDAD,r.disponibilidad,rd.descripcion as RECOMENDACION_DISPONIBILIDAD from grupos g join item i join respuestas r join resultado_confidencialidad rc on r.id_pregunta=rc.id_pregunta and rc.estado=r.confidencialidad join resultado_integridad ri on r.id_pregunta=ri.id_pregunta and r.integridad=ri.estado join resultado_disponibilidad rd on r.id_pregunta=rd.id_pregunta and r.disponibilidad=rd.estado on i.codigo_pregunta=r.id_pregunta on i.fk_id_grupo=g.id_grupo";
+	hoja_resultado=objConecta.consulta(SQL);
+      documento.open();
+while(hoja_resultado.next()){
+/*tem.addElement("========================================================");
+ */
+    Paragraph grupo = new Paragraph("Grupo "+hoja_resultado.getString("grupo")+"\n\n",
+                FontFactory.getFont("arial",
+                        12,
+                        Font.BOLD,
+                        BaseColor.BLUE
+                        )
+        );
+    Paragraph item = new Paragraph(hoja_resultado.getString("item")+"\n\n",
+                FontFactory.getFont("arial",
+                        10,
+                        Font.CENTER_BASELINE,
+                        BaseColor.BLACK
+                        )
+        );
+    Paragraph confidencialidad = new Paragraph("Confidencialidad: "+hoja_resultado.getString("confidencialidad")+"\n\n",
+                FontFactory.getFont("arial",
+                        10,
+                        Font.CENTER_BASELINE,
+                        BaseColor.BLACK
+                        )
+        );
+      Paragraph integridad = new Paragraph("Integridad: "+hoja_resultado.getString("integridad")+"\n\n",
+                FontFactory.getFont("arial",
+                        10,
+                        Font.CENTER_BASELINE,
+                        BaseColor.BLACK
+                        )
+        );
+        Paragraph disponibilidad = new Paragraph("Disponibilidad: "+hoja_resultado.getString("disponibilidad")+"\n\n",
+                FontFactory.getFont("arial",
+                        10,
+                        Font.CENTER_BASELINE,
+                        BaseColor.BLACK
+                        )
+        );
+          Paragraph recomendaciones = new Paragraph("RECOMENDACIONES"+"\n\n",
+                FontFactory.getFont("arial",
+                        12,
+                        Font.BOLD,
+                        BaseColor.RED
+                        )
+        );
+            Paragraph rc = new Paragraph(hoja_resultado.getString("RECOMENDACION_CONFIDENCIALIDAD")+"\n\n",
+                FontFactory.getFont("arial",
+                        10,
+                        Font.CENTER_BASELINE,
+                        BaseColor.BLACK
+                        )
+        );
+              Paragraph ri = new Paragraph(hoja_resultado.getString("RECOMENDACION_INTEGRIDAD")+"\n\n",
+                FontFactory.getFont("arial",
+                        10,
+                        Font.CENTER_BASELINE,
+                        BaseColor.BLACK
+                        )
+        );
+                Paragraph rd = new Paragraph(hoja_resultado.getString("RECOMENDACION_DISPONIBILIDAD")+"\n\n",
+                FontFactory.getFont("arial",
+                        10,
+                        Font.CENTER_BASELINE,
+                        BaseColor.BLACK
+                        )
+        );
+        documento.add(grupo);
+        documento.add(item);
+        documento.add(confidencialidad);
+        documento.add(integridad);
+        documento.add(disponibilidad); 
+        documento.add(recomendaciones);
+        documento.add(rc);
+        documento.add(ri);
+        documento.add(rd);
+           
+}
+   documento.close();
+}catch (SQLException ex){
+	   System.out.println("error con sql");
+}
+        
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
