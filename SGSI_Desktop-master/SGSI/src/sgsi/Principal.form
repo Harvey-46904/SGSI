@@ -140,13 +140,8 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="258" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="262" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Group type="102" attributes="0">
-                          <Component id="g10" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="32767" attributes="0"/>
-                          <Component id="aquí10" min="-2" max="-2" attributes="0"/>
-                      </Group>
                       <Group type="102" alignment="1" attributes="0">
                           <Component id="g8" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
@@ -168,11 +163,6 @@
                           <Component id="aquí5" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="g4" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="32767" attributes="0"/>
-                          <Component id="aquí4" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
                           <Component id="g3" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
                           <Component id="aquí3" min="-2" max="-2" attributes="0"/>
@@ -189,14 +179,14 @@
                           </Group>
                       </Group>
                   </Group>
-                  <EmptySpace pref="321" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace pref="11" max="32767" attributes="0"/>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="g1" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="aquí1" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -210,11 +200,6 @@
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="g3" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="aquí3" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="g4" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="aquí4" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
@@ -236,12 +221,7 @@
                       <Component id="g8" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="aquí8" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="g10" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="aquí10" alignment="3" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
+                  <EmptySpace pref="77" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -278,17 +258,6 @@
               <Font name="Arial" size="14" style="0"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Datos / Informaci&#xf3;n"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JRadioButton" name="g4">
-          <Properties>
-            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-              <ComponentRef name="Grupos"/>
-            </Property>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial" size="14" style="0"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Servicios"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="g5">
@@ -335,17 +304,6 @@
             <Property name="text" type="java.lang.String" value="Soportes de informaci&#xf3;n"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="g10">
-          <Properties>
-            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-              <ComponentRef name="Grupos"/>
-            </Property>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial" size="14" style="0"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Personal"/>
-          </Properties>
-        </Component>
         <Component class="javax.swing.JButton" name="aqu&#xed;1">
           <Properties>
             <Property name="text" type="java.lang.String" value="Informaci&#xf3;n"/>
@@ -369,14 +327,6 @@
           </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="aqu&#xed;3MouseClicked"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="aqu&#xed;4">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Informaci&#xf3;n"/>
-          </Properties>
-          <Events>
-            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="aqu&#xed;4MouseClicked"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="aqu&#xed;5">
@@ -411,14 +361,6 @@
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="aqu&#xed;8MouseClicked"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="aqu&#xed;10">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Informaci&#xf3;n"/>
-          </Properties>
-          <Events>
-            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="aqu&#xed;10MouseClicked"/>
-          </Events>
-        </Component>
       </SubComponents>
     </Container>
     <Container class="javax.swing.JPanel" name="Superio">
@@ -440,7 +382,7 @@
                       <Component id="b1" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Component id="d1" alignment="0" min="-2" pref="310" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="19" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -493,7 +435,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Recuerde por favor contar con tiempo suficiente para realizar la evaluaci&#xf3;n puesto que si el sistema se cierra usted no podr&#xed;a continuar, perder&#xed;a "/>
+            <Property name="text" type="java.lang.String" value="Recuerde por favor contar con tiempo suficiente para realizar la evaluaci&#xf3;n puesto que si cierra el sistema usted no podr&#xed;a continuar, perder&#xed;a "/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="b1">
@@ -504,7 +446,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Nota: Por favor no olvide seleccionar cada grupo"/>
+            <Property name="text" type="java.lang.String" value="Nota: Por favor no olvide seleccionar cada grupo para evaluar y al finalizar dar click en el bot&#xf3;n (Generar reporte)"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="d1">

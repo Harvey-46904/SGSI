@@ -29,6 +29,7 @@ import javax.swing.JOptionPane;
  * @author Family
  */
 public class resultados extends javax.swing.JFrame {
+
     private Object sqle;
 
     /**
@@ -53,6 +54,7 @@ public class resultados extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        tabla.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jScrollPane1.setViewportView(tabla);
 
         jButton1.setText("CREAR");
@@ -100,33 +102,34 @@ public class resultados extends javax.swing.JFrame {
             Logger.getLogger(resultados.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_jButton1ActionPerformed
-   public javax.swing.DefaultListModel listar(){
-       pkqControlador.clsConecta objConecta;
-       objConecta=new pkqControlador.clsConecta();
-javax.swing.DefaultListModel tem;
-tem=new javax.swing.DefaultListModel();
-try{
-	java.sql.ResultSet hoja_resultado =null;
-	String SQL = "select g.nombre as Grupo,i.nombre Item,r.confidencialidad,rc.descripcion as RECOMENDACION_CONFIDENCIALIDAD,r.integridad,ri.descripcion as RECOMENDACION_INTEGRIDAD,r.disponibilidad,rd.descripcion as RECOMENDACION_DISPONIBILIDAD from grupos g join item i join respuestas r join resultado_confidencialidad rc on r.id_pregunta=rc.id_pregunta and rc.estado=r.confidencialidad join resultado_integridad ri on r.id_pregunta=ri.id_pregunta and r.integridad=ri.estado join resultado_disponibilidad rd on r.id_pregunta=rd.id_pregunta and r.disponibilidad=rd.estado on i.codigo_pregunta=r.id_pregunta on i.fk_id_grupo=g.id_grupo";
-	hoja_resultado=objConecta.consulta(SQL);
-  
-while(hoja_resultado.next()){
-tem.addElement("========================================================");
-tem.addElement("Grupo "+hoja_resultado.getString("grupo"));
-tem.addElement(hoja_resultado.getString("item"));
-tem.addElement("Confidencialidad: "+hoja_resultado.getString("confidencialidad"));
-tem.addElement("Integridad: "+hoja_resultado.getString("integridad"));
-tem.addElement("Disponibilidad: "+hoja_resultado.getString("disponibilidad"));
-tem.addElement("RECOMENDACIONES");
-tem.addElement(hoja_resultado.getString("RECOMENDACION_CONFIDENCIALIDAD"));  
-tem.addElement(hoja_resultado.getString("RECOMENDACION_INTEGRIDAD"));  
-tem.addElement(hoja_resultado.getString("RECOMENDACION_DISPONIBILIDAD"));  
-}
-}catch (SQLException ex){
-	   System.out.println("error con sql");
-}
-return tem;
-}
+    public javax.swing.DefaultListModel listar() {
+        pkqControlador.clsConecta objConecta;
+        objConecta = new pkqControlador.clsConecta();
+        javax.swing.DefaultListModel tem;
+        tem = new javax.swing.DefaultListModel();
+        try {
+            java.sql.ResultSet hoja_resultado = null;
+            String SQL = "select g.nombre as Grupo,i.nombre Item,r.confidencialidad,rc.descripcion as RECOMENDACION_CONFIDENCIALIDAD,r.integridad,ri.descripcion as RECOMENDACION_INTEGRIDAD,r.disponibilidad,rd.descripcion as RECOMENDACION_DISPONIBILIDAD from grupos g join item i join respuestas r join resultado_confidencialidad rc on r.id_pregunta=rc.id_pregunta and rc.estado=r.confidencialidad join resultado_integridad ri on r.id_pregunta=ri.id_pregunta and r.integridad=ri.estado join resultado_disponibilidad rd on r.id_pregunta=rd.id_pregunta and r.disponibilidad=rd.estado on i.codigo_pregunta=r.id_pregunta on i.fk_id_grupo=g.id_grupo";
+            hoja_resultado = objConecta.consulta(SQL);
+
+            while (hoja_resultado.next()) {
+                tem.addElement("========================================================");
+                tem.addElement("Grupo " + hoja_resultado.getString("grupo"));
+                tem.addElement(hoja_resultado.getString("item"));
+                tem.addElement("Confidencialidad: " + hoja_resultado.getString("confidencialidad"));
+                tem.addElement("Integridad: " + hoja_resultado.getString("integridad"));
+                tem.addElement("Disponibilidad: " + hoja_resultado.getString("disponibilidad"));
+                tem.addElement("RECOMENDACIONES");
+                tem.addElement(hoja_resultado.getString("RECOMENDACION_CONFIDENCIALIDAD"));
+                tem.addElement(hoja_resultado.getString("RECOMENDACION_INTEGRIDAD"));
+                tem.addElement(hoja_resultado.getString("RECOMENDACION_DISPONIBILIDAD"));
+            }
+        } catch (SQLException ex) {
+            System.out.println("error con sql");
+        }
+        return tem;
+    }
+
     /**
      * @param args the command line arguments
      */
@@ -161,110 +164,129 @@ return tem;
             }
         });
     }
- public void crearPDF(String ruta) throws FileNotFoundException, DocumentException, SQLException {
+
+    public void crearPDF(String ruta) throws FileNotFoundException, DocumentException, SQLException {
         // Se crea el documento
-     pkqControlador.clsConecta objConecta;
-       objConecta=new pkqControlador.clsConecta();
-       Document documento = new Document();
-       FileOutputStream ficheroPDF = new FileOutputStream(ruta);
-       PdfWriter.getInstance(documento, ficheroPDF); 
-try{
-    
-	java.sql.ResultSet hoja_resultado =null;
-	String SQL = "select g.nombre as Grupo,i.nombre Item,r.confidencialidad,rc.descripcion as RECOMENDACION_CONFIDENCIALIDAD,r.integridad,ri.descripcion as RECOMENDACION_INTEGRIDAD,r.disponibilidad,rd.descripcion as RECOMENDACION_DISPONIBILIDAD from grupos g join item i join respuestas r join resultado_confidencialidad rc on r.id_pregunta=rc.id_pregunta and rc.estado=r.confidencialidad join resultado_integridad ri on r.id_pregunta=ri.id_pregunta and r.integridad=ri.estado join resultado_disponibilidad rd on r.id_pregunta=rd.id_pregunta and r.disponibilidad=rd.estado on i.codigo_pregunta=r.id_pregunta on i.fk_id_grupo=g.id_grupo";
-	hoja_resultado=objConecta.consulta(SQL);
-      documento.open();
-while(hoja_resultado.next()){
-/*tem.addElement("========================================================");
- */
-    Paragraph grupo = new Paragraph("Grupo "+hoja_resultado.getString("grupo")+"\n\n",
-                FontFactory.getFont("arial",
-                        12,
-                        Font.BOLD,
-                        BaseColor.BLUE
+        pkqControlador.clsConecta objConecta;
+        objConecta = new pkqControlador.clsConecta();
+        Document documento = new Document();
+        FileOutputStream ficheroPDF = new FileOutputStream(ruta);
+        PdfWriter.getInstance(documento, ficheroPDF);
+        /*Paragraph organizacion = new Paragraph(" Universidad CESMAG" + "\n\n",
+                        FontFactory.getFont("arial",
+                                12,
+                                Font.BOLD,
+                                BaseColor.BLUE
                         )
-        );
-    Paragraph item = new Paragraph(hoja_resultado.getString("item")+"\n\n",
-                FontFactory.getFont("arial",
-                        10,
-                        Font.CENTER_BASELINE,
-                        BaseColor.BLACK
+                );
+                Paragraph evaluacion = new Paragraph(" Reporte final evaluación de activos" + "\n\n",
+                        FontFactory.getFont("arial",
+                                12,
+                                Font.BOLD,
+                                BaseColor.RED
                         )
-        );
-    Paragraph confidencialidad = new Paragraph("Confidencialidad: "+hoja_resultado.getString("confidencialidad")+"\n\n",
-                FontFactory.getFont("arial",
-                        10,
-                        Font.CENTER_BASELINE,
-                        BaseColor.BLACK
+                );*/
+        try {
+
+            java.sql.ResultSet hoja_resultado = null;
+            String SQL = "select g.nombre as Grupo,i.nombre Item,r.confidencialidad,rc.descripcion as RECOMENDACION_CONFIDENCIALIDAD,r.integridad,ri.descripcion as RECOMENDACION_INTEGRIDAD,r.disponibilidad,rd.descripcion as RECOMENDACION_DISPONIBILIDAD from grupos g join item i join respuestas r join resultado_confidencialidad rc on r.id_pregunta=rc.id_pregunta and rc.estado=r.confidencialidad join resultado_integridad ri on r.id_pregunta=ri.id_pregunta and r.integridad=ri.estado join resultado_disponibilidad rd on r.id_pregunta=rd.id_pregunta and r.disponibilidad=rd.estado on i.codigo_pregunta=r.id_pregunta on i.fk_id_grupo=g.id_grupo";
+            hoja_resultado = objConecta.consulta(SQL);
+            documento.open();
+            
+            while (hoja_resultado.next()) {
+                /*tem.addElement("========================================================");
+                 */
+                Paragraph grupo = new Paragraph("Grupo " + hoja_resultado.getString("grupo") + "\n\n",
+                        FontFactory.getFont("arial",
+                                12,
+                                Font.BOLD,
+                                BaseColor.BLUE
                         )
-        );
-      Paragraph integridad = new Paragraph("Integridad: "+hoja_resultado.getString("integridad")+"\n\n",
-                FontFactory.getFont("arial",
-                        10,
-                        Font.CENTER_BASELINE,
-                        BaseColor.BLACK
+                );
+                Paragraph item = new Paragraph(hoja_resultado.getString("item") + "\n\n",
+                        FontFactory.getFont("arial",
+                                10,
+                                Font.CENTER_BASELINE,
+                                BaseColor.BLACK
                         )
-        );
-        Paragraph disponibilidad = new Paragraph("Disponibilidad: "+hoja_resultado.getString("disponibilidad")+"\n\n",
-                FontFactory.getFont("arial",
-                        10,
-                        Font.CENTER_BASELINE,
-                        BaseColor.BLACK
+                );
+                Paragraph confidencialidad = new Paragraph("Confidencialidad: " + hoja_resultado.getString("confidencialidad") + "\n\n",
+                        FontFactory.getFont("arial",
+                                10,
+                                Font.CENTER_BASELINE,
+                                BaseColor.BLACK
                         )
-        );
-          Paragraph recomendaciones = new Paragraph("RECOMENDACIONES"+"\n\n",
-                FontFactory.getFont("arial",
-                        12,
-                        Font.BOLD,
-                        BaseColor.RED
+                );
+                Paragraph integridad = new Paragraph("Integridad: " + hoja_resultado.getString("integridad") + "\n\n",
+                        FontFactory.getFont("arial",
+                                10,
+                                Font.CENTER_BASELINE,
+                                BaseColor.BLACK
                         )
-        );
-            Paragraph rc = new Paragraph(hoja_resultado.getString("RECOMENDACION_CONFIDENCIALIDAD")+"\n\n",
-                FontFactory.getFont("arial",
-                        10,
-                        Font.CENTER_BASELINE,
-                        BaseColor.BLACK
+                );
+                Paragraph disponibilidad = new Paragraph("Disponibilidad: " + hoja_resultado.getString("disponibilidad") + "\n\n",
+                        FontFactory.getFont("arial",
+                                10,
+                                Font.CENTER_BASELINE,
+                                BaseColor.BLACK
                         )
-        );
-              Paragraph ri = new Paragraph(hoja_resultado.getString("RECOMENDACION_INTEGRIDAD")+"\n\n",
-                FontFactory.getFont("arial",
-                        10,
-                        Font.CENTER_BASELINE,
-                        BaseColor.BLACK
+                );
+                Paragraph recomendaciones = new Paragraph("RECOMENDACIONES" + "\n\n",
+                        FontFactory.getFont("arial",
+                                12,
+                                Font.BOLD,
+                                BaseColor.RED
                         )
-        );
-                Paragraph rd = new Paragraph(hoja_resultado.getString("RECOMENDACION_DISPONIBILIDAD")+"\n\n",
-                FontFactory.getFont("arial",
-                        10,
-                        Font.CENTER_BASELINE,
-                        BaseColor.BLACK
+                );
+                Paragraph rc = new Paragraph("Confidencialidad: " + hoja_resultado.getString("RECOMENDACION_CONFIDENCIALIDAD") + "\n\n",
+                        FontFactory.getFont("arial",
+                                10,
+                                Font.CENTER_BASELINE,
+                                BaseColor.BLACK
                         )
-        );
+                );
+                Paragraph ri = new Paragraph("Integridad: " + hoja_resultado.getString("RECOMENDACION_INTEGRIDAD") + "\n\n",
+                        FontFactory.getFont("arial",
+                                10,
+                                Font.CENTER_BASELINE,
+                                BaseColor.BLACK
+                        )
+                );
+                Paragraph rd = new Paragraph("Disponibilidad: " + hoja_resultado.getString("RECOMENDACION_DISPONIBILIDAD") + "\n\n",
+                        FontFactory.getFont("arial",
+                                10,
+                                Font.CENTER_BASELINE,
+                                BaseColor.BLACK
+                        )
+                );
+                //documento.add(organizacion);
+                //documento.add(evaluacion);
                 PdfPTable tabla = new PdfPTable(3);
-        tabla.addCell("CONFIDENCIALIDAD");
-        tabla.addCell("INTEGRIDAD");
-        tabla.addCell("DISPONIBILIDAD");
-        tabla.addCell(hoja_resultado.getString("confidencialidad"));
-        tabla.addCell(hoja_resultado.getString("integridad"));
-        tabla.addCell(hoja_resultado.getString("disponibilidad"));
-        
-        documento.add(grupo);
-        documento.add(item);
-       // documento.add(confidencialidad);
-        //documento.add(integridad);
-        //documento.add(disponibilidad); 
-        documento.add(tabla);
-        documento.add(recomendaciones);
-        documento.add(rc);
-        documento.add(ri);
-        documento.add(rd);
-           
-}
-   documento.close();
-}finally{
-    System.out.println("fifi");
-}
-        
+                tabla.addCell("CONFIDENCIALIDAD");
+                tabla.addCell("INTEGRIDAD");
+                tabla.addCell("DISPONIBILIDAD");
+                tabla.addCell(hoja_resultado.getString("confidencialidad"));
+                tabla.addCell(hoja_resultado.getString("integridad"));
+                tabla.addCell(hoja_resultado.getString("disponibilidad"));
+
+                
+                documento.add(grupo);
+                documento.add(item);
+                // documento.add(confidencialidad);
+                //documento.add(integridad);
+                //documento.add(disponibilidad); 
+                documento.add(tabla);
+                documento.add(recomendaciones);
+                documento.add(rc);
+                documento.add(ri);
+                documento.add(rd);
+
+            }
+            documento.close();
+        } finally {
+            System.out.println("OK");
+        }
+
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

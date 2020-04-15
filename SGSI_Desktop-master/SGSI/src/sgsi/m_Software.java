@@ -1,4 +1,3 @@
-
 package sgsi;
 
 import java.awt.List;
@@ -15,6 +14,7 @@ import javax.swing.JRadioButton;
  * @author Luis Efe
  */
 public class m_Software extends javax.swing.JFrame {
+
     String sl = System.getProperty("line.separator");
 
     /**
@@ -24,8 +24,8 @@ public class m_Software extends javax.swing.JFrame {
         initComponents();
         this.setLocationRelativeTo(null);
         ;
-        JPanel ocultar[]=AgregarRespuestas(respuesta18,respuesta19,respuesta20,respuesta21,
-                respuesta22,respuesta23,respuesta24,respuesta25,respuesta26);
+        JPanel ocultar[] = AgregarRespuestas(respuesta18, respuesta19, respuesta20, respuesta21,
+                respuesta22, respuesta23, respuesta24, respuesta25);
         this.dispose();
         for (int i = 0; i < ocultar.length; i++) {
             ocultar[i].setVisible(false);
@@ -53,11 +53,6 @@ public class m_Software extends javax.swing.JFrame {
         Inferior = new javax.swing.JPanel();
         d6 = new javax.swing.JLabel();
         d10 = new javax.swing.JLabel();
-        Superior = new javax.swing.JPanel();
-        a = new javax.swing.JLabel();
-        b = new javax.swing.JLabel();
-        c = new javax.swing.JLabel();
-        d = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
@@ -126,19 +121,16 @@ public class m_Software extends javax.swing.JFrame {
         cb74 = new javax.swing.JComboBox();
         cb75 = new javax.swing.JComboBox();
         jLabel35 = new javax.swing.JLabel();
-        pregunta26 = new javax.swing.JPanel();
-        gen26 = new javax.swing.JPanel();
-        p26 = new javax.swing.JRadioButton();
-        respuesta26 = new javax.swing.JPanel();
-        cb76 = new javax.swing.JComboBox();
-        cb77 = new javax.swing.JComboBox();
-        cb78 = new javax.swing.JComboBox();
-        jLabel36 = new javax.swing.JLabel();
         Ayuda = new javax.swing.JPanel();
         d11 = new javax.swing.JLabel();
         d12 = new javax.swing.JLabel();
         d13 = new javax.swing.JLabel();
         d14 = new javax.swing.JLabel();
+        Superior4 = new javax.swing.JPanel();
+        a4 = new javax.swing.JLabel();
+        b4 = new javax.swing.JLabel();
+        c4 = new javax.swing.JLabel();
+        d4 = new javax.swing.JLabel();
 
         jLabel10.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel10.setText("Para más información sobre este módulo por favor dar un click ");
@@ -150,7 +142,7 @@ public class m_Software extends javax.swing.JFrame {
         c6.setText("Por favor, no olvide que como paso inicial debe marcar los activos con los cuales cuente su organización, posteriormente dar click en \"Seleccionar y evaluar\"");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Activos esenciales");
+        setTitle("Soportes de información");
         setBackground(new java.awt.Color(255, 255, 255));
         setResizable(false);
         setSize(new java.awt.Dimension(0, 0));
@@ -232,51 +224,6 @@ public class m_Software extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        Superior.setBackground(new java.awt.Color(53, 96, 183));
-
-        a.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        a.setForeground(new java.awt.Color(255, 255, 255));
-        a.setText("[Modulo Aplicaciones (Software)]");
-
-        b.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        b.setForeground(new java.awt.Color(255, 255, 255));
-        b.setText("y luego debe asignar valores entre 0 y 9  de acuerdo al conocimiento que tenga sobre los niveles de confidencialidad, integridad y disponibilidad de los mismos .");
-
-        c.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        c.setForeground(new java.awt.Color(255, 255, 255));
-        c.setText("Para continuar por favor no olvide que como paso inicial debe marcar los activos con los cuales cuente su organización, posteriormente dar click en \"Seleccionar y evaluar\"");
-
-        d.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        d.setForeground(new java.awt.Color(255, 255, 255));
-        d.setText("Nota: Para más información sobre los activos click en los signos de interrogación. Recuerde que (0) es el valor más bajo y (9) es el valor más alto de valoración. ");
-
-        javax.swing.GroupLayout SuperiorLayout = new javax.swing.GroupLayout(Superior);
-        Superior.setLayout(SuperiorLayout);
-        SuperiorLayout.setHorizontalGroup(
-            SuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(SuperiorLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(SuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(a)
-                    .addComponent(b)
-                    .addComponent(c)
-                    .addComponent(d))
-                .addContainerGap(15, Short.MAX_VALUE))
-        );
-        SuperiorLayout.setVerticalGroup(
-            SuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(SuperiorLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(a)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(c)
-                .addGap(2, 2, 2)
-                .addComponent(b)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(d)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
         jButton1.setText("Seleccionar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -291,7 +238,7 @@ public class m_Software extends javax.swing.JFrame {
             }
         });
 
-        p18.setText("[browser] Navegador web");
+        p18.setText("[OS] Sistema operativo");
         p18.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 p18ActionPerformed(evt);
@@ -397,7 +344,7 @@ public class m_Software extends javax.swing.JFrame {
                     .addContainerGap(25, Short.MAX_VALUE)))
         );
 
-        p19.setText("[prp] Desarrollo propio (In house)");
+        p19.setText("[Office] Ofimática");
         p19.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 p19ActionPerformed(evt);
@@ -927,7 +874,7 @@ public class m_Software extends javax.swing.JFrame {
                     .addContainerGap(25, Short.MAX_VALUE)))
         );
 
-        p24.setText("[file] Servidor de ficheros");
+        p24.setText("[Av] Antivirus");
         p24.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 p24ActionPerformed(evt);
@@ -1139,112 +1086,6 @@ public class m_Software extends javax.swing.JFrame {
                     .addContainerGap(25, Short.MAX_VALUE)))
         );
 
-        p26.setText("[office] Ofimática");
-        p26.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                p26ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout gen26Layout = new javax.swing.GroupLayout(gen26);
-        gen26.setLayout(gen26Layout);
-        gen26Layout.setHorizontalGroup(
-            gen26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, gen26Layout.createSequentialGroup()
-                .addContainerGap(17, Short.MAX_VALUE)
-                .addComponent(p26, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(14, 14, 14))
-        );
-        gen26Layout.setVerticalGroup(
-            gen26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(p26, javax.swing.GroupLayout.DEFAULT_SIZE, 37, Short.MAX_VALUE)
-        );
-
-        cb76.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Bajo", "Medio", "Alto" }));
-        cb76.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cb76ActionPerformed(evt);
-            }
-        });
-
-        cb77.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Bajo", "Medio", "Alto" }));
-        cb77.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cb77ActionPerformed(evt);
-            }
-        });
-
-        cb78.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Bajo", "Medio", "Alto" }));
-        cb78.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cb78ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout respuesta26Layout = new javax.swing.GroupLayout(respuesta26);
-        respuesta26.setLayout(respuesta26Layout);
-        respuesta26Layout.setHorizontalGroup(
-            respuesta26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(respuesta26Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(cb76, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(cb77, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(cb78, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(27, Short.MAX_VALUE))
-        );
-        respuesta26Layout.setVerticalGroup(
-            respuesta26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, respuesta26Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(respuesta26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(cb76, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cb77, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cb78, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap())
-        );
-
-        jLabel36.setText("¿?");
-        jLabel36.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel36MouseClicked(evt);
-            }
-        });
-
-        javax.swing.GroupLayout pregunta26Layout = new javax.swing.GroupLayout(pregunta26);
-        pregunta26.setLayout(pregunta26Layout);
-        pregunta26Layout.setHorizontalGroup(
-            pregunta26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pregunta26Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(gen26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(respuesta26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(34, Short.MAX_VALUE))
-            .addGroup(pregunta26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(pregunta26Layout.createSequentialGroup()
-                    .addGap(268, 268, 268)
-                    .addComponent(jLabel36)
-                    .addContainerGap(269, Short.MAX_VALUE)))
-        );
-        pregunta26Layout.setVerticalGroup(
-            pregunta26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pregunta26Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(gen26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-            .addGroup(pregunta26Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(respuesta26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(pregunta26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(pregunta26Layout.createSequentialGroup()
-                    .addGap(25, 25, 25)
-                    .addComponent(jLabel36)
-                    .addContainerGap(25, Short.MAX_VALUE)))
-        );
-
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -1254,14 +1095,13 @@ public class m_Software extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(pregunta18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(pregunta19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(pregunta26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(pregunta25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(pregunta24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(pregunta23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(pregunta22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(pregunta21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(pregunta20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(181, 181, 181))
+                .addGap(139, 139, 139))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1281,9 +1121,7 @@ public class m_Software extends javax.swing.JFrame {
                 .addComponent(pregunta24, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(pregunta25, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(pregunta26, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(91, 91, 91))
+                .addGap(16, 16, 16))
         );
 
         jScrollPane2.setViewportView(jPanel2);
@@ -1346,35 +1184,80 @@ public class m_Software extends javax.swing.JFrame {
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
 
+        Superior4.setBackground(new java.awt.Color(53, 96, 183));
+
+        a4.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        a4.setForeground(new java.awt.Color(255, 255, 255));
+        a4.setText("[Modulo Aplicaciones (Software)]");
+
+        b4.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        b4.setForeground(new java.awt.Color(255, 255, 255));
+        b4.setText("y luego debe escoger entre (Bajo,Medio,Alto)  de acuerdo a los niveles de relevancia sobre la Confidencialidad (C), integridad (I) y disponibilidad (D) de los mismos .");
+
+        c4.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        c4.setForeground(new java.awt.Color(255, 255, 255));
+        c4.setText("Para continuar por favor no olvide que como paso inicial debe marcar los activos con los cuales cuente su organización, posteriormente dar click en \"Seleccionar\"");
+
+        d4.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        d4.setForeground(new java.awt.Color(255, 255, 255));
+        d4.setText("Nota: Para más información sobre los activos click en los signos de interrogación disponibles en cada Ítem. ");
+
+        javax.swing.GroupLayout Superior4Layout = new javax.swing.GroupLayout(Superior4);
+        Superior4.setLayout(Superior4Layout);
+        Superior4Layout.setHorizontalGroup(
+            Superior4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Superior4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(Superior4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(a4)
+                    .addComponent(b4)
+                    .addComponent(c4)
+                    .addComponent(d4))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        Superior4Layout.setVerticalGroup(
+            Superior4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Superior4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(a4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(c4)
+                .addGap(2, 2, 2)
+                .addComponent(b4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(d4)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(Inferior, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(Superior, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jScrollPane2)
-                        .addContainerGap())
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(Ayuda, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jButton1)
                         .addGap(18, 18, 18)
                         .addComponent(jButton2)
-                        .addGap(65, 65, 65))))
+                        .addGap(65, 65, 65))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                        .addContainerGap())))
+            .addComponent(Superior4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(227, 227, 227)
                     .addComponent(Info, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(252, Short.MAX_VALUE)))
+                    .addContainerGap(212, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(Superior, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Superior4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 286, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -1407,24 +1290,26 @@ public class m_Software extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
       /*JRadioButton[] preguntas=new JRadioButton[4];
-      preguntas=AgregarPreguntas(p1,p2,p4,p5);
-      JPanel[] respuestas=new JPanel[4];
+         preguntas=AgregarPreguntas(p1,p2,p4,p5);
+         JPanel[] respuestas=new JPanel[4];
          pregunta4.setBounds(93, pregunta3.getY()+40, 544, 34);143 inicia
-      respuestas=AgregarRespuestas(r2,r3,r4,r6);
+         respuestas=AgregarRespuestas(r2,r3,r4,r6);
+         for (int i = 0; i < preguntas.length; i++) {
+         if(preguntas[i].isSelected())respuestas[i].setVisible(false);
+         }
+         */
+        JPanel[] controlador_preguntas = new JPanel[8];
+        controlador_preguntas = Preguntas(pregunta18, pregunta19, pregunta20,
+                pregunta21, pregunta22, pregunta23, pregunta24, pregunta25);
+        JRadioButton[] preguntas = new JRadioButton[8];
+        preguntas = AgregarPreguntas(p18, p19, p20, p21, p22, p23, p24, p25);
         for (int i = 0; i < preguntas.length; i++) {
-            if(preguntas[i].isSelected())respuestas[i].setVisible(false);
+            if (!preguntas[i].isSelected()) {
+                controlador_preguntas[i].setVisible(false);
+            }
         }
-     */
-        JPanel[]controlador_preguntas=new JPanel[9];
-       controlador_preguntas=Preguntas(pregunta18,pregunta19,pregunta20,
-               pregunta21,pregunta22,pregunta23,pregunta24,pregunta25,pregunta26);
-       JRadioButton[] preguntas=new JRadioButton[9];
-      preguntas=AgregarPreguntas(p18,p19,p20,p21,p22,p23,p24,p25,p26);
-        for (int i = 0; i < preguntas.length; i++) {
-            if(!preguntas[i].isSelected())controlador_preguntas[i].setVisible(false);
-        }
-        JPanel mostrar[]=AgregarRespuestas(respuesta18,respuesta19,respuesta20,respuesta21,
-                respuesta22,respuesta23,respuesta24,respuesta25,respuesta26);
+        JPanel mostrar[] = AgregarRespuestas(respuesta18, respuesta19, respuesta20, respuesta21,
+                respuesta22, respuesta23, respuesta24, respuesta25);
         for (int i = 0; i < mostrar.length; i++) {
             mostrar[i].setVisible(true);
         }
@@ -1432,46 +1317,46 @@ public class m_Software extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        ArrayList puntos=new ArrayList<String>();
-        int controlar=0;
-        int inicio=0;
-        int finalizar=2;
-        String datos="";
-        JComboBox[] opciones=new JComboBox[27];
-        opciones=respuestas(cb52,cb53,cb54,cb55,cb56,cb57,cb58,cb59,cb60,
-                cb61,cb62,cb63,cb64,cb65,cb66,cb67,cb68,cb69,cb70,cb71,cb72,cb73,
-                cb74,cb75,cb76,cb77,cb78);
-         JRadioButton[] preguntas=new JRadioButton[9];
-        preguntas=AgregarPreguntas(p18,p19,p20,p21,p22,p23,p24,p25,p26);
+        ArrayList puntos = new ArrayList<String>();
+        int controlar = 0;
+        int inicio = 0;
+        int finalizar = 2;
+        String datos = "";
+        JComboBox[] opciones = new JComboBox[24];
+        opciones = respuestas(cb52, cb53, cb54, cb55, cb56, cb57, cb58, cb59, cb60,
+                cb61, cb62, cb63, cb64, cb65, cb66, cb67, cb68, cb69, cb70, cb71, cb72, cb73,
+                cb74, cb75);
+        JRadioButton[] preguntas = new JRadioButton[8];
+        preguntas = AgregarPreguntas(p18, p19, p20, p21, p22, p23, p24, p25);
         for (int i = 0; i < preguntas.length; i++) {
-            if(preguntas[i].isSelected()) {
-                for ( controlar =inicio; controlar <= finalizar; controlar++) {
-                  datos=datos+opciones[controlar].getSelectedItem().toString()+"/";
+            if (preguntas[i].isSelected()) {
+                for (controlar = inicio; controlar <= finalizar; controlar++) {
+                    datos = datos + opciones[controlar].getSelectedItem().toString() + "/";
                 }
-                inicio=finalizar+1;
-                finalizar=inicio+2;
-            }else{
-             inicio=finalizar+1;
-             finalizar=inicio+2;
+                inicio = finalizar + 1;
+                finalizar = inicio + 2;
+            } else {
+                inicio = finalizar + 1;
+                finalizar = inicio + 2;
             }
-        if(datos!=""){
-            puntos.add("software"+(i+1)+"/"+datos);
-            datos="";
-        }
-        
+            if (datos != "") {
+                puntos.add("software" + (i + 1) + "/" + datos);
+                datos = "";
+            }
+
         }
         System.out.println(puntos);
-        m_Arquitectura m=new m_Arquitectura();
+        m_Arquitectura m = new m_Arquitectura();
         m.subir(puntos);
         volver();
-           
-        
+
+
     }//GEN-LAST:event_jButton2ActionPerformed
-public void volver(){
-        Principal action=new Principal();
+    public void volver() {
+        Principal action = new Principal();
         action.setVisible(true);
-       this.dispose();
-}
+        this.dispose();
+    }
     private void p18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p18ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_p18ActionPerformed
@@ -1600,26 +1485,10 @@ public void volver(){
         // TODO add your handling code here:
     }//GEN-LAST:event_cb75ActionPerformed
 
-    private void p26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p26ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_p26ActionPerformed
-
-    private void cb76ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb76ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cb76ActionPerformed
-
-    private void cb77ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb77ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cb77ActionPerformed
-
-    private void cb78ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb78ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cb78ActionPerformed
-
     private void jLabel29MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel29MouseClicked
 
         JOptionPane.showMessageDialog(rootPane, "La empresa u organización desarrollan sus propios sistemas con sus "
-            + "programadores y analistas","[prp] Desarrollo propio (in house)", JOptionPane.INFORMATION_MESSAGE);
+                + "programadores y analistas", "[prp] Desarrollo propio (in house)", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_jLabel29MouseClicked
 
     private void jLabel30MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel30MouseClicked
@@ -1628,103 +1497,97 @@ public void volver(){
 
     private void jLabel31MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel31MouseClicked
 
-        JOptionPane.showMessageDialog(rootPane, "Dispositivo de software que proporciona servicios de aplicaciones a las máquinas clientes","[app] Servidor de aplicaciones", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(rootPane, "Dispositivo de software que proporciona servicios de aplicaciones a las máquinas clientes", "[app] Servidor de aplicaciones", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_jLabel31MouseClicked
 
     private void jLabel32MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel32MouseClicked
 
         JOptionPane.showMessageDialog(rootPane, "Programa de computador usado para leer y enviar mensajes que son"
-            + sl+" almacenados en la misma máquina donde se ejecutan","[email_client] Cliente de correo electrónico", JOptionPane.INFORMATION_MESSAGE);
+                + sl + " almacenados en la misma máquina donde se ejecutan", "[email_client] Cliente de correo electrónico", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_jLabel32MouseClicked
 
     private void jLabel33MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel33MouseClicked
 
         JOptionPane.showMessageDialog(rootPane, "Aplicación de red de computadores alojada en un servidor de internet"
-            + sl+" para poder prestar el servicio de correo electrónico","[email_server] Servidor de correo electrónico", JOptionPane.INFORMATION_MESSAGE);
+                + sl + " para poder prestar el servicio de correo electrónico", "[email_server] Servidor de correo electrónico", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_jLabel33MouseClicked
 
     private void jLabel34MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel34MouseClicked
 
         JOptionPane.showMessageDialog(rootPane, "Permite el acceso remoto a los archivos que almacena o"
-            + sl+" sobre los archivos a los cuales tiene acceso","[file] Servidor de ficheros", JOptionPane.INFORMATION_MESSAGE);
+                + sl + " sobre los archivos a los cuales tiene acceso", "[file] Servidor de ficheros", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_jLabel34MouseClicked
 
     private void jLabel35MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel35MouseClicked
 
         JOptionPane.showMessageDialog(rootPane, "Programas que permiten el almacenamiento, modificación, y extracción de"
-            +sl+ " la información almacenada en una base de datos","[dbms] Sistema de gestión de bases de datos", JOptionPane.INFORMATION_MESSAGE);
+                + sl + " la información almacenada en una base de datos", "[dbms] Sistema de gestión de bases de datos", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_jLabel35MouseClicked
-
-    private void jLabel36MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel36MouseClicked
-
-        JOptionPane.showMessageDialog(rootPane, "Conjunto de herramientas utilizadas para producción de textos, diapositivas u hojas de cálculo","[Office] Ofimática", JOptionPane.INFORMATION_MESSAGE);
-    }//GEN-LAST:event_jLabel36MouseClicked
 
     private void jLabel39MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel39MouseClicked
 
-        JOptionPane.showMessageDialog(rootPane, "Software utilizado para navgar en la red de Internet","[browser] Navegador web", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(rootPane, "Software utilizado para navgar en la red de Internet", "[browser] Navegador web", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_jLabel39MouseClicked
 
     private void d12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_d12MouseClicked
 
         JOptionPane.showMessageDialog(rootPane, "La información no se pone a disposición ni se revela a individuos, "
-            + sl+ "entidades o procesos no autorizados"
-            +sl+""
-            + sl+"Valoración: ¿Qué daño causaría que lo conociera quién no debe?",
-            "[Confidencialidad]", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:
+                + sl + "entidades o procesos no autorizados"
+                + sl + ""
+                + sl + "Valoración: ¿Qué daño causaría que lo conociera quién no debe?",
+                "[Confidencialidad]", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:
     }//GEN-LAST:event_d12MouseClicked
 
     private void d13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_d13MouseClicked
 
         JOptionPane.showMessageDialog(rootPane, "Mantenimiento de la exactitud y completitud de la información y sus"
-            + sl+"métodos de proceso."
-            +sl+""
-            +sl+"Valoración: ¿Qué perjuicio causaría qué estuviera dañado o corrupto?","[Integridad]", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:// TODO add your handling code here:
+                + sl + "métodos de proceso."
+                + sl + ""
+                + sl + "Valoración: ¿Qué perjuicio causaría qué estuviera dañado o corrupto?", "[Integridad]", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:// TODO add your handling code here:
     }//GEN-LAST:event_d13MouseClicked
 
     private void d14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_d14MouseClicked
 
         JOptionPane.showMessageDialog(rootPane, "Acceso y utilización de la información y los sistemas de tratamiento de la misma"
-            + sl + "por parte de los individuos, entidades o procesos autorizados cuando lo requieran "
-            +sl+""
-            + sl+ "Valoración: ¿Qué perjuicio causaría no tenerlo o no poder utilizarlo?",
-            "[Disponibilidad]", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:// TODO add your handling code here:
+                + sl + "por parte de los individuos, entidades o procesos autorizados cuando lo requieran "
+                + sl + ""
+                + sl + "Valoración: ¿Qué perjuicio causaría no tenerlo o no poder utilizarlo?",
+                "[Disponibilidad]", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:// TODO add your handling code here:
         // TODO add your handling code here:
     }//GEN-LAST:event_d14MouseClicked
 
-    public  JRadioButton[] AgregarPreguntas(JRadioButton... arrayOpciones)
-{
-  JRadioButton[] preguntas=new JRadioButton[arrayOpciones.length];
-    for (int i = 0; i < arrayOpciones.length; i++) {
-        preguntas[i]=arrayOpciones[i];
+    public JRadioButton[] AgregarPreguntas(JRadioButton... arrayOpciones) {
+        JRadioButton[] preguntas = new JRadioButton[arrayOpciones.length];
+        for (int i = 0; i < arrayOpciones.length; i++) {
+            preguntas[i] = arrayOpciones[i];
+        }
+        return preguntas;
     }
-    return preguntas;
-}
 
-        public  JPanel[] AgregarRespuestas(JPanel... arrayOpciones)
-{
-  JPanel[] respuestas=new JPanel[arrayOpciones.length];
-    for (int i = 0; i < arrayOpciones.length; i++) {
-        respuestas[i]=arrayOpciones[i];
+    public JPanel[] AgregarRespuestas(JPanel... arrayOpciones) {
+        JPanel[] respuestas = new JPanel[arrayOpciones.length];
+        for (int i = 0; i < arrayOpciones.length; i++) {
+            respuestas[i] = arrayOpciones[i];
+        }
+        return respuestas;
     }
-    return respuestas;
-}
-         public  JPanel[] Preguntas(JPanel... arrayOpciones)
-{
-  JPanel[] respuestas=new JPanel[arrayOpciones.length];
-    for (int i = 0; i < arrayOpciones.length; i++) {
-        respuestas[i]=arrayOpciones[i];
+
+    public JPanel[] Preguntas(JPanel... arrayOpciones) {
+        JPanel[] respuestas = new JPanel[arrayOpciones.length];
+        for (int i = 0; i < arrayOpciones.length; i++) {
+            respuestas[i] = arrayOpciones[i];
+        }
+        return respuestas;
     }
-    return respuestas;
-}
-         public JComboBox[] respuestas(JComboBox... ArrayOpciones)
-{
-         JComboBox[] res=new JComboBox[ArrayOpciones.length];
-         for (int i = 0; i < ArrayOpciones.length; i++) {
-        res[i]=ArrayOpciones[i];
+
+    public JComboBox[] respuestas(JComboBox... ArrayOpciones) {
+        JComboBox[] res = new JComboBox[ArrayOpciones.length];
+        for (int i = 0; i < ArrayOpciones.length; i++) {
+            res[i] = ArrayOpciones[i];
+        }
+        return res;
     }
-         return res;
-   }
+
     /**
      * @param args the command line arguments
      */
@@ -1771,10 +1634,10 @@ public void volver(){
     private javax.swing.JPanel Ayuda;
     private javax.swing.JPanel Inferior;
     private javax.swing.JPanel Info;
-    private javax.swing.JPanel Superior;
-    private javax.swing.JLabel a;
-    private javax.swing.JLabel b;
-    private javax.swing.JLabel c;
+    private javax.swing.JPanel Superior4;
+    private javax.swing.JLabel a4;
+    private javax.swing.JLabel b4;
+    private javax.swing.JLabel c4;
     private javax.swing.JLabel c6;
     private javax.swing.JComboBox cb52;
     private javax.swing.JComboBox cb53;
@@ -1800,15 +1663,12 @@ public void volver(){
     private javax.swing.JComboBox cb73;
     private javax.swing.JComboBox cb74;
     private javax.swing.JComboBox cb75;
-    private javax.swing.JComboBox cb76;
-    private javax.swing.JComboBox cb77;
-    private javax.swing.JComboBox cb78;
-    private javax.swing.JLabel d;
     private javax.swing.JLabel d10;
     private javax.swing.JLabel d11;
     private javax.swing.JLabel d12;
     private javax.swing.JLabel d13;
     private javax.swing.JLabel d14;
+    private javax.swing.JLabel d4;
     private javax.swing.JLabel d6;
     private javax.swing.JPanel gen18;
     private javax.swing.JPanel gen19;
@@ -1818,7 +1678,6 @@ public void volver(){
     private javax.swing.JPanel gen23;
     private javax.swing.JPanel gen24;
     private javax.swing.JPanel gen25;
-    private javax.swing.JPanel gen26;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel10;
@@ -1832,7 +1691,6 @@ public void volver(){
     private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
-    private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -1847,7 +1705,6 @@ public void volver(){
     private javax.swing.JRadioButton p23;
     private javax.swing.JRadioButton p24;
     private javax.swing.JRadioButton p25;
-    private javax.swing.JRadioButton p26;
     private javax.swing.JPanel pregunta18;
     private javax.swing.JPanel pregunta19;
     private javax.swing.JPanel pregunta20;
@@ -1856,7 +1713,6 @@ public void volver(){
     private javax.swing.JPanel pregunta23;
     private javax.swing.JPanel pregunta24;
     private javax.swing.JPanel pregunta25;
-    private javax.swing.JPanel pregunta26;
     private javax.swing.JPanel respuesta18;
     private javax.swing.JPanel respuesta19;
     private javax.swing.JPanel respuesta20;
@@ -1865,6 +1721,5 @@ public void volver(){
     private javax.swing.JPanel respuesta23;
     private javax.swing.JPanel respuesta24;
     private javax.swing.JPanel respuesta25;
-    private javax.swing.JPanel respuesta26;
     // End of variables declaration//GEN-END:variables
 }

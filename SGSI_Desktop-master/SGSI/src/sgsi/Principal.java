@@ -20,7 +20,7 @@ import javax.swing.JOptionPane;
  * @author Luis Efe
  */
 public class Principal extends javax.swing.JFrame {
-    
+
     String sl = System.getProperty("line.separator");
 
     /**
@@ -29,7 +29,7 @@ public class Principal extends javax.swing.JFrame {
     public Principal() {
         initComponents();
         this.setLocationRelativeTo(null);
-       // reporte.setVisible(true);
+        // reporte.setVisible(true);
         //this.setExtendedState(MAXIMIZED_BOTH);
     }
 
@@ -50,21 +50,17 @@ public class Principal extends javax.swing.JFrame {
         g1 = new javax.swing.JRadioButton();
         g2 = new javax.swing.JRadioButton();
         g3 = new javax.swing.JRadioButton();
-        g4 = new javax.swing.JRadioButton();
         g5 = new javax.swing.JRadioButton();
         g6 = new javax.swing.JRadioButton();
         g7 = new javax.swing.JRadioButton();
         g8 = new javax.swing.JRadioButton();
-        g10 = new javax.swing.JRadioButton();
         aquí1 = new javax.swing.JButton();
         aquí2 = new javax.swing.JButton();
         aquí3 = new javax.swing.JButton();
-        aquí4 = new javax.swing.JButton();
         aquí5 = new javax.swing.JButton();
         aquí6 = new javax.swing.JButton();
         aquí7 = new javax.swing.JButton();
         aquí8 = new javax.swing.JButton();
-        aquí10 = new javax.swing.JButton();
         Superio = new javax.swing.JPanel();
         a = new javax.swing.JLabel();
         b = new javax.swing.JLabel();
@@ -127,10 +123,6 @@ public class Principal extends javax.swing.JFrame {
         g3.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         g3.setText("Datos / Información");
 
-        Grupos.add(g4);
-        g4.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        g4.setText("Servicios");
-
         Grupos.add(g5);
         g5.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         g5.setText("Aplicaciones / Software");
@@ -146,10 +138,6 @@ public class Principal extends javax.swing.JFrame {
         Grupos.add(g8);
         g8.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         g8.setText("Soportes de información");
-
-        Grupos.add(g10);
-        g10.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        g10.setText("Personal");
 
         aquí1.setText("Información");
         aquí1.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -174,13 +162,6 @@ public class Principal extends javax.swing.JFrame {
         aquí3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 aquí3MouseClicked(evt);
-            }
-        });
-
-        aquí4.setText("Información");
-        aquí4.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                aquí4MouseClicked(evt);
             }
         });
 
@@ -212,24 +193,13 @@ public class Principal extends javax.swing.JFrame {
             }
         });
 
-        aquí10.setText("Información");
-        aquí10.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                aquí10MouseClicked(evt);
-            }
-        });
-
         javax.swing.GroupLayout PrincipalLayout = new javax.swing.GroupLayout(Principal);
         Principal.setLayout(PrincipalLayout);
         PrincipalLayout.setHorizontalGroup(
             PrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PrincipalLayout.createSequentialGroup()
-                .addGap(258, 258, 258)
+                .addGap(262, 262, 262)
                 .addGroup(PrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(PrincipalLayout.createSequentialGroup()
-                        .addComponent(g10)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(aquí10))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PrincipalLayout.createSequentialGroup()
                         .addComponent(g8)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -247,10 +217,6 @@ public class Principal extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(aquí5))
                     .addGroup(PrincipalLayout.createSequentialGroup()
-                        .addComponent(g4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(aquí4))
-                    .addGroup(PrincipalLayout.createSequentialGroup()
                         .addComponent(g3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(aquí3))
@@ -262,12 +228,12 @@ public class Principal extends javax.swing.JFrame {
                         .addGroup(PrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(aquí2)
                             .addComponent(aquí1))))
-                .addContainerGap(321, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         PrincipalLayout.setVerticalGroup(
             PrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PrincipalLayout.createSequentialGroup()
-                .addContainerGap(11, Short.MAX_VALUE)
+            .addGroup(PrincipalLayout.createSequentialGroup()
+                .addGap(33, 33, 33)
                 .addGroup(PrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(g1)
                     .addComponent(aquí1))
@@ -279,10 +245,6 @@ public class Principal extends javax.swing.JFrame {
                 .addGroup(PrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(g3)
                     .addComponent(aquí3))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(PrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(g4)
-                    .addComponent(aquí4))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(PrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(g5)
@@ -299,11 +261,7 @@ public class Principal extends javax.swing.JFrame {
                 .addGroup(PrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(g8)
                     .addComponent(aquí8))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(PrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(g10)
-                    .addComponent(aquí10))
-                .addGap(43, 43, 43))
+                .addContainerGap(77, Short.MAX_VALUE))
         );
 
         Superio.setBackground(new java.awt.Color(53, 96, 183));
@@ -318,11 +276,11 @@ public class Principal extends javax.swing.JFrame {
 
         d.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         d.setForeground(new java.awt.Color(255, 255, 255));
-        d.setText("Recuerde por favor contar con tiempo suficiente para realizar la evaluación puesto que si el sistema se cierra usted no podría continuar, perdería ");
+        d.setText("Recuerde por favor contar con tiempo suficiente para realizar la evaluación puesto que si cierra el sistema usted no podría continuar, perdería ");
 
         b1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         b1.setForeground(new java.awt.Color(255, 255, 255));
-        b1.setText("Nota: Por favor no olvide seleccionar cada grupo");
+        b1.setText("Nota: Por favor no olvide seleccionar cada grupo para evaluar y al finalizar dar click en el botón (Generar reporte)");
 
         d1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         d1.setForeground(new java.awt.Color(255, 255, 255));
@@ -340,7 +298,7 @@ public class Principal extends javax.swing.JFrame {
                     .addComponent(d)
                     .addComponent(b1)
                     .addComponent(d1, javax.swing.GroupLayout.PREFERRED_SIZE, 310, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(19, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         SuperioLayout.setVerticalGroup(
             SuperioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -420,11 +378,11 @@ public class Principal extends javax.swing.JFrame {
         if (g1.isSelected()) {
             m_Activos activos = new m_Activos();
             activos.setVisible(true);
-           this.dispose();
+            this.dispose();
         } else if (g2.isSelected()) {
             m_Arquitectura arquitectura = new m_Arquitectura();
             arquitectura.setVisible(true);
-          this.dispose();
+            this.dispose();
         } else if (g3.isSelected()) {
             m_Datos datos = new m_Datos();
             datos.setVisible(true);
@@ -432,42 +390,36 @@ public class Principal extends javax.swing.JFrame {
         } else if (g3.isSelected()) {
             m_Datos datos = new m_Datos();
             datos.setVisible(true);
-            
-             this.setVisible(false);
+            this.setVisible(false);
         } else if (g5.isSelected()) {
             m_Software software = new m_Software();
             software.setVisible(true);
-            
-             this.setVisible(false);
+
+            this.setVisible(false);
         } else if (g6.isSelected()) {
             m_Hardware hardware = new m_Hardware();
             hardware.setVisible(true);
-          
-             this.setVisible(false);
+
+            this.setVisible(false);
         } else if (g7.isSelected()) {
             m_Redes redes = new m_Redes();
             redes.setVisible(true);
-        
-             this.setVisible(false);
+
+            this.setVisible(false);
         } else if (g8.isSelected()) {
             m_Soportes soportes = new m_Soportes();
             soportes.setVisible(true);
-           
-             this.setVisible(false);
-        } else if (g10.isSelected()) {
-            m_Personal personal = new m_Personal();
-            personal.setVisible(true);
-            
-             this.setVisible(false);
+
+            this.setVisible(false);
         }
 
     }
 
     private void verificarGruposActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_verificarGruposActionPerformed
 
-        if (g1.isSelected() || g2.isSelected() || g3.isSelected() || g4.isSelected() || g5.isSelected() || g6.isSelected()
-                || g7.isSelected() || g8.isSelected() || g10.isSelected()) {
-            validarGrupos();        
+        if (g1.isSelected() || g2.isSelected() || g3.isSelected() ||  g5.isSelected() || g6.isSelected()
+                || g7.isSelected() || g8.isSelected()) {
+            validarGrupos();
         } else {
             JOptionPane.showMessageDialog(rootPane, "Por favor elija un grupo para evaluar");
         }
@@ -484,15 +436,15 @@ public class Principal extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Por favor continue con la evaluación", "Sistema de evaluación SGSI", JOptionPane.INFORMATION_MESSAGE);
         }
     }//GEN-LAST:event_jButton2MouseClicked
-public int comprueba(){
- int a=0;
-         pkqControlador.clsConecta objConecta;
-       objConecta=new pkqControlador.clsConecta();
-	java.sql.ResultSet hoja_resultado =null;
-	String SQL = "select * from respuestas";
-	hoja_resultado=objConecta.consulta(SQL);
+    public int comprueba() {
+        int a = 0;
+        pkqControlador.clsConecta objConecta;
+        objConecta = new pkqControlador.clsConecta();
+        java.sql.ResultSet hoja_resultado = null;
+        String SQL = "select * from respuestas";
+        hoja_resultado = objConecta.consulta(SQL);
         try {
-            while(hoja_resultado.next()){
+            while (hoja_resultado.next()) {
                 a++;
             }
             System.out.println(a);
@@ -500,40 +452,40 @@ public int comprueba(){
             Logger.getLogger(Inicio.class.getName()).log(Level.SEVERE, null, ex);
         }
         return a;
-}
+    }
     private void verificarGrupos1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_verificarGrupos1ActionPerformed
         // TODO add your handling code here:
-        resultados r=new resultados();
-        JFileChooser seleccion=new JFileChooser();
+        resultados r = new resultados();
+        JFileChooser seleccion = new JFileChooser();
         FileOutputStream Archivo = null;
-          if(comprueba()!=0){
-        if(seleccion.showDialog(null,"Guardar")== JFileChooser.APPROVE_OPTION){
-          
-            try {
-                String ruta=seleccion.getSelectedFile()+".pdf";
-                r.crearPDF(ruta);
-                JOptionPane.showMessageDialog(null,"Se a creado correctamente el reporte");
-            } catch (FileNotFoundException ex) {
-                Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
-            } catch (DocumentException ex) {
-                Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
-            } catch (SQLException ex) {
-                Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
+        if (comprueba() != 0) {
+            if (seleccion.showDialog(null, "Guardar") == JFileChooser.APPROVE_OPTION) {
+
+                try {
+                    String ruta = seleccion.getSelectedFile() + ".pdf";
+                    r.crearPDF(ruta);
+                    JOptionPane.showMessageDialog(null, "Se ha creado correctamente el reporte");
+                } catch (FileNotFoundException ex) {
+                    Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (DocumentException ex) {
+                    Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (SQLException ex) {
+                    Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
+                }
+
             }
-              
+        } else {
+            JOptionPane.showMessageDialog(null, "Debe seleccionar cada grupo para generar reporte");
         }
-          }else{
-              JOptionPane.showMessageDialog(null,"Debe contestar los items para generar reporte");
-          }
     }//GEN-LAST:event_verificarGrupos1ActionPerformed
 
     private void aquí1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_aquí1MouseClicked
         // TODO add your handling code here:
-        
+
         JOptionPane.showMessageDialog(rootPane, "En un sistema de información hay dos cosas esenciales: "
-                + sl+"La información que se maneja y los servicios que prestan. "
-                + sl+"Estos activos esenciales marcan los requisitos de seguridad para "
-                + sl+"todos los demás componentes del sistema","[essential] activos esenciales", JOptionPane.INFORMATION_MESSAGE);
+                + sl + "La información que se maneja y los servicios que prestan. "
+                + sl + "Estos activos esenciales marcan los requisitos de seguridad para "
+                + sl + "todos los demás componentes del sistema", "[essential] activos esenciales", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_aquí1MouseClicked
 
     private void aquí1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aquí1ActionPerformed
@@ -543,54 +495,41 @@ public int comprueba(){
     private void aquí2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_aquí2MouseClicked
         // TODO add your handling code here:
         JOptionPane.showMessageDialog(null, "Se trata de elementos que permiten estructurar el sistema "
-                + sl+"definiendo su arquitectura interna y sus relaciones con el exterior", "[arch] Arquitectura del sistema", JOptionPane.INFORMATION_MESSAGE);
+                + sl + "definiendo su arquitectura interna y sus relaciones con el exterior", "[arch] Arquitectura del sistema", JOptionPane.INFORMATION_MESSAGE);
 
     }//GEN-LAST:event_aquí2MouseClicked
 
     private void aquí3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_aquí3MouseClicked
         // TODO add your handling code here:
-        
+
         JOptionPane.showMessageDialog(null, "Los datos son el corazón que permite a una organización prestar sus servicios. La información es" + sl + ""
                 + "un activo abstracto que es almacenado en equipos o soportes de información", "[D] Datos/Información", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_aquí3MouseClicked
 
-    private void aquí4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_aquí4MouseClicked
-        // TODO add your handling code here:
-        
-        JOptionPane.showMessageDialog(rootPane, "Esta sección contempla servicios prestados por el sistema."
-                +sl+ "auxiliares que se necesitan para poder organizar el sistema", "[S] Servicios", JOptionPane.INFORMATION_MESSAGE);
-    }//GEN-LAST:event_aquí4MouseClicked
-
     private void aquí5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_aquí5MouseClicked
         // TODO add your handling code here:
-        
+
         JOptionPane.showMessageDialog(rootPane, "" + sl + "Software que permite manejar los datos de información", "[SW] Aplicaciones (Software)", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_aquí5MouseClicked
 
     private void aquí6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_aquí6MouseClicked
         // TODO add your handling code here:
-        
+
         JOptionPane.showMessageDialog(rootPane, "Dispositivos o equipos informáticos que permiten hospedar datos, aplicaciones o servicios", "[HW] Equipos informáticos (hardware)", JOptionPane.INFORMATION_MESSAGE);
 
     }//GEN-LAST:event_aquí6MouseClicked
 
     private void aquí7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_aquí7MouseClicked
         // TODO add your handling code here:
-        
+
         JOptionPane.showMessageDialog(rootPane, "Son medios de transporte que permiten el intercambio de datos de un sitio a otro", "[COM] Redes de comunicaciones", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_aquí7MouseClicked
 
     private void aquí8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_aquí8MouseClicked
         // TODO add your handling code here:
-        
+
         JOptionPane.showMessageDialog(rootPane, "Dispositivos que permiten almacenar información de forma permanente o, al menos, durante largos periodos de tiempo.", "[Media] Soportes de información", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_aquí8MouseClicked
-
-    private void aquí10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_aquí10MouseClicked
-        // TODO add your handling code here:
-        
-        JOptionPane.showMessageDialog(rootPane, "Personas que manipula u operan todos los elementos anteriormente mencionados","[P] Personal", JOptionPane.INFORMATION_MESSAGE);
-    }//GEN-LAST:event_aquí10MouseClicked
 
     /**
      * @param args the command line arguments
@@ -635,10 +574,8 @@ public int comprueba(){
     private javax.swing.JPanel Superio;
     private javax.swing.JLabel a;
     private javax.swing.JButton aquí1;
-    private javax.swing.JButton aquí10;
     private javax.swing.JButton aquí2;
     private javax.swing.JButton aquí3;
-    private javax.swing.JButton aquí4;
     private javax.swing.JButton aquí5;
     private javax.swing.JButton aquí6;
     private javax.swing.JButton aquí7;
@@ -650,10 +587,8 @@ public int comprueba(){
     private javax.swing.JLabel d24;
     private javax.swing.JLabel d6;
     private javax.swing.JRadioButton g1;
-    private javax.swing.JRadioButton g10;
     private javax.swing.JRadioButton g2;
     private javax.swing.JRadioButton g3;
-    private javax.swing.JRadioButton g4;
     private javax.swing.JRadioButton g5;
     private javax.swing.JRadioButton g6;
     private javax.swing.JRadioButton g7;

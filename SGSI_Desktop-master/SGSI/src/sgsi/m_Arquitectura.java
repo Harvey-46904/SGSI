@@ -1,4 +1,3 @@
-
 package sgsi;
 
 import java.awt.List;
@@ -16,6 +15,7 @@ import pkqControlador.clsConecta;
  * @author Luis Efe
  */
 public class m_Arquitectura extends javax.swing.JFrame {
+
     String sl = System.getProperty("line.separator");
 
     /**
@@ -25,7 +25,7 @@ public class m_Arquitectura extends javax.swing.JFrame {
         initComponents();
         this.setLocationRelativeTo(null);
         ;
-       JPanel ocultar[]=AgregarRespuestas(respuesta5,respuesta6,respuesta7);
+        JPanel ocultar[] = AgregarRespuestas(respuesta5, respuesta6, respuesta7);
         for (int i = 0; i < ocultar.length; i++) {
             ocultar[i].setVisible(false);
         }
@@ -57,11 +57,6 @@ public class m_Arquitectura extends javax.swing.JFrame {
         Inferior = new javax.swing.JPanel();
         d6 = new javax.swing.JLabel();
         d10 = new javax.swing.JLabel();
-        Superior = new javax.swing.JPanel();
-        a = new javax.swing.JLabel();
-        b = new javax.swing.JLabel();
-        c = new javax.swing.JLabel();
-        d = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         pregunta6 = new javax.swing.JPanel();
@@ -87,6 +82,11 @@ public class m_Arquitectura extends javax.swing.JFrame {
         cb13 = new javax.swing.JComboBox();
         cb14 = new javax.swing.JComboBox();
         cb15 = new javax.swing.JComboBox();
+        Superior = new javax.swing.JPanel();
+        a = new javax.swing.JLabel();
+        b = new javax.swing.JLabel();
+        c = new javax.swing.JLabel();
+        d = new javax.swing.JLabel();
 
         jLabel10.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel10.setText("Para más información sobre este módulo por favor dar un click ");
@@ -98,7 +98,7 @@ public class m_Arquitectura extends javax.swing.JFrame {
         c6.setText("Por favor, no olvide que como paso inicial debe marcar los activos con los cuales cuente su organización, posteriormente dar click en \"Seleccionar y evaluar\"");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Activos esenciales");
+        setTitle("Arquitectura del sistema");
         setBackground(new java.awt.Color(255, 255, 255));
         setResizable(false);
         setSize(new java.awt.Dimension(0, 0));
@@ -235,51 +235,6 @@ public class m_Arquitectura extends javax.swing.JFrame {
                 .addComponent(d6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(d10)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        Superior.setBackground(new java.awt.Color(53, 96, 183));
-
-        a.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        a.setForeground(new java.awt.Color(255, 255, 255));
-        a.setText("[Modulo Arquitectura del sistema]");
-
-        b.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        b.setForeground(new java.awt.Color(255, 255, 255));
-        b.setText("y luego debe asignar valores entre 0 y 9  de acuerdo al conocimiento que tenga sobre los niveles de confidencialidad, integridad y disponibilidad de los mismos .");
-
-        c.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        c.setForeground(new java.awt.Color(255, 255, 255));
-        c.setText("Para continuar por favor no olvide que como paso inicial debe marcar los activos con los cuales cuente su organización, posteriormente dar click en \"Seleccionar y evaluar\"");
-
-        d.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        d.setForeground(new java.awt.Color(255, 255, 255));
-        d.setText("Nota: Para más información sobre los activos click en los signos de interrogación. Recuerde que (0) es el valor más bajo y (9) es el valor más alto de valoración. ");
-
-        javax.swing.GroupLayout SuperiorLayout = new javax.swing.GroupLayout(Superior);
-        Superior.setLayout(SuperiorLayout);
-        SuperiorLayout.setHorizontalGroup(
-            SuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(SuperiorLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(SuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(a)
-                    .addComponent(b)
-                    .addComponent(c)
-                    .addComponent(d))
-                .addContainerGap(15, Short.MAX_VALUE))
-        );
-        SuperiorLayout.setVerticalGroup(
-            SuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(SuperiorLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(a)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(c)
-                .addGap(2, 2, 2)
-                .addComponent(b)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(d)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -605,12 +560,56 @@ public class m_Arquitectura extends javax.swing.JFrame {
                 .addGap(65, 65, 65))
         );
 
+        Superior.setBackground(new java.awt.Color(53, 96, 183));
+
+        a.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        a.setForeground(new java.awt.Color(255, 255, 255));
+        a.setText("[Modulo Arquitectura del sistema]");
+
+        b.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        b.setForeground(new java.awt.Color(255, 255, 255));
+        b.setText("y luego debe escoger entre (Bajo,Medio,Alto)  de acuerdo a los niveles de relevancia sobre la Confidencialidad (C), integridad (I) y disponibilidad (D) de los mismos .");
+
+        c.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        c.setForeground(new java.awt.Color(255, 255, 255));
+        c.setText("Para continuar por favor no olvide que como paso inicial debe marcar los activos con los cuales cuente su organización, posteriormente dar click en \"Seleccionar\"");
+
+        d.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        d.setForeground(new java.awt.Color(255, 255, 255));
+        d.setText("Nota: Para más información sobre los activos click en los signos de interrogación disponibles en cada Ítem. ");
+
+        javax.swing.GroupLayout SuperiorLayout = new javax.swing.GroupLayout(Superior);
+        Superior.setLayout(SuperiorLayout);
+        SuperiorLayout.setHorizontalGroup(
+            SuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SuperiorLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(SuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(a)
+                    .addComponent(b)
+                    .addComponent(c)
+                    .addComponent(d))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        SuperiorLayout.setVerticalGroup(
+            SuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(SuperiorLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(a)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(c)
+                .addGap(2, 2, 2)
+                .addComponent(b)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(d)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(Inferior, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(Superior, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(Ayuda, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -628,6 +627,7 @@ public class m_Arquitectura extends javax.swing.JFrame {
                         .addComponent(pregunta5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(pregunta7, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(Superior, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -666,22 +666,24 @@ public class m_Arquitectura extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
       /*JRadioButton[] preguntas=new JRadioButton[4];
-      preguntas=AgregarPreguntas(p1,p2,p4,p5);
-      JPanel[] respuestas=new JPanel[4];
+         preguntas=AgregarPreguntas(p1,p2,p4,p5);
+         JPanel[] respuestas=new JPanel[4];
          pregunta4.setBounds(93, pregunta3.getY()+40, 544, 34);143 inicia
-      respuestas=AgregarRespuestas(r2,r3,r4,r6);
+         respuestas=AgregarRespuestas(r2,r3,r4,r6);
+         for (int i = 0; i < preguntas.length; i++) {
+         if(preguntas[i].isSelected())respuestas[i].setVisible(false);
+         }
+         */
+        JPanel[] controlador_preguntas = new JPanel[3];
+        controlador_preguntas = Preguntas(pregunta5, pregunta6, pregunta7);
+        JRadioButton[] preguntas = new JRadioButton[3];
+        preguntas = AgregarPreguntas(p5, p6, p7);
         for (int i = 0; i < preguntas.length; i++) {
-            if(preguntas[i].isSelected())respuestas[i].setVisible(false);
+            if (!preguntas[i].isSelected()) {
+                controlador_preguntas[i].setVisible(false);
+            }
         }
-     */
-        JPanel[]controlador_preguntas=new JPanel[3];
-       controlador_preguntas=Preguntas(pregunta5,pregunta6,pregunta7);
-       JRadioButton[] preguntas=new JRadioButton[3];
-      preguntas=AgregarPreguntas(p5,p6,p7);
-        for (int i = 0; i < preguntas.length; i++) {
-            if(!preguntas[i].isSelected())controlador_preguntas[i].setVisible(false);
-        }
-        JPanel mostrar[]=AgregarRespuestas(respuesta5,respuesta6,respuesta7);
+        JPanel mostrar[] = AgregarRespuestas(respuesta5, respuesta6, respuesta7);
         for (int i = 0; i < mostrar.length; i++) {
             mostrar[i].setVisible(true);
         }
@@ -689,50 +691,51 @@ public class m_Arquitectura extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        ArrayList puntos=new ArrayList<String>();
-        int controlar=0;
-        int inicio=0;
-        int finalizar=2;
-        String datos="";
-        JComboBox[] opciones=new JComboBox[12];
-        opciones=respuestas(cb13,cb14,cb15,cb16,cb17,cb18,cb19,cb20,cb21);
-         JRadioButton[] preguntas=new JRadioButton[4];
-        preguntas=AgregarPreguntas(p5,p6,p7);
+        ArrayList puntos = new ArrayList<String>();
+        int controlar = 0;
+        int inicio = 0;
+        int finalizar = 2;
+        String datos = "";
+        JComboBox[] opciones = new JComboBox[12];
+        opciones = respuestas(cb13, cb14, cb15, cb16, cb17, cb18, cb19, cb20, cb21);
+        JRadioButton[] preguntas = new JRadioButton[4];
+        preguntas = AgregarPreguntas(p5, p6, p7);
         for (int i = 0; i < preguntas.length; i++) {
-            if(preguntas[i].isSelected()) {
-                for ( controlar =inicio; controlar <= finalizar; controlar++) {
-                  datos=datos+opciones[controlar].getSelectedItem().toString()+"/";
+            if (preguntas[i].isSelected()) {
+                for (controlar = inicio; controlar <= finalizar; controlar++) {
+                    datos = datos + opciones[controlar].getSelectedItem().toString() + "/";
                 }
-                inicio=finalizar+1;
-                finalizar=inicio+2;
-            }else{
-             inicio=finalizar+1;
-             finalizar=inicio+2;
+                inicio = finalizar + 1;
+                finalizar = inicio + 2;
+            } else {
+                inicio = finalizar + 1;
+                finalizar = inicio + 2;
             }
-        if(datos!=""){
-            puntos.add("Arquitectura"+(i+1)+"/"+datos);
-            datos="";
-        }
-        
+            if (datos != "") {
+                puntos.add("Arquitectura" + (i + 1) + "/" + datos);
+                datos = "";
+            }
+
         }
         System.out.println(puntos);
         subir(puntos);
-        volver();   
+        volver();
     }//GEN-LAST:event_jButton2ActionPerformed
-public void subir(ArrayList<String> pila){
-         clsConecta ob=new clsConecta();
+    public void subir(ArrayList<String> pila) {
+        clsConecta ob = new clsConecta();
         for (int i = 0; i < pila.size(); i++) {
-        String datos[] =pila.get(i).split("/");
-     String sql= "INSERT INTO respuestas VALUES (default, '"+datos[0]+"', '"+datos[1]+"', '"+datos[2]+"','"+datos[3]+"')";  
-        ob.insertar(sql);
+            String datos[] = pila.get(i).split("/");
+            String sql = "INSERT INTO respuestas VALUES (default, '" + datos[0] + "', '" + datos[1] + "', '" + datos[2] + "','" + datos[3] + "')";
+            ob.insertar(sql);
         }
-        
+
     }
-public void volver(){
-        Principal action=new Principal();
+
+    public void volver() {
+        Principal action = new Principal();
         action.setVisible(true);
-       this.dispose();
-}
+        this.dispose();
+    }
     private void p5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p5ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_p5ActionPerformed
@@ -784,7 +787,7 @@ public void volver(){
     private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
 
         String sl = System.getProperty("line.separator");
-        JOptionPane.showMessageDialog(rootPane,"Establece una frontera inter-pares: cuando dos sistemas se interconectan para intercambiar información.","[ip] Punto de interconexión",JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:
+        JOptionPane.showMessageDialog(rootPane, "Establece una frontera inter-pares: cuando dos sistemas se interconectan para intercambiar información.", "[ip] Punto de interconexión", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:
     }//GEN-LAST:event_jLabel2MouseClicked
 
     private void jLabel2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseEntered
@@ -795,7 +798,7 @@ public void volver(){
     private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
 
         String sl = System.getProperty("line.separator");
-        JOptionPane.showMessageDialog(rootPane,"Establece una frontera inferior, cuando para la prestación de nuestros servicios recurrimos a un tercero.","[ext]  Proporcionado por terceros",JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:
+        JOptionPane.showMessageDialog(rootPane, "Establece una frontera inferior, cuando para la prestación de nuestros servicios recurrimos a un tercero.", "[ext]  Proporcionado por terceros", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:
     }//GEN-LAST:event_jLabel4MouseClicked
 
     private void jLabel4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseEntered
@@ -806,63 +809,62 @@ public void volver(){
     private void d12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_d12MouseClicked
 
         JOptionPane.showMessageDialog(rootPane, "La información no se pone a disposición ni se revela a individuos, "
-            + sl+ "entidades o procesos no autorizados"
-            +sl+""
-            + sl+"Valoración: ¿Qué daño causaría que lo conociera quién no debe?",
-            "[Confidencialidad]", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:
+                + sl + "entidades o procesos no autorizados"
+                + sl + ""
+                + sl + "Valoración: ¿Qué daño causaría que lo conociera quién no debe?",
+                "[Confidencialidad]", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:
     }//GEN-LAST:event_d12MouseClicked
 
     private void d13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_d13MouseClicked
 
         JOptionPane.showMessageDialog(rootPane, "Mantenimiento de la exactitud y completitud de la información y sus"
-            + sl+"métodos de proceso."
-            +sl+""
-            +sl+"Valoración: ¿Qué perjuicio causaría qué estuviera dañado o corrupto?","[Integridad]", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:// TODO add your handling code here:
+                + sl + "métodos de proceso."
+                + sl + ""
+                + sl + "Valoración: ¿Qué perjuicio causaría qué estuviera dañado o corrupto?", "[Integridad]", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:// TODO add your handling code here:
     }//GEN-LAST:event_d13MouseClicked
 
     private void d14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_d14MouseClicked
 
         JOptionPane.showMessageDialog(rootPane, "Acceso y utilización de la información y los sistemas de tratamiento de la misma"
-            + sl + "por parte de los individuos, entidades o procesos autorizados cuando lo requieran "
-            +sl+""
-            + sl+ "Valoración: ¿Qué perjuicio causaría no tenerlo o no poder utilizarlo?",
-            "[Disponibilidad]", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:// TODO add your handling code here:
+                + sl + "por parte de los individuos, entidades o procesos autorizados cuando lo requieran "
+                + sl + ""
+                + sl + "Valoración: ¿Qué perjuicio causaría no tenerlo o no poder utilizarlo?",
+                "[Disponibilidad]", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:// TODO add your handling code here:
         // TODO add your handling code here:
     }//GEN-LAST:event_d14MouseClicked
 
-    public  JRadioButton[] AgregarPreguntas(JRadioButton... arrayOpciones)
-{
-  JRadioButton[] preguntas=new JRadioButton[arrayOpciones.length];
-    for (int i = 0; i < arrayOpciones.length; i++) {
-        preguntas[i]=arrayOpciones[i];
+    public JRadioButton[] AgregarPreguntas(JRadioButton... arrayOpciones) {
+        JRadioButton[] preguntas = new JRadioButton[arrayOpciones.length];
+        for (int i = 0; i < arrayOpciones.length; i++) {
+            preguntas[i] = arrayOpciones[i];
+        }
+        return preguntas;
     }
-    return preguntas;
-}
 
-        public  JPanel[] AgregarRespuestas(JPanel... arrayOpciones)
-{
-  JPanel[] respuestas=new JPanel[arrayOpciones.length];
-    for (int i = 0; i < arrayOpciones.length; i++) {
-        respuestas[i]=arrayOpciones[i];
+    public JPanel[] AgregarRespuestas(JPanel... arrayOpciones) {
+        JPanel[] respuestas = new JPanel[arrayOpciones.length];
+        for (int i = 0; i < arrayOpciones.length; i++) {
+            respuestas[i] = arrayOpciones[i];
+        }
+        return respuestas;
     }
-    return respuestas;
-}
-         public  JPanel[] Preguntas(JPanel... arrayOpciones)
-{
-  JPanel[] respuestas=new JPanel[arrayOpciones.length];
-    for (int i = 0; i < arrayOpciones.length; i++) {
-        respuestas[i]=arrayOpciones[i];
+
+    public JPanel[] Preguntas(JPanel... arrayOpciones) {
+        JPanel[] respuestas = new JPanel[arrayOpciones.length];
+        for (int i = 0; i < arrayOpciones.length; i++) {
+            respuestas[i] = arrayOpciones[i];
+        }
+        return respuestas;
     }
-    return respuestas;
-}
-         public JComboBox[] respuestas(JComboBox... ArrayOpciones)
-{
-         JComboBox[] res=new JComboBox[ArrayOpciones.length];
-         for (int i = 0; i < ArrayOpciones.length; i++) {
-        res[i]=ArrayOpciones[i];
+
+    public JComboBox[] respuestas(JComboBox... ArrayOpciones) {
+        JComboBox[] res = new JComboBox[ArrayOpciones.length];
+        for (int i = 0; i < ArrayOpciones.length; i++) {
+            res[i] = ArrayOpciones[i];
+        }
+        return res;
     }
-         return res;
-   }
+
     /**
      * @param args the command line arguments
      */

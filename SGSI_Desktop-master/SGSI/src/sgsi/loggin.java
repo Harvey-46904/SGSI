@@ -62,6 +62,10 @@ public class loggin extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel2.setText("Contraseña:");
 
+        txtUsuario.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        txtUsuario.setToolTipText("");
+        txtUsuario.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+
         exit.setText("Salir");
         exit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -75,6 +79,8 @@ public class loggin extends javax.swing.JFrame {
                 nextActionPerformed(evt);
             }
         });
+
+        txtPassword.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
 
         jPanel2.setBackground(new java.awt.Color(53, 96, 183));
 
@@ -136,21 +142,21 @@ public class loggin extends javax.swing.JFrame {
                 .addComponent(next)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(33, Short.MAX_VALUE)
+                .addContainerGap(24, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel1)
                     .addComponent(jLabel2))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(txtUsuario)
-                    .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(27, 27, 27))
+                    .addComponent(txtUsuario, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+                    .addComponent(txtPassword))
+                .addGap(48, 48, 48))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 63, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 61, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
                     .addComponent(txtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -191,29 +197,29 @@ public class loggin extends javax.swing.JFrame {
         String user, pwd;
         user = txtUsuario.getText();
         pwd = txtPassword.getText();
-        
-        if (user.equals("admin") && pwd.equals("1234")){
+
+        if (user.equals("ingSis") && pwd.equals("1234")) {
             Principal principal = new Principal();
             principal.setVisible(true);
             this.setVisible(false);
-            clsConecta ob=new clsConecta();
-            String borrar="delete from respuestas";
+            clsConecta ob = new clsConecta();
+            String borrar = "delete from respuestas";
             ob.consulta(borrar);
             //this.dispose();
-        }else{
+        } else {
             JOptionPane.showMessageDialog(null, "Usuario o contraseña incorrectos");
         }
-        
+
     }//GEN-LAST:event_nextActionPerformed
 
     private void exitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitActionPerformed
 
-        int resp = JOptionPane.showConfirmDialog(null, "¿Está seguro qué desea salir?", "¡Alerta!", JOptionPane.YES_NO_OPTION,JOptionPane.WARNING_MESSAGE);
-        if (JOptionPane.YES_OPTION == resp){
-            JOptionPane.showMessageDialog(null,"Hasta pronto...","Sistema de evaluación",JOptionPane.INFORMATION_MESSAGE);            
+        int resp = JOptionPane.showConfirmDialog(null, "¿Está seguro qué desea salir?", "¡Alerta!", JOptionPane.YES_NO_OPTION, JOptionPane.WARNING_MESSAGE);
+        if (JOptionPane.YES_OPTION == resp) {
+            JOptionPane.showMessageDialog(null, "Hasta pronto...", "Sistema de evaluación", JOptionPane.INFORMATION_MESSAGE);
             System.exit(0);
-        }else{
-            JOptionPane.showMessageDialog(null,"Por favor continue con el inicio de sesión","Sistema de evaluación SGSI",JOptionPane.INFORMATION_MESSAGE);
+        } else {
+            JOptionPane.showMessageDialog(null, "Por favor continue con el inicio de sesión", "Sistema de evaluación SGSI", JOptionPane.INFORMATION_MESSAGE);
         }// TODO add your handling code here:
     }//GEN-LAST:event_exitActionPerformed
 

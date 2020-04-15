@@ -3,13 +3,18 @@ package sgsi;
 
 import java.sql.SQLException;
 import java.awt.List;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+
 import java.util.ArrayList;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
+import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
+import javax.swing.WindowConstants;
 import pkqControlador.clsConecta;
 
 /**
@@ -17,12 +22,14 @@ import pkqControlador.clsConecta;
  * @author Luis Efe
  */
 public class m_Activos extends javax.swing.JFrame {
+
     String sl = System.getProperty("line.separator");
 
     /**
      * Creates new form activos_esenciales
      */
     public m_Activos() {
+        //cerrar();
         initComponents();
         this.setLocationRelativeTo(null);
         ;
@@ -78,6 +85,7 @@ public class m_Activos extends javax.swing.JFrame {
         cb7 = new javax.swing.JComboBox();
         cb8 = new javax.swing.JComboBox();
         cb9 = new javax.swing.JComboBox();
+        jLabel11 = new javax.swing.JLabel();
         pregunta4 = new javax.swing.JPanel();
         gen4 = new javax.swing.JPanel();
         p4 = new javax.swing.JRadioButton();
@@ -85,6 +93,7 @@ public class m_Activos extends javax.swing.JFrame {
         cb10 = new javax.swing.JComboBox();
         cb11 = new javax.swing.JComboBox();
         cb12 = new javax.swing.JComboBox();
+        jLabel12 = new javax.swing.JLabel();
         Info = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -158,15 +167,15 @@ public class m_Activos extends javax.swing.JFrame {
 
         b.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         b.setForeground(new java.awt.Color(255, 255, 255));
-        b.setText("y luego debe escoger entre (Bajo,Medio,Alto)  de acuerdo al conocimiento que tenga sobre los niveles de Confidencialidad (C), integridad (I) y disponibilidad (D) de los mismos .");
+        b.setText("y luego debe escoger entre (Bajo,Medio,Alto)  de acuerdo a los niveles de relevancia sobre la Confidencialidad (C), integridad (I) y disponibilidad (D) de los mismos .");
 
         c.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         c.setForeground(new java.awt.Color(255, 255, 255));
-        c.setText("Para continuar por favor no olvide que como paso inicial debe marcar los activos con los cuales cuente su organización, posteriormente dar click en \"Seleccionar y evaluar\"");
+        c.setText("Para continuar por favor no olvide que como paso inicial debe marcar los activos con los cuales cuente su organización, posteriormente dar click en \"Seleccionar\"");
 
         d.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         d.setForeground(new java.awt.Color(255, 255, 255));
-        d.setText("Nota: Para más información sobre los activos click en los signos de interrogación. Recuerde que (0) es el valor más bajo y (9) es el valor más alto de valoración. ");
+        d.setText("Nota: Para más información sobre los activos click en los signos de interrogación disponibles en cada Ítem. ");
 
         javax.swing.GroupLayout SuperiorLayout = new javax.swing.GroupLayout(Superior);
         Superior.setLayout(SuperiorLayout);
@@ -492,6 +501,16 @@ public class m_Activos extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jLabel11.setText("¿?");
+        jLabel11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel11MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel11MouseEntered(evt);
+            }
+        });
+
         javax.swing.GroupLayout pregunta3Layout = new javax.swing.GroupLayout(pregunta3);
         pregunta3.setLayout(pregunta3Layout);
         pregunta3Layout.setHorizontalGroup(
@@ -502,6 +521,11 @@ public class m_Activos extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(respuesta3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(41, Short.MAX_VALUE))
+            .addGroup(pregunta3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta3Layout.createSequentialGroup()
+                    .addGap(272, 272, 272)
+                    .addComponent(jLabel11)
+                    .addContainerGap(272, Short.MAX_VALUE)))
         );
         pregunta3Layout.setVerticalGroup(
             pregunta3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -513,6 +537,11 @@ public class m_Activos extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(respuesta3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(pregunta3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta3Layout.createSequentialGroup()
+                    .addGap(25, 25, 25)
+                    .addComponent(jLabel11)
+                    .addContainerGap(25, Short.MAX_VALUE)))
         );
 
         p4.setText("[pub] De caracter privado");
@@ -581,6 +610,16 @@ public class m_Activos extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jLabel12.setText("¿?");
+        jLabel12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel12MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel12MouseEntered(evt);
+            }
+        });
+
         javax.swing.GroupLayout pregunta4Layout = new javax.swing.GroupLayout(pregunta4);
         pregunta4.setLayout(pregunta4Layout);
         pregunta4Layout.setHorizontalGroup(
@@ -591,6 +630,11 @@ public class m_Activos extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(respuesta4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(41, Short.MAX_VALUE))
+            .addGroup(pregunta4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta4Layout.createSequentialGroup()
+                    .addGap(272, 272, 272)
+                    .addComponent(jLabel12)
+                    .addContainerGap(272, Short.MAX_VALUE)))
         );
         pregunta4Layout.setVerticalGroup(
             pregunta4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -602,6 +646,11 @@ public class m_Activos extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(respuesta4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(pregunta4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pregunta4Layout.createSequentialGroup()
+                    .addGap(25, 25, 25)
+                    .addComponent(jLabel12)
+                    .addContainerGap(25, Short.MAX_VALUE)))
         );
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -623,7 +672,7 @@ public class m_Activos extends javax.swing.JFrame {
             .addGroup(InfoLayout.createSequentialGroup()
                 .addGap(42, 42, 42)
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 250, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 186, Short.MAX_VALUE)
                 .addComponent(jLabel4)
                 .addGap(55, 55, 55)
                 .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -765,28 +814,27 @@ public class m_Activos extends javax.swing.JFrame {
 
     private void d12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_d12MouseClicked
 
-        
         JOptionPane.showMessageDialog(rootPane, "La información no se pone a disposición ni se revela a individuos, "
-                + sl+ "entidades o procesos no autorizados"
-                +sl+""
-                + sl+"Valoración: ¿Qué daño causaría que lo conociera quién no debe?",
+                + sl + "entidades o procesos no autorizados"
+                + sl + ""
+                + sl + "Valoración: ¿Qué daño causaría que lo conociera quién no debe?",
                 "[Confidencialidad]", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:
     }//GEN-LAST:event_d12MouseClicked
 
     private void d13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_d13MouseClicked
 
         JOptionPane.showMessageDialog(rootPane, "Mantenimiento de la exactitud y completitud de la información y sus"
-                + sl+"métodos de proceso."
-                +sl+""
-                +sl+"Valoración: ¿Qué perjuicio causaría qué estuviera dañado o corrupto?","[Integridad]", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:// TODO add your handling code here:
+                + sl + "métodos de proceso."
+                + sl + ""
+                + sl + "Valoración: ¿Qué perjuicio causaría qué estuviera dañado o corrupto?", "[Integridad]", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:// TODO add your handling code here:
     }//GEN-LAST:event_d13MouseClicked
 
     private void d14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_d14MouseClicked
-        
+
         JOptionPane.showMessageDialog(rootPane, "Acceso y utilización de la información y los sistemas de tratamiento de la misma"
                 + sl + "por parte de los individuos, entidades o procesos autorizados cuando lo requieran "
-                +sl+""
-                + sl+ "Valoración: ¿Qué perjuicio causaría no tenerlo o no poder utilizarlo?",
+                + sl + ""
+                + sl + "Valoración: ¿Qué perjuicio causaría no tenerlo o no poder utilizarlo?",
                 "[Disponibilidad]", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:// TODO add your handling code here:
         // TODO add your handling code here:
     }//GEN-LAST:event_d14MouseClicked
@@ -844,7 +892,7 @@ public class m_Activos extends javax.swing.JFrame {
                 finalizar = inicio + 2;
             }
             if (datos != "") {
-                puntos.add( "activos" + (i + 1) + "/" + datos);
+                puntos.add("activos" + (i + 1) + "/" + datos);
                 datos = "";
             }
 
@@ -853,25 +901,51 @@ public class m_Activos extends javax.swing.JFrame {
         System.out.println(puntos.size());
         subir(puntos);
         volver();
-     
-        
+
+
     }//GEN-LAST:event_jButton2ActionPerformed
-    public void subir(ArrayList<String> pila){
-         clsConecta ob=new clsConecta();
+    public void subir(ArrayList<String> pila) {
+        clsConecta ob = new clsConecta();
         for (int i = 0; i < pila.size(); i++) {
-        String datos[] =pila.get(i).split("/");
-     String sql= "INSERT INTO respuestas VALUES (default, '"+datos[0]+"', '"+datos[1]+"', '"+datos[2]+"','"+datos[3]+"')";  
-        ob.insertar(sql);
+            String datos[] = pila.get(i).split("/");
+            String sql = "INSERT INTO respuestas VALUES (default, '" + datos[0] + "', '" + datos[1] + "', '" + datos[2] + "','" + datos[3] + "')";
+            ob.insertar(sql);
         }
-        
+
     }
-    public void volver(){
-    Principal action=new Principal();
+
+    public void volver() {
+        Principal action = new Principal();
         action.setVisible(true);
         this.setVisible(false);
-       
+
+    }
+    /*
+    public void cerrar (){
+        try {
+            this.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
+            addWindowListener (new WindowAdapter(){
+                public void windowClosing (WindowEvent e){
+                    confirmarSalida();
+                }
+            });
+            this.setVisible(true);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
     
+    public void confirmarSalida (){
+        int valor = JOptionPane.showConfirmDialog(this, "¿Está seguro qué desea salir?","Advertencia",JOptionPane.YES_NO_OPTION);
+        if (valor == JOptionPane.YES_OPTION){
+            JOptionPane.showMessageDialog(null,"Gracias","Vuelva pronto",JOptionPane.INFORMATION_MESSAGE);
+        }else{
+            JOptionPane.showMessageDialog(null,"asas","asas",JOptionPane.INFORMATION_MESSAGE);
+        }
+            
+    }
+    */
+
     private void cb1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cb1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_cb1ActionPerformed
@@ -935,11 +1009,11 @@ public class m_Activos extends javax.swing.JFrame {
     private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
 
         String sl = System.getProperty("line.separator");
-        JOptionPane.showMessageDialog(rootPane,"Dícese de aquellos que son esenciales para la supervivencia de la Organización;"+sl+""
-            + "es decir que su carencia o daño afectaría directamente a la existencia de la Organización. Se pueden "+sl+""
-            + "identificar aquellos que son imprescindibles para que la Organización supere una situación de emergencia,"+sl+""
-            + "aquellos que permiten desempeñar o reconstruir las misiones críticas, aquellos sustancian la naturaleza legal"+sl+""
-            + "o los derechos financieros de la Organización o sus usuarios.","[vr] Datos vitales (registros de la organización)",JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:
+        JOptionPane.showMessageDialog(rootPane, "Dícese de aquellos que son esenciales para la supervivencia de la Organización;" + sl + ""
+                + "es decir que su carencia o daño afectaría directamente a la existencia de la Organización. Se pueden " + sl + ""
+                + "identificar aquellos que son imprescindibles para que la Organización supere una situación de emergencia," + sl + ""
+                + "aquellos que permiten desempeñar o reconstruir las misiones críticas, aquellos sustancian la naturaleza legal" + sl + ""
+                + "o los derechos financieros de la Organización o sus usuarios.", "[vr] Datos vitales (registros de la organización)", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:
     }//GEN-LAST:event_jLabel2MouseClicked
 
     private void jLabel2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseEntered
@@ -950,16 +1024,36 @@ public class m_Activos extends javax.swing.JFrame {
     private void jLabel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseClicked
 
         String sl = System.getProperty("line.separator");
-        JOptionPane.showMessageDialog(rootPane,"Dícese de cualquier información concerniente a personas físicas identificadas o identificables. "+sl+""
-            + "Los datos de carácter personal están regulados por leyes y reglamentos en cuanto "+sl+""
-            + "afectan a las libertades públicas y los derechos fundamentales de las personas físicas,"+sl+""
-            + " y especialmente su honor e intimidad personal y familiar.","[Per] Datos de carácter personal",JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:
+        JOptionPane.showMessageDialog(rootPane, "Dícese de cualquier información concerniente a personas físicas identificadas o identificables. " + sl + ""
+                + "Los datos de carácter personal están regulados por leyes y reglamentos en cuanto " + sl + ""
+                + "afectan a las libertades públicas y los derechos fundamentales de las personas físicas," + sl + ""
+                + " y especialmente su honor e intimidad personal y familiar.", "[Per] Datos de carácter personal", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:
     }//GEN-LAST:event_jLabel9MouseClicked
 
     private void jLabel9MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseEntered
         // TODO add your handling code here:
 
     }//GEN-LAST:event_jLabel9MouseEntered
+
+    private void jLabel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel11MouseClicked
+
+    private void jLabel11MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel11MouseEntered
+
+    private void jLabel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseClicked
+
+        String sl = System.getProperty("line.separator");
+        JOptionPane.showMessageDialog(rootPane, "Documentos cuya información es relevante y contiene datos de privacidad"
+                + sl+ "los cuales sólo son de uso exclusivo para personas autorizadas", "[Pub] De caracter privado", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel12MouseClicked
+
+    private void jLabel12MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel12MouseEntered
 
     public JRadioButton[] AgregarPreguntas(JRadioButton... arrayOpciones) {
         JRadioButton[] preguntas = new JRadioButton[arrayOpciones.length];
@@ -1071,6 +1165,8 @@ public class m_Activos extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

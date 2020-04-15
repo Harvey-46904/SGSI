@@ -14,6 +14,7 @@ import javax.swing.JRadioButton;
  * @author Luis Efe
  */
 public class m_Redes extends javax.swing.JFrame {
+
     String sl = System.getProperty("line.separator");
 
     /**
@@ -23,8 +24,8 @@ public class m_Redes extends javax.swing.JFrame {
         initComponents();
         this.setLocationRelativeTo(null);
         ;
-        JPanel ocultar[] = AgregarRespuestas(respuesta32, respuesta33,respuesta34,respuesta35,
-                respuesta36,respuesta37,respuesta38,respuesta39);
+        JPanel ocultar[] = AgregarRespuestas(respuesta32, respuesta33, respuesta34, respuesta35,
+                respuesta36, respuesta37, respuesta38, respuesta39);
         for (int i = 0; i < ocultar.length; i++) {
             ocultar[i].setVisible(false);
         }
@@ -169,7 +170,7 @@ public class m_Redes extends javax.swing.JFrame {
             .addGroup(InfoLayout.createSequentialGroup()
                 .addGap(42, 42, 42)
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 245, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 230, Short.MAX_VALUE)
                 .addComponent(jLabel5)
                 .addGap(55, 55, 55)
                 .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -251,7 +252,7 @@ public class m_Redes extends javax.swing.JFrame {
                     .addComponent(b)
                     .addComponent(c)
                     .addComponent(d))
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         SuperiorLayout.setVerticalGroup(
             SuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1127,7 +1128,7 @@ public class m_Redes extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(192, Short.MAX_VALUE)
+                .addContainerGap(229, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(pregunta39, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(pregunta38, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1137,7 +1138,7 @@ public class m_Redes extends javax.swing.JFrame {
                     .addComponent(pregunta34, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(pregunta33, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(pregunta32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(156, 156, 156))
+                .addGap(114, 114, 114))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1230,7 +1231,7 @@ public class m_Redes extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addComponent(jScrollPane2)
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                         .addContainerGap())
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(Ayuda, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1241,9 +1242,9 @@ public class m_Redes extends javax.swing.JFrame {
                         .addGap(68, 68, 68))))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
-                    .addGap(229, 229, 229)
+                    .addGap(254, 254, 254)
                     .addComponent(Info, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(230, Short.MAX_VALUE)))
+                    .addContainerGap(215, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1290,17 +1291,17 @@ public class m_Redes extends javax.swing.JFrame {
          }
          */
         JPanel[] controlador_preguntas = new JPanel[8];
-        controlador_preguntas = Preguntas(pregunta32,pregunta33,pregunta34,pregunta35,pregunta36,
-                pregunta37,pregunta38,pregunta39);
+        controlador_preguntas = Preguntas(pregunta32, pregunta33, pregunta34, pregunta35, pregunta36,
+                pregunta37, pregunta38, pregunta39);
         JRadioButton[] preguntas = new JRadioButton[8];
-        preguntas = AgregarPreguntas(p32,p33,p34,p35,p36,p37,p38,p39);
+        preguntas = AgregarPreguntas(p32, p33, p34, p35, p36, p37, p38, p39);
         for (int i = 0; i < preguntas.length; i++) {
             if (!preguntas[i].isSelected()) {
                 controlador_preguntas[i].setVisible(false);
             }
         }
-        JPanel mostrar[] = AgregarRespuestas(respuesta32, respuesta33,respuesta34,respuesta35,
-                respuesta36,respuesta37,respuesta38,respuesta39);
+        JPanel mostrar[] = AgregarRespuestas(respuesta32, respuesta33, respuesta34, respuesta35,
+                respuesta36, respuesta37, respuesta38, respuesta39);
         for (int i = 0; i < mostrar.length; i++) {
             mostrar[i].setVisible(true);
         }
@@ -1314,10 +1315,10 @@ public class m_Redes extends javax.swing.JFrame {
         int finalizar = 2;
         String datos = "";
         JComboBox[] opciones = new JComboBox[24];
-        opciones = respuestas(cb94,cb95,cb96,cb97,cb98,cb99,cb100,cb101,cb102,cb103,cb104,cb105,cb106,cb107,cb108,cb109,cb110,
-                cb111,cb112,cb113,cb114,cb115,cb116,cb117);
+        opciones = respuestas(cb94, cb95, cb96, cb97, cb98, cb99, cb100, cb101, cb102, cb103, cb104, cb105, cb106, cb107, cb108, cb109, cb110,
+                cb111, cb112, cb113, cb114, cb115, cb116, cb117);
         JRadioButton[] preguntas = new JRadioButton[8];
-        preguntas = AgregarPreguntas(p32,p33,p34,p35,p36,p37,p38,p39);
+        preguntas = AgregarPreguntas(p32, p33, p34, p35, p36, p37, p38, p39);
         for (int i = 0; i < preguntas.length; i++) {
             if (preguntas[i].isSelected()) {
                 for (controlar = inicio; controlar <= finalizar; controlar++) {
@@ -1336,16 +1337,16 @@ public class m_Redes extends javax.swing.JFrame {
 
         }
         System.out.println(puntos);
-        m_Arquitectura m=new m_Arquitectura();
+        m_Arquitectura m = new m_Arquitectura();
         m.subir(puntos);
         volver();
-        
+
     }//GEN-LAST:event_jButton2ActionPerformed
-public void volver(){
-        Principal action=new Principal();
+    public void volver() {
+        Principal action = new Principal();
         action.setVisible(true);
-       this.dispose();
-}
+        this.dispose();
+    }
     private void p32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p32ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_p32ActionPerformed
@@ -1476,71 +1477,71 @@ public void volver(){
 
     private void jLabel27MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel27MouseClicked
 
-        JOptionPane.showMessageDialog(rootPane, "Red de comunicaciones usada para llamar entre dos o más partes","[PSNT] Red telefónica", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(rootPane, "Red de comunicaciones usada para llamar entre dos o más partes", "[PSNT] Red telefónica", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_jLabel27MouseClicked
 
     private void jLabel28MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel28MouseClicked
 
-        JOptionPane.showMessageDialog(rootPane, "Comunicación realizada a través de ondas","[radio] Comunicaciones radio", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(rootPane, "Comunicación realizada a través de ondas", "[radio] Comunicaciones radio", JOptionPane.INFORMATION_MESSAGE);
 
     }//GEN-LAST:event_jLabel28MouseClicked
 
     private void jLabel29MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel29MouseClicked
 
         JOptionPane.showMessageDialog(rootPane, "Tecnología de comunicación inalámbrica que permite conectar a internet dipositivos"
-            + sl+" electrónicos como computadores, celulares, tablets, etc.","[wifi] Red inalámbrica", JOptionPane.INFORMATION_MESSAGE);
+                + sl + " electrónicos como computadores, celulares, tablets, etc.", "[wifi] Red inalámbrica", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_jLabel29MouseClicked
 
     private void jLabel30MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel30MouseClicked
 
-        JOptionPane.showMessageDialog(rootPane, "Medio de comunicación inalámbrico","[mobile] Telefonía móvil", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(rootPane, "Medio de comunicación inalámbrico", "[mobile] Telefonía móvil", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_jLabel30MouseClicked
 
     private void jLabel31MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel31MouseClicked
 
-        JOptionPane.showMessageDialog(rootPane, "Red de computadores que abarca un espacio reducido (casa, apto, edificio)","[LAN] Red local", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(rootPane, "Red de computadores que abarca un espacio reducido (casa, apto, edificio)", "[LAN] Red local", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_jLabel31MouseClicked
 
     private void jLabel32MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel32MouseClicked
 
-        JOptionPane.showMessageDialog(rootPane, "Red de computadores que abarca un espacio reducido (casa, apto, edificio)","[LAN] Red local", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(rootPane, "Red de computadores que abarca un espacio reducido (casa, apto, edificio)", "[LAN] Red local", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_jLabel32MouseClicked
 
     private void jLabel33MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel33MouseClicked
 
-        JOptionPane.showMessageDialog(rootPane, "Red de alta velocidad que brinda cobertura a un área extensa","[MAN] Red metropolitana", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(rootPane, "Red de alta velocidad que brinda cobertura a un área extensa", "[MAN] Red metropolitana", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_jLabel33MouseClicked
 
     private void jLabel34MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel34MouseClicked
 
         JOptionPane.showMessageDialog(rootPane, "Conjunto de redes de comunicación interconectadas entre sí que ofrecen diversos"
-            + sl+" recursos como por ejemplo el acceso a  archivos a través de la red","[Internet] Internet", JOptionPane.INFORMATION_MESSAGE);
+                + sl + " recursos como por ejemplo el acceso a  archivos a través de la red", "[Internet] Internet", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_jLabel34MouseClicked
 
     private void d12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_d12MouseClicked
 
         JOptionPane.showMessageDialog(rootPane, "La información no se pone a disposición ni se revela a individuos, "
-            + sl+ "entidades o procesos no autorizados"
-            +sl+""
-            + sl+"Valoración: ¿Qué daño causaría que lo conociera quién no debe?",
-            "[Confidencialidad]", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:
+                + sl + "entidades o procesos no autorizados"
+                + sl + ""
+                + sl + "Valoración: ¿Qué daño causaría que lo conociera quién no debe?",
+                "[Confidencialidad]", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:
     }//GEN-LAST:event_d12MouseClicked
 
     private void d13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_d13MouseClicked
 
         JOptionPane.showMessageDialog(rootPane, "Mantenimiento de la exactitud y completitud de la información y sus"
-            + sl+"métodos de proceso."
-            +sl+""
-            +sl+"Valoración: ¿Qué perjuicio causaría qué estuviera dañado o corrupto?","[Integridad]", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:// TODO add your handling code here:
+                + sl + "métodos de proceso."
+                + sl + ""
+                + sl + "Valoración: ¿Qué perjuicio causaría qué estuviera dañado o corrupto?", "[Integridad]", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:// TODO add your handling code here:
     }//GEN-LAST:event_d13MouseClicked
 
     private void d14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_d14MouseClicked
 
         JOptionPane.showMessageDialog(rootPane, "Acceso y utilización de la información y los sistemas de tratamiento de la misma"
-            + sl + "por parte de los individuos, entidades o procesos autorizados cuando lo requieran "
-            +sl+""
-            + sl+ "Valoración: ¿Qué perjuicio causaría no tenerlo o no poder utilizarlo?",
-            "[Disponibilidad]", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:// TODO add your handling code here:
+                + sl + "por parte de los individuos, entidades o procesos autorizados cuando lo requieran "
+                + sl + ""
+                + sl + "Valoración: ¿Qué perjuicio causaría no tenerlo o no poder utilizarlo?",
+                "[Disponibilidad]", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:// TODO add your handling code here:
         // TODO add your handling code here:
     }//GEN-LAST:event_d14MouseClicked
 

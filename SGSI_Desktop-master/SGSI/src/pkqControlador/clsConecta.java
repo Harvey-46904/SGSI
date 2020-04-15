@@ -28,7 +28,7 @@ try {
 	catch(ClassNotFoundException ex){
 	System.out.println("error cargando el driver");
 	}
-	con=DriverManager.getConnection("jdbc:postgresql://localhost:5432/DB_SGSI","postgres","unicesmag" );
+	con=DriverManager.getConnection("jdbc:postgresql://localhost:5432/DB_SGSI","postgres","045180" );
 	} catch(SQLException ex){
 	System.out.println("no hay conexion con el  motor");
  }

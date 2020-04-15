@@ -14,6 +14,7 @@ import javax.swing.JRadioButton;
  * @author Luis Efe
  */
 public class m_Soportes extends javax.swing.JFrame {
+
     String sl = System.getProperty("line.separator");
 
     /**
@@ -23,8 +24,8 @@ public class m_Soportes extends javax.swing.JFrame {
         initComponents();
         this.setLocationRelativeTo(null);
         ;
-        JPanel ocultar[] = AgregarRespuestas(respuesta40, respuesta41,respuesta42,respuesta43,
-                respuesta44,respuesta45,respuesta46);
+        JPanel ocultar[] = AgregarRespuestas(respuesta40, respuesta41, respuesta42, respuesta43,
+                respuesta44, respuesta45, respuesta46);
         for (int i = 0; i < ocultar.length; i++) {
             ocultar[i].setVisible(false);
         }
@@ -46,11 +47,6 @@ public class m_Soportes extends javax.swing.JFrame {
         Inferior = new javax.swing.JPanel();
         d6 = new javax.swing.JLabel();
         d10 = new javax.swing.JLabel();
-        Superior = new javax.swing.JPanel();
-        a = new javax.swing.JLabel();
-        b = new javax.swing.JLabel();
-        c = new javax.swing.JLabel();
-        d = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         Info = new javax.swing.JPanel();
@@ -121,6 +117,11 @@ public class m_Soportes extends javax.swing.JFrame {
         d12 = new javax.swing.JLabel();
         d13 = new javax.swing.JLabel();
         d14 = new javax.swing.JLabel();
+        Superior4 = new javax.swing.JPanel();
+        a4 = new javax.swing.JLabel();
+        b4 = new javax.swing.JLabel();
+        c4 = new javax.swing.JLabel();
+        d4 = new javax.swing.JLabel();
 
         jLabel10.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel10.setText("Para más información sobre este módulo por favor dar un click ");
@@ -173,51 +174,6 @@ public class m_Soportes extends javax.swing.JFrame {
                 .addComponent(d6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(d10)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        Superior.setBackground(new java.awt.Color(53, 96, 183));
-
-        a.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        a.setForeground(new java.awt.Color(255, 255, 255));
-        a.setText("[Modulo Soportes de información]");
-
-        b.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        b.setForeground(new java.awt.Color(255, 255, 255));
-        b.setText("y luego debe asignar valores entre 0 y 9  de acuerdo al conocimiento que tenga sobre los niveles de confidencialidad, integridad y disponibilidad de los mismos .");
-
-        c.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        c.setForeground(new java.awt.Color(255, 255, 255));
-        c.setText("Para continuar por favor no olvide que como paso inicial debe marcar los activos con los cuales cuente su organización, posteriormente dar click en \"Seleccionar y evaluar\"");
-
-        d.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        d.setForeground(new java.awt.Color(255, 255, 255));
-        d.setText("Nota: Para más información sobre los activos click en los signos de interrogación. Recuerde que (0) es el valor más bajo y (9) es el valor más alto de valoración. ");
-
-        javax.swing.GroupLayout SuperiorLayout = new javax.swing.GroupLayout(Superior);
-        Superior.setLayout(SuperiorLayout);
-        SuperiorLayout.setHorizontalGroup(
-            SuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(SuperiorLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(SuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(a)
-                    .addComponent(b)
-                    .addComponent(c)
-                    .addComponent(d))
-                .addContainerGap(33, Short.MAX_VALUE))
-        );
-        SuperiorLayout.setVerticalGroup(
-            SuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(SuperiorLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(a)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(c)
-                .addGap(2, 2, 2)
-                .addComponent(b)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(d)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -1029,7 +985,7 @@ public class m_Soportes extends javax.swing.JFrame {
                     .addComponent(pregunta42, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(pregunta41, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(pregunta40, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(209, Short.MAX_VALUE))
+                .addContainerGap(161, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1047,7 +1003,7 @@ public class m_Soportes extends javax.swing.JFrame {
                 .addComponent(pregunta45, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(pregunta46, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 37, Short.MAX_VALUE))
+                .addGap(0, 50, Short.MAX_VALUE))
         );
 
         jScrollPane2.setViewportView(jPanel1);
@@ -1110,12 +1066,56 @@ public class m_Soportes extends javax.swing.JFrame {
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
 
+        Superior4.setBackground(new java.awt.Color(53, 96, 183));
+
+        a4.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        a4.setForeground(new java.awt.Color(255, 255, 255));
+        a4.setText("[Módulo Soportes de información]");
+
+        b4.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        b4.setForeground(new java.awt.Color(255, 255, 255));
+        b4.setText("y luego debe escoger entre (Bajo,Medio,Alto)  de acuerdo a los niveles de relevancia sobre la Confidencialidad (C), integridad (I) y disponibilidad (D) de los mismos .");
+
+        c4.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        c4.setForeground(new java.awt.Color(255, 255, 255));
+        c4.setText("Para continuar por favor no olvide que como paso inicial debe marcar los activos con los cuales cuente su organización, posteriormente dar click en \"Seleccionar\"");
+
+        d4.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        d4.setForeground(new java.awt.Color(255, 255, 255));
+        d4.setText("Nota: Para más información sobre los activos click en los signos de interrogación disponibles en cada Ítem. ");
+
+        javax.swing.GroupLayout Superior4Layout = new javax.swing.GroupLayout(Superior4);
+        Superior4.setLayout(Superior4Layout);
+        Superior4Layout.setHorizontalGroup(
+            Superior4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Superior4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(Superior4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(a4)
+                    .addComponent(b4)
+                    .addComponent(c4)
+                    .addComponent(d4))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        Superior4Layout.setVerticalGroup(
+            Superior4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Superior4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(a4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(c4)
+                .addGap(2, 2, 2)
+                .addComponent(b4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(d4)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(Inferior, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(Superior, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(Ayuda, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1128,16 +1128,19 @@ public class m_Soportes extends javax.swing.JFrame {
                 .addGap(199, 199, 199)
                 .addComponent(Info, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addComponent(Superior4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addContainerGap()
-                    .addComponent(jScrollPane2)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 910, Short.MAX_VALUE)
                     .addContainerGap()))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(Superior, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Superior4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Info, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 282, Short.MAX_VALUE)
@@ -1179,17 +1182,17 @@ public class m_Soportes extends javax.swing.JFrame {
          }
          */
         JPanel[] controlador_preguntas = new JPanel[8];
-        controlador_preguntas = Preguntas(pregunta40,pregunta41,pregunta42,pregunta43,pregunta44,pregunta45,
+        controlador_preguntas = Preguntas(pregunta40, pregunta41, pregunta42, pregunta43, pregunta44, pregunta45,
                 pregunta46);
         JRadioButton[] preguntas = new JRadioButton[8];
-        preguntas = AgregarPreguntas(p40,p41,p42,p43,p44,p45,p46);
+        preguntas = AgregarPreguntas(p40, p41, p42, p43, p44, p45, p46);
         for (int i = 0; i < preguntas.length; i++) {
             if (!preguntas[i].isSelected()) {
                 controlador_preguntas[i].setVisible(false);
             }
         }
-        JPanel mostrar[] = AgregarRespuestas(respuesta40, respuesta41,respuesta42,respuesta43,
-                respuesta44,respuesta45,respuesta46);
+        JPanel mostrar[] = AgregarRespuestas(respuesta40, respuesta41, respuesta42, respuesta43,
+                respuesta44, respuesta45, respuesta46);
         for (int i = 0; i < mostrar.length; i++) {
             mostrar[i].setVisible(true);
         }
@@ -1203,10 +1206,10 @@ public class m_Soportes extends javax.swing.JFrame {
         int finalizar = 2;
         String datos = "";
         JComboBox[] opciones = new JComboBox[24];
-        opciones = respuestas(cb118,cb119,cb120,cb121,cb122,cb123,cb124,cb125,cb126,cb127,cb128,cb129,cb130,
-                cb131,cb132,cb133,cb134,cb135,cb136,cb137,cb138);
+        opciones = respuestas(cb118, cb119, cb120, cb121, cb122, cb123, cb124, cb125, cb126, cb127, cb128, cb129, cb130,
+                cb131, cb132, cb133, cb134, cb135, cb136, cb137, cb138);
         JRadioButton[] preguntas = new JRadioButton[8];
-        preguntas = AgregarPreguntas(p40,p41,p42,p43,p44,p45,p46);
+        preguntas = AgregarPreguntas(p40, p41, p42, p43, p44, p45, p46);
         for (int i = 0; i < preguntas.length; i++) {
             if (preguntas[i].isSelected()) {
                 for (controlar = inicio; controlar <= finalizar; controlar++) {
@@ -1225,17 +1228,17 @@ public class m_Soportes extends javax.swing.JFrame {
 
         }
         System.out.println(puntos);
-        m_Arquitectura m=new m_Arquitectura();
+        m_Arquitectura m = new m_Arquitectura();
         m.subir(puntos);
         volver();
-        
-     
+
+
     }//GEN-LAST:event_jButton2ActionPerformed
-public void volver(){
-        Principal action=new Principal();
+    public void volver() {
+        Principal action = new Principal();
         action.setVisible(true);
-       this.dispose();
-}
+        this.dispose();
+    }
     private void p40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_p40ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_p40ActionPerformed
@@ -1350,66 +1353,66 @@ public void volver(){
 
     private void jLabel27MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel27MouseClicked
 
-        JOptionPane.showMessageDialog(rootPane, "Discos duros internos o externos y de estado sólido","[disk] Discos", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(rootPane, "Discos duros internos o externos y de estado sólido", "[disk] Discos", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_jLabel27MouseClicked
 
     private void jLabel29MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel29MouseClicked
-        JOptionPane.showMessageDialog(rootPane, "Disposito de almacenamiento encontrado comunmente en teléfonos celulares, camarás","[mc] Tarjetas de memoria", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(rootPane, "Disposito de almacenamiento encontrado comunmente en teléfonos celulares, camarás", "[mc] Tarjetas de memoria", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_jLabel29MouseClicked
 
     private void jLabel28MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel28MouseClicked
 
         JOptionPane.showMessageDialog(rootPane, "Red de almacenamiento integral, donde se ve incluida una arquitectura completa"
-            +sl +" que maneja una red de alta velocidad de canal o fibra óptica (Conmutadores, "
-            + sl+"puentes) y almacenamiento en red (discos duros)","[san] Almacenamiento en red", JOptionPane.INFORMATION_MESSAGE);
+                + sl + " que maneja una red de alta velocidad de canal o fibra óptica (Conmutadores, "
+                + sl + "puentes) y almacenamiento en red (discos duros)", "[san] Almacenamiento en red", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_jLabel28MouseClicked
 
     private void jLabel30MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel30MouseClicked
 
-        JOptionPane.showMessageDialog(rootPane, "Disco compacto para leer y guardar información en formato digital","[cd] Cederrón (CD-ROM)", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(rootPane, "Disco compacto para leer y guardar información en formato digital", "[cd] Cederrón (CD-ROM)", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_jLabel30MouseClicked
 
     private void jLabel31MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel31MouseClicked
 
-        JOptionPane.showMessageDialog(rootPane, "Dispositivo electrónico que permite almcenar información en formato digital","[usb] Memorias USB", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(rootPane, "Dispositivo electrónico que permite almcenar información en formato digital", "[usb] Memorias USB", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_jLabel31MouseClicked
 
     private void jLabel32MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel32MouseClicked
 
-        JOptionPane.showMessageDialog(rootPane, "Dispositivo electrónico que permite almcenar información en formato digital","[dvd] DVD", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(rootPane, "Dispositivo electrónico que permite almcenar información en formato digital", "[dvd] DVD", JOptionPane.INFORMATION_MESSAGE);
         // TODO add your handling code here:
     }//GEN-LAST:event_jLabel32MouseClicked
 
     private void jLabel33MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel33MouseClicked
 
-        JOptionPane.showMessageDialog(rootPane, "Material físico","[printed] Material impreso", JOptionPane.INFORMATION_MESSAGE);
-        
+        JOptionPane.showMessageDialog(rootPane, "Material físico", "[printed] Material impreso", JOptionPane.INFORMATION_MESSAGE);
+
     }//GEN-LAST:event_jLabel33MouseClicked
 
     private void d12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_d12MouseClicked
 
         JOptionPane.showMessageDialog(rootPane, "La información no se pone a disposición ni se revela a individuos, "
-            + sl+ "entidades o procesos no autorizados"
-            +sl+""
-            + sl+"Valoración: ¿Qué daño causaría que lo conociera quién no debe?",
-            "[Confidencialidad]", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:
+                + sl + "entidades o procesos no autorizados"
+                + sl + ""
+                + sl + "Valoración: ¿Qué daño causaría que lo conociera quién no debe?",
+                "[Confidencialidad]", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:
     }//GEN-LAST:event_d12MouseClicked
 
     private void d13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_d13MouseClicked
 
         JOptionPane.showMessageDialog(rootPane, "Mantenimiento de la exactitud y completitud de la información y sus"
-            + sl+"métodos de proceso."
-            +sl+""
-            +sl+"Valoración: ¿Qué perjuicio causaría qué estuviera dañado o corrupto?","[Integridad]", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:// TODO add your handling code here:
+                + sl + "métodos de proceso."
+                + sl + ""
+                + sl + "Valoración: ¿Qué perjuicio causaría qué estuviera dañado o corrupto?", "[Integridad]", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:// TODO add your handling code here:
     }//GEN-LAST:event_d13MouseClicked
 
     private void d14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_d14MouseClicked
 
         JOptionPane.showMessageDialog(rootPane, "Acceso y utilización de la información y los sistemas de tratamiento de la misma"
-            + sl + "por parte de los individuos, entidades o procesos autorizados cuando lo requieran "
-            +sl+""
-            + sl+ "Valoración: ¿Qué perjuicio causaría no tenerlo o no poder utilizarlo?",
-            "[Disponibilidad]", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:// TODO add your handling code here:
+                + sl + "por parte de los individuos, entidades o procesos autorizados cuando lo requieran "
+                + sl + ""
+                + sl + "Valoración: ¿Qué perjuicio causaría no tenerlo o no poder utilizarlo?",
+                "[Disponibilidad]", JOptionPane.INFORMATION_MESSAGE);// TODO add your handling code here:// TODO add your handling code here:
         // TODO add your handling code here:
     }//GEN-LAST:event_d14MouseClicked
 
@@ -1491,10 +1494,10 @@ public void volver(){
     private javax.swing.JPanel Ayuda;
     private javax.swing.JPanel Inferior;
     private javax.swing.JPanel Info;
-    private javax.swing.JPanel Superior;
-    private javax.swing.JLabel a;
-    private javax.swing.JLabel b;
-    private javax.swing.JLabel c;
+    private javax.swing.JPanel Superior4;
+    private javax.swing.JLabel a4;
+    private javax.swing.JLabel b4;
+    private javax.swing.JLabel c4;
     private javax.swing.JLabel c6;
     private javax.swing.JComboBox cb118;
     private javax.swing.JComboBox cb119;
@@ -1517,12 +1520,12 @@ public void volver(){
     private javax.swing.JComboBox cb136;
     private javax.swing.JComboBox cb137;
     private javax.swing.JComboBox cb138;
-    private javax.swing.JLabel d;
     private javax.swing.JLabel d10;
     private javax.swing.JLabel d11;
     private javax.swing.JLabel d12;
     private javax.swing.JLabel d13;
     private javax.swing.JLabel d14;
+    private javax.swing.JLabel d4;
     private javax.swing.JLabel d6;
     private javax.swing.JPanel gen40;
     private javax.swing.JPanel gen41;
